@@ -632,7 +632,7 @@ code {
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
-  padding: 15px;
+  padding: 5px 10px 5px 10px;
   margin: 0 -15px 15px;
 }
 .sidebar-module h4 {
@@ -658,6 +658,16 @@ code {
   padding-left: 25px;
 }
 
+/*
+ * Tidbits
+ */
+.tidbit-list-item {
+	
+}
+
+.tidbit-list-item-hidden {
+	visibility: hidden;
+}
 
 /*
  * Blog posts
@@ -700,6 +710,10 @@ code {
 }
 .article-entry>*:last-child {
   margin-bottom: 15px;
+}
+.article-entry blockquote {
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 10px;
 }
 
 /* article footer content */

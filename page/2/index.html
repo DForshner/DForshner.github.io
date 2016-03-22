@@ -97,6 +97,286 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Feature-Extraction" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/12/10/Feature-Extraction/">Feature Extraction</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/12/10/Feature-Extraction/" class="article-date"><time datetime="2015-12-10T18:00:00.000Z" itemprop="datePublished">15-12-10</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Science/">Data Science</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Talk about how to turn raw data into features to use in learning and modelling and a short presentation on linear modelling.</p>
+<ul>
+<li>Adding new features that describe how the data changes over time (ex: position/velocity/acceleration/jerk).</li>
+<li>Figure out what variables are important to deduce dimensions.  Less dimensions reduces error.</li>
+<li>PCA - capture variance in new vector that maximize variance.</li>
+<li>Choose components based on proportion of variance (How much variance does this data account for?)</li>
+<li>PCA may make things worse!  There may be too many relationships between variables and we don’t want to lose any.</li>
+<li>Over-fitting - Using too much local data that doesn’t account for variance.  The model becomes fitted to the data you are seeing instead of the relationships between variables.</li>
+<li>The log function can be used to separate data.</li>
+<li>Linear modelling - Fit a line to minimize the amount of error.  Best if error is normally distributed (most errors are zero).</li>
+</ul>
+<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/227172091/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Expert-Android-Developers-Speak" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/12/03/Expert-Android-Developers-Speak/">Expert Android Developers Speak</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/12/03/Expert-Android-Developers-Speak/" class="article-date"><time datetime="2015-12-03T19:00:00.000Z" itemprop="datePublished">15-12-03</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GDG/">GDG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Presentations on Kotlin and using JNI for android development.</p>
+<ul>
+<li>I really like Kotlin’s idea of separating nullable and non-nullable references.  It seems similar to the option/maybe monad idea (apologies if you design type systems and languages).</li>
+<li>The gist of the JNI presentation seemed to be that you really don’t want to use and the extra layers will probably make your code slower.  It’s a way of using using C/C++ libraries and not a way to increase performance.</li>
+</ul>
+<p><a href="http://www.meetup.com/GDG-Waterloo/events/226754660/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/">Coverage Is Not Strongly Correlated With Test Suite Effectiveness</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/" class="article-date"><time datetime="2015-12-01T18:31:15.000Z" itemprop="datePublished">15-12-01</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Empirical-Study/">Empirical Study</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Development/">Software Development</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>No great surprises here.  I think people’s time is better spent testing the common paths through their code and capturing important functional requirments.  I found the ideas in <a href="https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell" target="_blank" rel="external">Functional Core, Imperative Shell</a> and <a href="http://simpleprogrammer.com/2012/10/21/there-are-only-two-roles-of-code/" target="_blank" rel="external">There Are Only Two Roles of Code</a> were helpful in figuring out how to spend my test writing budget.</p>
+<blockquote>
+<p>We found that there is a low to moderate correlation between coverage and effectiveness when the number of tests in the suite is controlled for. In addition, we found that stronger forms of coverage do not provide greater insight into the effectiveness of the suite. Our results suggest that coverage, while useful for identifying under-tested parts of a program, should not be used as a quality target because it is not a good indicator of test suite effectiveness.</p>
+</blockquote>
+<p><a href="http://www.linozemtseva.com/research/2014/icse/coverage/" target="_blank" rel="external">Study</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Ensemble-Learning-Basics" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/11/19/Ensemble-Learning-Basics/">Ensemble Learning Basics</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/11/19/Ensemble-Learning-Basics/" class="article-date"><time datetime="2015-11-19T18:00:00.000Z" itemprop="datePublished">15-11-19</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Science/">Data Science</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Interesting talk about how ensemble learning was used in the Netflix contest and a short presentation on statistical bootstrapping.</p>
+<ul>
+<li>The basic idea is that multiple models are used and they are fitted to the data they work best with.</li>
+<li>Usually we compare models and take the best one but what if instead we combine different models and take the best characteristics of each?</li>
+<li>Cross validation - using a portion of the sample data to check of over-fitting.</li>
+</ul>
+<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/226637424/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Cross-Platform-Localization-Strategies" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/09/09/Cross-Platform-Localization-Strategies/">Cross Platform Localization Strategies</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/09/09/Cross-Platform-Localization-Strategies/" class="article-date"><time datetime="2015-09-09T18:00:00.000Z" itemprop="datePublished">15-09-09</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Easier to consider this at the start of a project (even for one language) than add it later.</li>
+<li>The awkward moment of silence when the presenter asks if everyone knows what dependency injection is :-/.</li>
+</ul>
+<p><a href="http://www.meetup.com/CTTDNUG/events/223674975/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Growing-Object-Oriented-Software-Guided-by-Tests" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -201,286 +481,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-The-Algorithm-Design-Manual" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/05/31/The-Algorithm-Design-Manual/">The Algorithm Design Manual</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/05/31/The-Algorithm-Design-Manual/" class="article-date"><time datetime="2015-06-01T00:00:00.000Z" itemprop="datePublished">15-06-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Algorithms/">Algorithms</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Two books in one!</p>
-<ul>
-<li>A guide on how to approach solving problems.</li>
-<li>An Encyclopedia of algorithms and data structures.</li>
-</ul>
-<p>If you want a sense of ‘what’s out there’ in the world of algorithms and data structures then this is the book for you.  It doesn’t go deep into any one topic but it does give you a sense of what problems a given algorithm might solve and some of the trade-offs to consider when applying it.</p>
-<p>Have a few minutes to burn? Just go to a random page and I guarantee you will learn something new.</p>
-<p><a href="https://www.goodreads.com/book/show/425208.The_Algorithm_Design_Manual?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Algorithms-in-a-Nutshell" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/05/31/Algorithms-in-a-Nutshell/">Algorithms in a Nutshell</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/05/31/Algorithms-in-a-Nutshell/" class="article-date"><time datetime="2015-06-01T00:00:00.000Z" itemprop="datePublished">15-06-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>Good coverage of a wide variety of algorithms and data structures.</li>
-<li>Convenient size for taking on the plane to read.</li>
-<li>Great chapter on network flow problems.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/4229486-algorithms-in-a-nutshell?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Design-Patterns-Elements-of-Reusable-Object-Oriented-Software" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/05/31/Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/">Design Patterns: Elements of Reusable Object-Oriented Software</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/05/31/Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/" class="article-date"><time datetime="2015-06-01T00:00:00.000Z" itemprop="datePublished">15-06-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>Most of the patterns revolve around solving problems in the GUI domain using a static language.</li>
-<li>This strikes me as one of those books everyone says to read but havent’ read themselves.</li>
-<li>It’s … rather dry.  Useful if you have insomnia.</li>
-<li>I’d recommend <a href="https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Head First Design Patterns</a> instead.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/85009.Design_Patterns?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Exploding-Software-Engineering-Myths" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/18/Exploding-Software-Engineering-Myths/">Exploding Software-Engineering Myths</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/02/18/Exploding-Software-Engineering-Myths/" class="article-date"><time datetime="2015-02-18T18:31:15.000Z" itemprop="datePublished">15-02-18</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Empirical-Study/">Empirical Study</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Development/">Software Development</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>An overview of different empirical studies on software development methodologies.</p>
-<blockquote>
-<p>ongoing research in his quest to validate conventional software-engineering wisdom.</p>
-</blockquote>
-<p><a href="http://research.microsoft.com/apps/mobile/news.aspx?post=/en-us/news/features/nagappan-100609.aspx" target="_blank" rel="external">Link</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/">Ever have one of those days where your L1 cache collapses into a black hole?</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/" class="article-date"><time datetime="2015-02-12T18:20:47.000Z" itemprop="datePublished">15-02-12</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Complexity/">Complexity</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Interesting look at how to incorporate the cost of random access into complexity estimates.</p>
-<blockquote>
-<p>In short: if you try to squeeze too much L1 cache onto your CPU it will eventually collapse into a black hole, and that would make it awkward to get the results of the computation back to the user.</p>
-</blockquote>
-<p><a href="http://www.ilikebigbits.com/blog/2014/4/21/the-myth-of-ram-part-i" target="_blank" rel="external">The Myth of RAM - Part 1</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/28/the-myth-of-ram-part-ii" target="_blank" rel="external">The Myth of RAM - Part 2</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/29/the-myth-of-ram-part-iii" target="_blank" rel="external">The Myth of RAM - Part 3</a><br><a href="http://www.ilikebigbits.com/blog/2015/2/9/the-myth-of-ram-part-iv" target="_blank" rel="external">The Myth of RAM - Part 4</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="active"><span class="page-number">2</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li><a class="page-next" rel="next" href="/page/3/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="active"><span class="page-number">2</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li><a class="page-number" href="/page/5/">5</a></li><li><a class="page-next" rel="next" href="/page/3/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -512,7 +516,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/SVG/">SVG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">12</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Coursera/">Coursera</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/SVG/">SVG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 
