@@ -5,15 +5,15 @@
   
   <title>~Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/foo">
+  <meta name="description" content="David Forshner&apos;s notebook/bookmarks/random">
 <meta property="og:type" content="website">
 <meta property="og:title" content="~Blog">
 <meta property="og:url" content="https://dforshner.github.io/index.html">
 <meta property="og:site_name" content="~Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/foo">
+<meta property="og:description" content="David Forshner&apos;s notebook/bookmarks/random">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="~Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/foo">
+<meta name="twitter:description" content="David Forshner&apos;s notebook/bookmarks/random">
   
     <link rel="alternate" href="/atom.xml" title="~Blog" type="application/atom+xml">
   
@@ -96,6 +96,159 @@ ga('send', 'pageview');
     <div class="row">
         <div class="col-sm-8 blog-main">
           
+  
+    <article id="post-Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/">Exploring Shannon&#39;s Prediction And Entropy Of Printed English Paper</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/" class="article-date"><time datetime="2016-03-29T00:00:00.000Z" itemprop="datePublished">16-03-29</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-language-processing/">Natural language processing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Tried and mostly failing to replicate the results from <a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf" target="_blank" rel="external">Shannon’s paper</a> using War and Peace as a stand in for “The English Language”.</p>
+<p>I say mostly because I’m pretty sure I am measuring the entropy measurements for different length n-grams in the English language but it turns out I’m calculating isolated symbols entropy while Shannon is calculating conditional n-gram entropy.<br><a href="https://stackoverflow.com/questions/9604460/how-to-find-out-the-entropy-of-the-english-language" target="_blank" rel="external">Helpful SO answer</a></p>
+<p>I did get interesting results for the top 10 unigrams and bigrams:</p>
+<table>
+<thead>
+<tr>
+<th>Unigram</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[ ]</td>
+<td>0.1826038</td>
+</tr>
+<tr>
+<td>[e]</td>
+<td>0.1017603</td>
+</tr>
+<tr>
+<td>[t]</td>
+<td>0.07308632</td>
+</tr>
+<tr>
+<td>[a]</td>
+<td>0.06643674</td>
+</tr>
+<tr>
+<td>[o]</td>
+<td>0.06226344</td>
+</tr>
+<tr>
+<td>[n]</td>
+<td>0.05945337</td>
+</tr>
+<tr>
+<td>[i]</td>
+<td>0.05626013</td>
+</tr>
+<tr>
+<td>[h]</td>
+<td>0.05403983</td>
+</tr>
+<tr>
+<td>[s]</td>
+<td>0.05258396</td>
+</tr>
+<tr>
+<td>[r]</td>
+<td>0.04791417</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Bigram</th>
+<th>Probability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[e ]</td>
+<td>0.03586495</td>
+</tr>
+<tr>
+<td>[ t]</td>
+<td>0.02825758</td>
+</tr>
+<tr>
+<td>[d ]</td>
+<td>0.02448941</td>
+</tr>
+<tr>
+<td>[he]</td>
+<td>0.02429185</td>
+</tr>
+<tr>
+<td>[th]</td>
+<td>0.02381377</td>
+</tr>
+<tr>
+<td>[ a]</td>
+<td>0.02245183</td>
+</tr>
+<tr>
+<td>[s ]</td>
+<td>0.02028996</td>
+</tr>
+<tr>
+<td>[t ]</td>
+<td>0.01880665</td>
+</tr>
+<tr>
+<td>[ h]</td>
+<td>0.01607567</td>
+</tr>
+<tr>
+<td>[in]</td>
+<td>0.01563341</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/ShannonPredictionAndEntropyOfPrintedEnglish.cs" target="_blank" rel="external">Source Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-Left-Pad-Libration" class="article article-type-post" itemscope itemprop="blogPost">
 
@@ -181,6 +334,57 @@ ga('send', 'pageview');
       
         <p>Explained Visually has some pretty amazing visual explanations of different ideas.  If a picture is worth a 1000 words what do SVG Animations go for?</p>
 <p><a href="http://setosa.io/ev/" target="_blank" rel="external">Link</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Exploring-Augmented-Interval-Trees" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/02/28/Exploring-Augmented-Interval-Trees/">Exploring Augmented Interval Trees</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/02/28/Exploring-Augmented-Interval-Trees/" class="article-date"><time datetime="2016-02-29T00:00:00.000Z" itemprop="datePublished">16-02-29</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Interval trees store a set of intervals and can be used to find all intervals that overlap with the query interval.  In the augmented variant, each node maintains the maximum end value of the node and all of its children.  We can use this extra information during searches to rule out subtrees that cannot possibly contain the query interval.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/AugmentedIntervalTree.cs" target="_blank" rel="external">The Code</a></p>
 
       
     </div>
@@ -359,109 +563,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Boltmade-CodeRetreat-Rule110" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/02/17/Boltmade-CodeRetreat-Rule110/">Code Retreat - Rule 110</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/02/17/Boltmade-CodeRetreat-Rule110/" class="article-date"><time datetime="2016-02-17T16:52:39.000Z" itemprop="datePublished">16-02-17</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Attended my first <a href="https://www.boltmade.com/" target="_blank" rel="external">boltmade</a> code retreat.  The basic idea is to pair program with another attendee to try and implement Rule 110 in 30 min rounds.  The catch is that each round you start over with a different partner, variation of the problem, and possibly programming language.</p>
-<p><a href="http://www.meetup.com/boltmade-sessions/events/228679956/" target="_blank" rel="external">Meetup event</a></p>
-<p>I was a bit nervous but it was a surprisingly fun time.  I had some ideas I didn’t get to try so I ended up doing <a href="https://github.com/DForshner/CSharpExperiments/blob/master/Rule110CellularAutomaton.cs" target="_blank" rel="external">my own version</a> the next day.</p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Engie-Award-2015" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/01/22/Engie-Award-2015/">Engie Award 2015</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/01/22/Engie-Award-2015/" class="article-date"><time datetime="2016-01-22T15:17:49.000Z" itemprop="datePublished">16-01-22</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I won a thing :-)</p>
-<p><img src="/images/Engie-award-2015.jpg" alt=""></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
@@ -474,8 +575,8 @@ ga('send', 'pageview');
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           
   <div class="sidebar-module sidebar-module-inset">
-  <h4>About</h4>
-  <p>sometimes on time && probably not profound</p>
+  <h4>Ingredients</h4>
+  <p>1/3 notebook 1/3 bookmarks 1/3 random</p>
 
 </div>
 
@@ -504,7 +605,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Coursera/">Coursera</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">11</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Coursera/">Coursera</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-language-processing/">Natural language processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">16</span></li></ul>
   </div>
 
 
