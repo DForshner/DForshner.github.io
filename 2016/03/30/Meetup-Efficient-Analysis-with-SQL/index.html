@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Algorithms Design and Analysis - Part 2 | ~ Blog</title>
+  <title>Meetup - Efficient Analysis with SQL | ~ Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Tim Roughgarden does an amazing job explaining how different algorithms work and the problems they are trying to solve.
-Great graph section covering different minimum spanning tree and shortest path">
+  <meta name="description" content="The main part of the meetup was a presentation on tally tables, cross apply and normalization in SQL.  
+
+Talley tables are used to replace while loops and fill in missing data.  Examples are shift tab">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Algorithms Design and Analysis - Part 2">
-<meta property="og:url" content="https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/index.html">
+<meta property="og:title" content="Meetup - Efficient Analysis with SQL">
+<meta property="og:url" content="https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/index.html">
 <meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="Tim Roughgarden does an amazing job explaining how different algorithms work and the problems they are trying to solve.
-Great graph section covering different minimum spanning tree and shortest path">
-<meta property="og:updated_time" content="2016-03-22T18:34:42.147Z">
+<meta property="og:description" content="The main part of the meetup was a presentation on tally tables, cross apply and normalization in SQL.  
+
+Talley tables are used to replace while loops and fill in missing data.  Examples are shift tab">
+<meta property="og:updated_time" content="2016-04-01T01:44:08.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Algorithms Design and Analysis - Part 2">
-<meta name="twitter:description" content="Tim Roughgarden does an amazing job explaining how different algorithms work and the problems they are trying to solve.
-Great graph section covering different minimum spanning tree and shortest path">
+<meta name="twitter:title" content="Meetup - Efficient Analysis with SQL">
+<meta name="twitter:description" content="The main part of the meetup was a presentation on tally tables, cross apply and normalization in SQL.  
+
+Talley tables are used to replace while loops and fill in missing data.  Examples are shift tab">
   
     <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
   
@@ -119,13 +122,13 @@ ga('send', 'pageview');
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          <article id="post-Algorithms-Design-and-Analysis-Part-II" class="article article-type-post" itemscope itemprop="blogPost">
+          <article id="post-Meetup-Efficient-Analysis-with-SQL" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 class="article-title" itemprop="name">
-      Algorithms Design and Analysis - Part 2
+      Meetup - Efficient Analysis with SQL
     </h3>
   
 
@@ -134,14 +137,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/05/29/Algorithms-Design-and-Analysis-Part-II/" class="article-date"><time datetime="2015-05-29T13:23:00.000Z" itemprop="datePublished">15-05-29</time></a>
+  <a href="/2016/03/30/Meetup-Efficient-Analysis-with-SQL/" class="article-date"><time datetime="2016-03-31T00:00:00.000Z" itemprop="datePublished">16-03-31</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Course/">Course</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Coursera/">Coursera</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MOOC/">MOOC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Science/">Data Science</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
 
 
   </div>
@@ -149,13 +152,24 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>Tim Roughgarden does an amazing job explaining how different algorithms work and the problems they are trying to solve.</li>
-<li>Great graph section covering different minimum spanning tree and shortest path algorithms.</li>
-<li>The best explanation of dynamic programming I’ve seen so far.</li>
-<li>The catchphrase ‘Can we do better?’ sticks in your head long after the course is over.</li>
+        <p>The main part of the meetup was a presentation on tally tables, cross apply and normalization in SQL.  </p>
+<ul>
+<li>Talley tables are used to replace while loops and fill in missing data.  Examples are shift tables, fiscal day tables, and holiday tables.</li>
+<li>When creating tally tables set fill-rate to 100% as you won’t be adding/removing from them.</li>
+<li>Examples of using cross apply to pivot and unpivot (fold) data.</li>
+<li>Activity-based costing (task/material column/labor column/burden column) is denormalized whereas a debit-credit view is normalized (separate material row/labor row/ burden row).</li>
+<li>Interesting idea that normalization is about ‘fidelity’ and accurately modeling the real world.  I’ve always felt normalization was more a way of storing data in a general application-agnostic way so it didn’t need to change as the application evolves.</li>
 </ul>
-<p><a href="https://github.com/DForshner/Certificates/blob/master/Algorithms%20Design%20and%20Analysis%20-%20Part%202%20-%202015%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a><br><a href="https://www.coursera.org/course/algo2" target="_blank" rel="external">Course Link</a></p>
+<p>This was followed by a short talk on scaling.</p>
+<ul>
+<li>Scaling is changing all the weights by the same factor so the ratio between weights remains unchanged.</li>
+<li>Scaling weights help pull them towards the unit circle.  If all the points are large values the get reduced and if they are all small they get increased.  Prevents numerical stability problems.</li>
+<li>If one axis has a small scale and the there large it can cause clustering algorithms to accidently combine clusters along the small scale axis.</li>
+<li>Other benefits of scaling are that gradient descent and learning rates will be faster.  It’s easier to find the minimum error of a circular cone.</li>
+<li>When scaling the mean and variance can be approximated by using a random sample of the data points.</li>
+<li>Interesting idea on finding anomalous events by treating them like n-grams and finding improbable chains of events.  For example, if event C has a high probability given event A and B then it not occurring could be considered anomalous.</li>
+</ul>
+<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/229944024/" target="_blank" rel="external">Meetup Event</a></p>
 
       
     </div>
@@ -174,19 +188,12 @@ ga('send', 'pageview');
 <ul id="article-nav" class="nav nav-pills nav-justified">
   
   <li role="presentation">
-    <a href="/2015/05/22/Table-Driven-Design-Example/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/" id="article-nav-older" class="article-nav-link-wrap">
       <i class="fa fa-chevron-left pull-left"></i>
-      <span class="article-nav-link-title">Table Driven Design Example</span>
+      <span class="article-nav-link-title">Exploring Shannon&#39;s Prediction And Entropy Of Printed English Paper</span>
     </a>
   </li>
   
-  
-  <li role="presentation">
-    <a href="/2015/05/31/Algorithms-in-a-Nutshell/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">Algorithms in a Nutshell</span>
-      <i class="fa fa-chevron-right pull-right"></i>
-    </a>
-  </li>
   
 </ul>
 

@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>~Blog</title>
+  <title>~ Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
 <meta property="og:type" content="website">
-<meta property="og:title" content="~Blog">
+<meta property="og:title" content="~ Blog">
 <meta property="og:url" content="https://dforshner.github.io/page/5/index.html">
-<meta property="og:site_name" content="~Blog">
+<meta property="og:site_name" content="~ Blog">
 <meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~Blog">
+<meta name="twitter:title" content="~ Blog">
 <meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
   
-    <link rel="alternate" href="/atom.xml" title="~Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -42,6 +42,20 @@ ga('send', 'pageview');
 
 </script>
 <!-- End Google Analytics -->
+
+
+  
+	<!-- Site Name Markup -->
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "WebSite",
+	  "name" : "~ Blog",
+	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "url" : "https://dforshner.github.io"
+	}
+	</script>
+	<!-- End Site Name Markup-->
 
 
 </head>
@@ -102,6 +116,67 @@ ga('send', 'pageview');
     <div class="row">
         <div class="col-sm-8 blog-main">
           
+  
+    <article id="post-First-Look-at-React-js-Flux-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/">First Look at React.js &amp; Flux Pattern</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/" class="article-date"><time datetime="2015-03-13T00:00:00.000Z" itemprop="datePublished">15-03-13</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I took a crack at creating some dashboards using Facebook’s React &amp; Flux libraries.  Overall I think they are on to something.</p>
+<ul>
+<li>It was surprisingly easy to get something up working and then iterate on it.</li>
+<li>I found the functional concepts they are pushing a refreshing change from messing with jquery.  The code looks actually looks like code instead of a tangled rat’s nest of callbacks and dom mutations.</li>
+<li>It’s very explicit about how state is stored and mutated.  People don’t think enough about this stuff and haveing it front and center like this is nice.</li>
+<li>The flux pattern is interesting.  I like how it separates concerns but it seems like there is a lot of code duplication.</li>
+<li>The idea of updating state and re-rendering reminds me of a game loop.</li>
+<li>I’m not sure how the virtual DOM is going to perform but the “native calls are slow” argument makes sense.  I’ve run into some bad jank when lots of backbone sub-views get re-rendered at the same time.</li>
+<li>The jsx concept of combining template(html) and code is a bit strange at first but I think they are on to something.  Using backbone you pretty much end up editing the template/model/view files for most changes so I can see the argument that they aren’t independent concerns.</li>
+<li>I also used Webstorm (support for jsx) for the first time and I never knew what I was missing.  Visual Studio doesn’t even come close.</li>
+</ul>
+<p><a href="https://github.com/DForshner/ReactFluxDashboardProto" target="_blank" rel="external">Prototype Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-Exploding-Software-Engineering-Myths" class="article article-type-post" itemscope itemprop="blogPost">
 
@@ -262,6 +337,61 @@ ga('send', 'pageview');
 
 
   
+    <article id="post-Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/">Ace the Programming Interview: 160 Questions and Answers for Success</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/" class="article-date"><time datetime="2015-01-27T00:00:00.000Z" itemprop="datePublished">15-01-27</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Good choice for entry level positions and for companies that are not doing “program a whiteboard” style interviews.</li>
+<li>Coding problems are fairly simple compared to other interview books. </li>
+<li>Good selection of behavioural/talk about x style questions.</li>
+</ul>
+<p><a href="https://www.goodreads.com/book/show/17219668-ace-the-programming-interview?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Elements-of-Programming-Interviews-300-Questions-and-Solutions" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -368,119 +498,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/">Ace the Programming Interview: 160 Questions and Answers for Success</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/" class="article-date"><time datetime="2015-01-27T00:00:00.000Z" itemprop="datePublished">15-01-27</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>Good choice for entry level positions and for companies that are not doing “program a whiteboard” style interviews.</li>
-<li>Coding problems are fairly simple compared to other interview books. </li>
-<li>Good selection of behavioural/talk about x style questions.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/17219668-ace-the-programming-interview?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Code-Complete-A-Practical-Handbook-of-Software-Construction" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2014/12/31/Code-Complete-A-Practical-Handbook-of-Software-Construction/">Code Complete: A Practical Handbook of Software Construction</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2014/12/31/Code-Complete-A-Practical-Handbook-of-Software-Construction/" class="article-date"><time datetime="2015-01-01T00:00:00.000Z" itemprop="datePublished">15-01-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>I’m forever recommending people buy this book.</li>
-<li>Great advice on managing complexity and writing code you can understand in a year.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/4845.Code_Complete?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/4/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li class="active"><span class="page-number">5</span></li><li><a class="page-number" href="/page/6/">6</a></li><li><a class="page-next" rel="next" href="/page/6/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/4/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li class="active"><span class="page-number">5</span></li><li><a class="page-number" href="/page/6/">6</a></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-next" rel="next" href="/page/6/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -519,7 +540,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">11</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Coursera/">Coursera</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-language-processing/">Natural language processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">16</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">11</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Coursera/">Coursera</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-language-processing/">Natural language processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">16</span></li></ul>
   </div>
 
 
