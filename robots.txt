@@ -12,4 +12,4 @@ Disallow: /*.gif$
 Disallow: /*.png$
 Disallow: /*.bmp$
 Allow: /
-Sitemap: /sitemap.xml
+Sitemap: sitemap.xml
