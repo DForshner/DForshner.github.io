@@ -6,11 +6,10 @@ Disallow: /categories/*/
 Disallow: /tags/*/
 Disallow: /js/
 Disallow: /images/
-Disallow: /css/
 Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.gif$
 Disallow: /*.png$
 Disallow: /*.bmp$
 Allow: /
-Sitemap: dforshner.github.io/sitemap
+Sitemap: /sitemap.xml
