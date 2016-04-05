@@ -2,9 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
+    
+    <lastmod>2016-04-05T00:42:15.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
+    
+    <lastmod>2016-04-05T00:31:32.412Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
+    
+    <lastmod>2016-04-05T00:31:11.354Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
+    
+    <lastmod>2016-04-05T00:31:08.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
+    
+    <lastmod>2016-04-05T00:31:05.275Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
+    
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
+    
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
+    
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
+    
+    <lastmod>2016-04-05T00:29:41.295Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
+    
+    <lastmod>2016-04-05T00:29:06.266Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/</loc>
     
-    <lastmod>2016-04-01T01:44:08.843Z</lastmod>
+    <lastmod>2016-04-05T00:28:21.920Z</lastmod>
     
   </url>
   
@@ -12,41 +82,6 @@
     <loc>https://dforshner.github.io/2016/01/03/4k-Demo-Flop/</loc>
     
     <lastmod>2016-03-30T21:37:39.591Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
-    
-    <lastmod>2016-03-30T21:20:23.544Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
-    
-    <lastmod>2016-03-30T21:06:13.951Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
-    
-    <lastmod>2016-03-30T20:30:46.333Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
-    
-    <lastmod>2016-03-30T20:30:36.830Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
-    
-    <lastmod>2016-03-30T20:29:34.861Z</lastmod>
     
   </url>
   
@@ -114,23 +149,9 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
-    
-    <lastmod>2016-03-24T15:56:26.269Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2015/12/03/Expert-Android-Developers-Speak/</loc>
     
     <lastmod>2016-03-24T15:55:46.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
-    
-    <lastmod>2016-03-24T15:53:46.843Z</lastmod>
     
   </url>
   
@@ -166,20 +187,6 @@
     <loc>https://dforshner.github.io/2014/11/03/M101P-MongoDB-for-Developers/</loc>
     
     <lastmod>2016-03-22T18:45:16.601Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
-    
-    <lastmod>2016-03-22T18:34:42.147Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
-    
-    <lastmod>2016-03-22T18:15:00.411Z</lastmod>
     
   </url>
   
