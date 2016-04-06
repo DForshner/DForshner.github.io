@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2015/09/09/Cross-Platform-Localization-Strategies/</loc>
+    
+    <lastmod>2016-04-06T21:22:30.229Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
     
-    <lastmod>2016-04-05T00:42:15.572Z</lastmod>
+    <lastmod>2016-04-06T21:21:21.426Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/</loc>
+    
+    <lastmod>2016-04-06T21:19:50.392Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/01/03/4k-Demo-Flop/</loc>
+    
+    <lastmod>2016-04-06T20:59:39.868Z</lastmod>
     
   </url>
   
@@ -44,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
+    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
+    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
@@ -75,13 +96,6 @@
     <loc>https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/</loc>
     
     <lastmod>2016-04-05T00:28:21.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/01/03/4k-Demo-Flop/</loc>
-    
-    <lastmod>2016-03-30T21:37:39.591Z</lastmod>
     
   </url>
   
@@ -163,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/09/09/Cross-Platform-Localization-Strategies/</loc>
-    
-    <lastmod>2016-03-22T21:12:20.409Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2016/01/22/Engie-Award-2015/</loc>
     
     <lastmod>2016-03-22T19:25:32.739Z</lastmod>
@@ -194,13 +201,6 @@
     <loc>https://dforshner.github.io/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/</loc>
     
     <lastmod>2016-03-21T22:06:59.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/</loc>
-    
-    <lastmod>2016-03-21T22:05:49.812Z</lastmod>
     
   </url>
   
