@@ -58,6 +58,9 @@ ga('send', 'pageview');
 	<!-- End Site Name Markup-->
 
 
+  
+  <!-- Google charts-->
+  <script type="text/javascript" src="//www.google.com/jsapi"></script>
 </head>
 
 <body>
@@ -131,6 +134,62 @@ ga('send', 'pageview');
     <div class="row">
         <div class="col-sm-8 blog-main">
           
+  
+    <article id="post-Card-Sorting-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/07/Card-Sorting-Meetup/">Card Sorting</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/07/Card-Sorting-Meetup/" class="article-date"><time datetime="2016-04-08T00:00:00.000Z" itemprop="datePublished">16-04-08</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/User-Experience-Design/">User Experience Design</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The session centered on using the  <a href="https://en.wikipedia.org/wiki/Card_sorting" target="_blank" rel="external">card sorting</a> to develop intuitive layouts.  For example, developing a website navigation structure that is obvious to users.  Card sorting is considered a brainstorming step, so it’s important that users focus on grouping into categories and not on designing the site.</p>
+<p>Card sorting comprises grouping cards that describe features and content into groups.  The number of cards ranges from 30 Cards for a general user to 60 cards for a domain expert.  Users should aim for 5+ groupings.</p>
+<p>In the first half, we got into groups and did an open card sort in groups of 2-4 people.  In an open card sort, users generate their own categories when grouping the cards.  It’s a generative tool used to discover the categories and vocabulary that users use.</p>
+<p>The discussions that occur while a group is doing the sort are a valuable source for information you won’t get from an individual card sort.  Disagreements can be a good thing that allows the best ideas to rise to the top but you want to be careful to prevent an individual group member from dominating the conversation.</p>
+<p>In the second half, we did a closed card sort as individuals using <a href="https://www.optimalworkshop.com/" target="_blank" rel="external">optimal workshop</a>.  Closed card sorts have pre-defined categories and are best for validating your design. </p>
+<p>The presenter pointed out that prototypes are the best way of validating that users can find stuff.  They use card sorting to help develop a prototype and then use the prototype to do their validation.  As an example, they showed a series of paper screen mock-ups they asked users to navigate while performing different tasks.</p>
+<p><a href="http://www.meetup.com/boltmade-sessions/events/229760347/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-Designing-Data-Intensive-Applications" class="article article-type-post" itemscope itemprop="blogPost">
 
@@ -290,106 +349,34 @@ ga('send', 'pageview');
         <p>Tried and mostly failing to replicate the results from <a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf" target="_blank" rel="external">Shannon’s paper</a> using War and Peace as a stand in for “The English Language”.</p>
 <p>I say mostly because I’m pretty sure I am measuring the entropy measurements for different length n-grams in the English language but it turns out I’m calculating isolated symbols entropy while Shannon is calculating conditional n-gram entropy.<br><a href="https://stackoverflow.com/questions/9604460/how-to-find-out-the-entropy-of-the-english-language" target="_blank" rel="external">Helpful SO answer</a></p>
 <p>I did get interesting results for the top 10 unigrams and bigrams:</p>
-<table>
-<thead>
-<tr>
-<th>Unigram</th>
-<th>Probability</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[ ]</td>
-<td>0.1826038</td>
-</tr>
-<tr>
-<td>[e]</td>
-<td>0.1017603</td>
-</tr>
-<tr>
-<td>[t]</td>
-<td>0.07308632</td>
-</tr>
-<tr>
-<td>[a]</td>
-<td>0.06643674</td>
-</tr>
-<tr>
-<td>[o]</td>
-<td>0.06226344</td>
-</tr>
-<tr>
-<td>[n]</td>
-<td>0.05945337</td>
-</tr>
-<tr>
-<td>[i]</td>
-<td>0.05626013</td>
-</tr>
-<tr>
-<td>[h]</td>
-<td>0.05403983</td>
-</tr>
-<tr>
-<td>[s]</td>
-<td>0.05258396</td>
-</tr>
-<tr>
-<td>[r]</td>
-<td>0.04791417</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>Bigram</th>
-<th>Probability</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>[e ]</td>
-<td>0.03586495</td>
-</tr>
-<tr>
-<td>[ t]</td>
-<td>0.02825758</td>
-</tr>
-<tr>
-<td>[d ]</td>
-<td>0.02448941</td>
-</tr>
-<tr>
-<td>[he]</td>
-<td>0.02429185</td>
-</tr>
-<tr>
-<td>[th]</td>
-<td>0.02381377</td>
-</tr>
-<tr>
-<td>[ a]</td>
-<td>0.02245183</td>
-</tr>
-<tr>
-<td>[s ]</td>
-<td>0.02028996</td>
-</tr>
-<tr>
-<td>[t ]</td>
-<td>0.01880665</td>
-</tr>
-<tr>
-<td>[ h]</td>
-<td>0.01607567</td>
-</tr>
-<tr>
-<td>[in]</td>
-<td>0.01563341</td>
-</tr>
-</tbody>
-</table>
+<div id="googleChart9416"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.PieChart(document.getElementById("googleChart9416"))).draw(google.visualization.arrayToDataTable([['Unigram', 'Probability'],['other', 0.24359794],['" "', 0.1826038],['e', 0.1017603],['t', 0.07308632],['a', 0.06643674],['o', 0.06226344],['n', 0.05945337],['i', 0.05626013],['h', 0.05403983],['s', 0.05258396],['r', 0.04791417]]),{"legend":"none","pieSliceText":"label","slices":{"0":{"color":"gray"}},"title":"Top 10 Unigrams","width":"500","height":400});
+      });
+    })();
+  }
+</script>
+<div id="googleChart8646"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.PieChart(document.getElementById("googleChart8646"))).draw(google.visualization.arrayToDataTable([['Bigram', 'Probability'],['other', 0.80588987],['"e "', 0.03586495],['" t"', 0.02825758],['"d "', 0.02448941],['"he"', 0.02429185],['"th"', 0.02381377],['" a"', 0.02245183],['"s "', 0.02028996],['"t "', 0.01880665],['" h"', 0.01607567],['"in"', 0.01563341]]),{"legend":{"position":"left"},"pieSliceText":"label","slices":{"0":{"color":"gray"},"1":{"offset":0.2}},"title":"Top 10 Bigrams","width":"500","height":400});
+      });
+    })();
+  }
+</script>
 <p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/ShannonPredictionAndEntropyOfPrintedEnglish.cs" target="_blank" rel="external">Source Code</a></p>
 
       
@@ -564,65 +551,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/">What Google Learned From Its Quest to Build the Perfect Team</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/" class="article-date"><time datetime="2016-02-25T18:31:15.000Z" itemprop="datePublished">16-02-25</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Empirical-Study/">Empirical Study</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>An amazing New York Times article on what makes an effective team.  There were two key things they noticed about effective teams:</p>
-<blockquote>
-<p>… members spoke in roughly the same proportion, a phenomenon the researchers referred to as ‘equality in distribution of conversational turn-taking.’ On some teams, everyone spoke during each task; on others, leadership shifted among teammates from assignment to assignment. But in each case, by the end of the day, everyone had spoken roughly the same amount. ‘As long as everyone got a chance to talk, the team did well,’ Woolley said. ‘But if only one person or a small group spoke all the time, the collective intelligence declined.’</p>
-<p>Second, the good teams all had high ‘average social sensitivity’ — a fancy way of saying they were skilled at intuiting how others felt based on their tone of voice, their expressions and other nonverbal cues.</p>
-</blockquote>
-<p><a href="http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html" target="_blank" rel="external">Link</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/9/">9</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -661,7 +593,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 

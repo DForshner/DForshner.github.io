@@ -2,6 +2,125 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
+    
+    <lastmod>2016-04-09T23:47:50.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/</loc>
+    
+    <lastmod>2016-04-09T23:46:56.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/03/02/Testing-Meetup/</loc>
+    
+    <lastmod>2016-04-09T23:41:49.748Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/31/Odds-Ends-September-2015/</loc>
+    
+    <lastmod>2016-04-09T23:32:34.362Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/11/30/Odds-Ends-December-2015/</loc>
+    
+    <lastmod>2016-04-09T23:27:56.059Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
+    
+    <lastmod>2016-04-09T23:11:33.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/Odds-Ends-June-2015/</loc>
+    
+    <lastmod>2016-04-09T23:08:49.588Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/05/31/Odds-Ends-June-2014/</loc>
+    
+    <lastmod>2016-04-08T20:45:54.300Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/07/31/Odds-Ends-September-2013/</loc>
+    
+    <lastmod>2016-04-08T20:35:12.431Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/11/30/Odds-Ends-December-2014/</loc>
+    
+    <lastmod>2016-04-08T20:30:07.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/08/31/Odds-Ends-September-2014/</loc>
+    
+    <lastmod>2016-04-08T20:30:07.508Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/02/28/Odds-Ends-March-2014/</loc>
+    
+    <lastmod>2016-04-08T20:30:07.505Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/11/30/Odds-Ends-December-2013/</loc>
+    
+    <lastmod>2016-04-08T20:27:23.301Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/</loc>
+    
+    <lastmod>2016-04-08T20:19:40.375Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/11/10/Testable-JavaScript-Presentation/</loc>
+    
+    <lastmod>2016-04-08T19:57:13.825Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/</loc>
+    
+    <lastmod>2016-04-08T16:29:57.324Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
+    
+    <lastmod>2016-04-07T19:12:55.703Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2015/09/09/Cross-Platform-Localization-Strategies/</loc>
     
     <lastmod>2016-04-06T21:22:30.229Z</lastmod>
@@ -58,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
-    
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
@@ -79,16 +191,16 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
+    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
     
-    <lastmod>2016-04-05T00:29:41.295Z</lastmod>
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
+    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
     
-    <lastmod>2016-04-05T00:29:06.266Z</lastmod>
+    <lastmod>2016-04-05T00:29:41.295Z</lastmod>
     
   </url>
   
@@ -110,13 +222,6 @@
     <loc>https://dforshner.github.io/2015/10/10/Raft-Understandable-Distributed-Consensus/</loc>
     
     <lastmod>2016-03-26T22:13:22.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/</loc>
-    
-    <lastmod>2016-03-26T22:12:38.239Z</lastmod>
     
   </url>
   

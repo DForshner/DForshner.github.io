@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hiring Hacks: How Stack Overflow Interviews Engineers | ~ Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Notes from a webinar by Matt Sherman, Engineering Manager at Stack Overflow, on the company’s technical interview process.
+Key Traits to look for: Smart and gets things done.
+General principals
+
+Not a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hiring Hacks: How Stack Overflow Interviews Engineers">
+<meta property="og:url" content="https://dforshner.github.io/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/index.html">
+<meta property="og:site_name" content="~ Blog">
+<meta property="og:description" content="Notes from a webinar by Matt Sherman, Engineering Manager at Stack Overflow, on the company’s technical interview process.
+Key Traits to look for: Smart and gets things done.
+General principals
+
+Not a">
+<meta property="og:updated_time" content="2016-04-09T23:46:56.152Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hiring Hacks: How Stack Overflow Interviews Engineers">
+<meta name="twitter:description" content="Notes from a webinar by Matt Sherman, Engineering Manager at Stack Overflow, on the company’s technical interview process.
+Key Traits to look for: Smart and gets things done.
+General principals
+
+Not a">
+  
+    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-75403717-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+	<!-- Site Name Markup -->
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "WebSite",
+	  "name" : "~ Blog",
+	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "url" : "https://dforshner.github.io"
+	}
+	</script>
+	<!-- End Site Name Markup-->
+
+
+  
+  <!-- Google charts-->
+  <script type="text/javascript" src="//www.google.com/jsapi"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-menu-navbar">
+      <ul class="nav navbar-nav">
+        
+		    <li>
+				<a class="" href="/index.html">
+					<i class="fa fa-home"></i>Home
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="/archives">
+					<i class="fa fa-archive"></i>Archives
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="https://github.com/dforshner/">
+					<i class="fa fa-github"></i>Github
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="/pdfs/Resume.pdf">
+					<i class="fa fa-trophy"></i>Resume
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="https://www.linkedin.com/in/dforshner/">
+					<i class="fa fa-linkedin"></i>LinkedIn
+				</a>
+			</li>
+        
+      </ul>
+
+      <!--
+      <ul class="nav navbar-nav navbar-right">
+        
+          <li><a href="/atom.xml" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
+        
+      </ul>
+      -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <div class="container">
+	<div class="blog-header">
+  
+    <p class="lead blog-description">David Forshner&#39;s blog/notebook/bookmarks/random</p>
+  
+</div>
+
+    <div class="row">
+        <div class="col-sm-8 blog-main">
+          <article id="post-Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 class="article-title" itemprop="name">
+      Hiring Hacks: How Stack Overflow Interviews Engineers
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/" class="article-date"><time datetime="2015-12-16T00:00:00.000Z" itemprop="datePublished">15-12-16</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interviewing/">Interviewing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Notes from a webinar by Matt Sherman, Engineering Manager at Stack Overflow, on the company’s technical interview process.</p>
+<p>Key Traits to look for: Smart and gets things done.</p>
+<p>General principals</p>
+<ul>
+<li>Not a quiz! No gotchas! No brain teasers!</li>
+<li>You want to start a conversation that reveals how they think.</li>
+<li>Choose problems that lead to good conversations!</li>
+<li>Do you want to work with this person?</li>
+<li>Each interviewer must decide hire/no hire (no maybes)<ul>
+<li>“I think they are a good but not right for my team” is a red flag.</li>
+</ul>
+</li>
+<li>Interviewees (even no hires) should leave feeling they are respected!  <ul>
+<li>They may be future customers.  </li>
+<li>They may have friends you may want to interview.</li>
+</ul>
+</li>
+<li>Schedule 60 min but say 45 min so you can end early if they are struggling.  Be graceful about ending early.</li>
+<li>Look for depth, passion, interest in the product.  It’s hard to look for a “cultural fit”.</li>
+<li>Document technical questions and try to standardize interviews.</li>
+<li>Ask yourself: At the end of 60 min what information do I want to have about this person?</li>
+<li>Evaluate your own performance during interviews.  What could you have done better?</li>
+<li>It’s better to not hire than accidently hire a bad candidate.  Err on the side of no hire.</li>
+<li>Shadowing - Follow experienced interviewer for 6 months.  Do mock interviews with co-workers.</li>
+<li>Interview cycle should take 2-3 weeks max.<ul>
+<li>Feedback </li>
+<li>“You’re not there yet but we think you could be.”</li>
+<li>Provide list of books to read and things to work on</li>
+<li>NOTHING PERSONAL! (Legal Issues) </li>
+</ul>
+</li>
+</ul>
+<p>Interview process</p>
+<ul>
+<li>Step 1 - Resume Review<ul>
+<li>[T]argeted - Is this a targeted application or a generic mass mailing?  Why do they want to work here?</li>
+<li>[E]experienced - 4+ yrs. full stack</li>
+<li>[D]epth - Tech is a stack of layers.  They use the software but they also know how to go deeper into guts of the system.</li>
+<li>[P]assion - Do they enjoy programming?  Do they make games?  Code for fun?</li>
+<li>[G]ets Things Done - Do they get things out the door?  Do they finish projects/products?</li>
+</ul>
+</li>
+<li>Step 2 - Remote Code Screen<ul>
+<li>30 min over hangouts using a shared document.</li>
+<li>Should be intentionally easy.  </li>
+<li>Any day to day programmer should be able to do it.</li>
+</ul>
+</li>
+<li>Step 3 - Smart interview<ul>
+<li>In-depth algorithm question</li>
+<li>How much complexity can they keep in their head at once time?</li>
+<li>Encourage them to think out loud.  It’s a conversation.</li>
+<li>Make it clear you want to know their thought process, not the answer.  It’s fine if they get it wrong and go back.</li>
+</ul>
+</li>
+<li>Step 4 - Gets things done interview<ul>
+<li>A larger system design question.</li>
+<li>At an architectural/high-level design an entire application.</li>
+<li>Look at a system and understand what each part is and how they work together.</li>
+<li>DB (SQL) + Web Server (C#/Ruby/etc.) + Browser (JS/HTML)</li>
+<li>Look for both breadth and macro understanding.</li>
+<li>Full-stack - They could do the whole thing on their own.</li>
+</ul>
+</li>
+<li>Step 5 - Product management interview<ul>
+<li>Talk to the people who decide what the products are.</li>
+<li>Do they understand users and the business?</li>
+<li>Do they care about customers?</li>
+<li>How would you design and test this product?</li>
+<li>How would you know if this product was successful?</li>
+<li>A lot of engineers do product management at some point.</li>
+</ul>
+</li>
+<li>Step 6 - Executive interviews<ul>
+<li>It’s your turn to sell yourself and convince them they want to work here.</li>
+<li>They probably have other offers.</li>
+<li>Start talking about a team they might fit on.</li>
+</ul>
+</li>
+<li>Step 7 - Make an offer  <ul>
+<li>Important to have a fast turnaround.</li>
+</ul>
+</li>
+</ul>
+<p>Finding candidates</p>
+<ul>
+<li>Have a good brand<ul>
+<li>Recruiters are your brand! </li>
+<li>Go to events/meetups.</li>
+<li>Connect with people.</li>
+</ul>
+</li>
+<li>It’s much easier to develop a brand if it’s true :-)</li>
+<li>The ideal situation is when an engineer already working at company recommends another engineer.</li>
+</ul>
+<p><a href="http://event.on24.com/wcc/r/1102097/CEA34F635FCFA2F13182A0C1B6D33654" target="_blank" rel="external">Event Link</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2015/12/10/Feature-Extraction/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Feature Extraction</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2016/01/01/One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">One second code: Do YOU know how much your computer can do in a second?</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
+
+
+  
+</article>
+
+
+
+
+        </div>
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          
+  <div class="sidebar-module sidebar-module-inset">
+  <h4>Ingredients</h4>
+  <p>⅓ notebook ⅓ bookmarks ⅓ random</p>
+
+</div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Currently Reading</h4>
+    <ul class="sidebar-module-list">
+        
+          <li class="sidebar-module-list-item">
+			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;amp;utm_source=blog_book">Designing Data-Intensive Applications</a>
+		  </li>
+		
+          <li class="sidebar-module-list-item">
+			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/17346997-doing-data-science?utm_medium=api&amp;amp;utm_source=blog_book">Doing Data Science</a>
+		  </li>
+		
+          <li class="sidebar-module-list-item">
+			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/22512931-building-microservices?utm_medium=api&amp;amp;utm_source=blog_book">Building Microservices</a>
+		  </li>
+		
+    </ul>
+  </div>
+
+
+  
+  <div class="sidebar-module">
+    <h4>Tags</h4>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Course/">Course</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+  </div>
+
+
+
+
+        </div>
+    </div>
+  </div>
+  <footer class="blog-footer">
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2016 David Forshner<br>
+    </div>
+  </div>
+</footer>
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" integrity="sha384-8gBf6Y4YYq7Jx97PIqmTwLPin4hxIzQw5aDmUg/DDhul9fFpbbLcLh3nTIIDJKhx" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+</body>
+</html>
