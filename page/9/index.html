@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-Odds-Ends-December-2013" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Odds-Ends-June-2013" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2012/11/30/Odds-Ends-December-2013/">Odds &amp; Ends - December 2013</a>
+      <a class="article-title" href="/2013/05/31/Odds-Ends-June-2013/">Odds &amp; Ends - June 2013</a>
     </h3>
   
 
@@ -150,7 +150,7 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2012/11/30/Odds-Ends-December-2013/" class="article-date"><time datetime="2012-12-01T00:00:00.000Z" itemprop="datePublished">12-12-01</time></a>
+  <a href="/2013/05/31/Odds-Ends-June-2013/" class="article-date"><time datetime="2013-06-01T00:00:00.000Z" itemprop="datePublished">13-06-01</time></a>
 </div>
 
     
@@ -167,16 +167,31 @@ ga('send', 'pageview');
       
         <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
 <ul>
-<li>Objects on the stack are much more likely to be in the cache than arbitrary heap lines.</li>
-<li>Closure - A function closes over the area it is defined in so it can access variables that are not in its parameter list.</li>
-<li>Anonymous functions (ECMAScript) - Functions that do not have a name associated with them.  Used to manage the scope of objects, modules, and namespaces.</li>
-<li>Control Technique (testing) - A method by which you control your test by factoring out the portion of your program which has side effects outside the scope of control of the code you intend to test.  You need to control the side effects when testing.  Example: stubbing external dependencies.</li>
-<li>Mutable - Can change contents without changing identity.</li>
-<li>Immutable - Cannot change contents without changing identity.  Values are unchangeable once they are created.</li>
-<li>Good C++: Avoid mutation, avoid side effects, don’t use raw loops, avoid class hierarchy and inheritance (basically be more functional).<ul>
-<li>The worse case is side effects with global scope.</li>
-<li>Same principal apply to fields, properties, parameters, and variables.  Don’t mutate unless you have a good reason.</li>
-<li>Increase reliability by removing side effects so the code is easier to compose and integrate.  Side-effect free code works in all environments!</li>
+<li>Information-theoretic security - Derives security from informational theory instead of computational complexity.  It cannot be broken even when the adversary has unlimited computing resources as they do not have enough information to break the encryption.<ul>
+<li>Example: Onetime pad.</li>
+</ul>
+</li>
+<li>Computationally secure - Secure assuming adversary is computationally limited.<ul>
+<li>Example: RSA, Diffie-Hellman</li>
+</ul>
+</li>
+<li><strong>API Design</strong><ul>
+<li>Don’t make the return type of method depend on the value of an argument.  It makes it hard to figure out relationships.</li>
+<li>Avoid flag arguments intended to change the behavior of a method in some way.  The call is more readable if the API has two separate methods.</li>
+<li>Avoid confusion as to whether a method returns a new object or modifies (mutates) an object in place.  Show intent!<ul>
+<li>Ex: foo.sort() doesn’t return value so it must modify in place.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>When to assert</em><ul>
+<li>Defensive programming</li>
+<li>Run-time checks on program logic (poor man’s unit testing)</li>
+<li>Checking contracts (pre-conditions/post-conditions)</li>
+<li>Program invariants</li>
+<li>Check for “won’t happen” edge cases</li>
+<li>Confirm documentation</li>
+<li>Never use if failure is likely because asserts will get compiled away in release builds.</li>
 </ul>
 </li>
 </ul>
@@ -199,13 +214,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Returning-ptr-to-stack-vs-heap-allocated-instance-in-C" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Google-I-O-Extended-2013" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/">Returning ptr to stack vs. heap allocated instance in C++</a>
+      <a class="article-title" href="/2013/05/17/Google-I-O-Extended-2013/">Google I/O Extended 2013</a>
     </h3>
   
 
@@ -214,14 +229,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/" class="article-date"><time datetime="2012-10-01T00:00:00.000Z" itemprop="datePublished">12-10-01</time></a>
+  <a href="/2013/05/17/Google-I-O-Extended-2013/" class="article-date"><time datetime="2013-05-18T00:00:00.000Z" itemprop="datePublished">13-05-18</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Conferences/">Conferences</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interviewing/">Interviewing</a></li></ul>
 
 
   </div>
@@ -229,7 +244,106 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Thingy;</span><br><span class="line"></span><br><span class="line"><span class="function">Thingy* <span class="title">foo</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a; <span class="comment">// Stack</span></span><br><span class="line">  Thingy b; <span class="comment">// Created on stack</span></span><br><span class="line">  Thingy *ptr_to_b = &amp;b;  <span class="comment">// Points to address on stack</span></span><br><span class="line">  Thingy *ptr_to_c = <span class="keyword">new</span> Thingy(); <span class="comment">// Points to address of thingy created on heap</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pointer_to_c; <span class="comment">// Safe - Thingy lives on heap and outlives foo().  Remember to delete.</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pointer_to_b; <span class="comment">// BOOM! Because b lives on stack and will be deleted when foo() returns.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>Notes from the Google I/O Extended conference at Google’s Kitchener location.  I went to the workshops on interviewing at Google, Google Fiber and multi-touch interfaces.</p>
+<ul>
+<li>In Canada - Ad words, Chromebook (Pixel), consumer commerce products, mobile Gmail (IOS app).</li>
+<li>Pixel Concept - A better touch based web experience.</li>
+<li>Building platforms to support the evolution from Desktop -&gt; Laptops -&gt; Smart Phones.<ul>
+<li>Android - Bring open standards to the mobile industry.</li>
+<li>Chrome - Build web as a platform and provide simple safe browsing.</li>
+</ul>
+</li>
+<li>Activity recognition - Accelerometer + machine learning</li>
+<li>Google Cloud Messaging - Push data to mobile apps, syncronize notification dismissal across devices, auto retry, etc.</li>
+<li><strong>App Developer Tools</strong><ul>
+<li>App translation service to match make with a translation company.</li>
+<li>Google play store uses per user bubbling recommendations based on +1’s and installed/purchased apps.</li>
+<li>App store has beta testing and staged rollout (alpha-&gt;beta-&gt;prod) and you can roll out new versions to a portion of users.</li>
+</ul>
+</li>
+<li><strong>Music App</strong> - Guild you through exploring your music.  Tries to understand what you want to hear.<ul>
+<li>Pick a category and get expert powered recommendations.</li>
+<li>Play radio is a never ending queue of related tracks.</li>
+<li>My library - Personal music + online music collection blended together.</li>
+<li>Listen Now - Machine learning your musical preferences</li>
+</ul>
+</li>
+<li><strong>Chrome platform</strong><ul>
+<li>Do for mobile web what was done for desktop</li>
+<li>Chromebooks are built for the web</li>
+<li>Consistent user experience across web independent of device or browser.</li>
+</ul>
+</li>
+<li>Browser is a means not an end</li>
+<li><strong>Google Play for Eduction</strong><ul>
+<li>Walled garden within a walled garden</li>
+<li>Teachers pick and push to all student tablets at once.</li>
+</ul>
+</li>
+<li><strong>Data Centers</strong><ul>
+<li>Peer with ISP to lower transit costs</li>
+<li>Colossus to replace GFS - 100x bigger</li>
+<li>Flume - Pipelines of map reduce</li>
+<li>Spanner - Big data with transactional capability</li>
+<li>Compute Engine (ISS)<ul>
+<li>1-minute billing granularity</li>
+<li>Small instances with predictable performance instead of best effort.</li>
+</ul>
+</li>
+<li>App Engine (PSS)<ul>
+<li>Android studio new comes with a mobile starter kit that integrates with App Engine.  Write the front-end and it creates the back-end for you.</li>
+</ul>
+</li>
+<li>App Engine And Compute Engine can access same data store (GCloud).  Do CPU and I/O intensive tasks in Compute Engine to save money.<ul>
+<li>Ex: Doing semantic analysis on Compute instance using Hadoop and serving results on App Engine.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Interviewing at Google</strong><ul>
+<li>Can you write code?  Can you think at scale?</li>
+<li>Verbalize your thought process.  Talk about what you are thinking.</li>
+<li>Start with the simple case and then work towards a general answer.</li>
+<li>If you don’t know something don’t fake it.  Just move on to the next part.</li>
+<li>Be confident about your skills.</li>
+<li>Don’t interrupt the interviewer.  How will you work with a team?</li>
+<li>Don’t say bad things about anything!!!  They are looking for positive, open and capable.</li>
+<li>Interviewers create a packet containing the questions asked, how you answered, a copy of the code you wrote, and their opinion on you being a good fit.</li>
+<li>Resume - Show progression and what you accomplished.</li>
+<li>They are looking for generalists.</li>
+<li>Build expertise - Answer questions on SO, start blog, work on open source, etc.</li>
+<li>Practice coding in front of a whiteboard.</li>
+<li>Read the Algorithm Design Manual.</li>
+</ul>
+</li>
+<li><strong>Google Fiber</strong><ul>
+<li>Organize world’s information and make it accessible to all.</li>
+<li>Already a technology company but want to gain experience as a services company.</li>
+<li><u>Fiberhoods</u> - Find interested communities and build there.<ul>
+<li>Schools, libraries, emergency centers, community centers, etc. are connected for free.</li>
+<li>Lots of municipal politics.</li>
+</ul>
+</li>
+<li>Search built into your TV</li>
+<li>In Kitchener they do UX, product testing, and development.</li>
+<li>Analytics says people watch 5hrs of TV per day???</li>
+<li>Financial model is TV + internet</li>
+</ul>
+</li>
+<li><strong>Multi-touch Interfaces</strong><ul>
+<li>Most H/W will support up to 10 touches at the same time.</li>
+<li>Recommend touch surface is 9x9mm (~44pts).</li>
+<li>CSS pixels vary in physical size!</li>
+<li>Don’t rely on hover!  Use tap event to fake hover effect.</li>
+<li>Browsers will fake mouse events on touch so you may get two events if not careful.</li>
+<li>Touch events will target the node where the touch started even if the node is moved/removed from the DOM.</li>
+<li>It’s hard to hit small targets</li>
+<li>Initial tap is delayed.  There is a 300ms delay to figure out if you are double tapping or not.</li>
+<li>Touch events can happen faster than you can render (&gt; 60 Hz).  Use requestAnimationFrame() to register work for next vFrame.</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
 
@@ -248,13 +362,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Software-Engineering-as-a-Service" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2012/03/31/Software-Engineering-as-a-Service/">Software Engineering as a Service</a>
+      <a class="article-title" href="/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/">Pattern Oriented Software Architectures for Concurrent and Networked Software</a>
     </h3>
   
 
@@ -263,7 +377,7 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2012/03/31/Software-Engineering-as-a-Service/" class="article-date"><time datetime="2012-04-01T00:00:00.000Z" itemprop="datePublished">12-04-01</time></a>
+  <a href="/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/" class="article-date"><time datetime="2013-05-14T00:00:00.000Z" itemprop="datePublished">13-05-14</time></a>
 </div>
 
     
@@ -279,10 +393,11 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <ul>
-<li>I was impressed with how quickly I was able to put something together with Ruby on Rails.</li>
-<li>It seems like the course has disappeared from Coursera and moved to edX?</li>
+<li>Gives a sense for how patterns evolve depending on their environment and the problem they are trying to address.</li>
+<li>Shows how patterns evolve from language level to framework level constructs.</li>
+<li>I have mixed feelings about using ACE as an example.  Distributed objects don’t seem to have survived contact with the internet world.</li>
 </ul>
-<p><a href="https://github.com/DForshner/Certificates/blob/master/Software%20Engineering%20as%20a%20Service%202012%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a></p>
+<p><a href="https://github.com/DForshner/Certificates/blob/master/Pattern-Oriented%20Software%20Architectures%20for%20Concurrent%20and%20Networked%20Software%202013%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a><br><a href="https://www.coursera.org/course/posasoftware" target="_blank" rel="external">Course Link</a></p>
 
       
     </div>
@@ -302,13 +417,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Going-Back-To-School" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Introduction-to-Meteor-js" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2009/08/08/Going-Back-To-School/">Going back to school</a>
+      <a class="article-title" href="/2013/03/15/Introduction-to-Meteor-js/">Introduction to Meteor.js</a>
     </h3>
   
 
@@ -317,14 +432,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2009/08/08/Going-Back-To-School/" class="article-date"><time datetime="2009-08-09T00:00:00.000Z" itemprop="datePublished">09-08-09</time></a>
+  <a href="/2013/03/15/Introduction-to-Meteor-js/" class="article-date"><time datetime="2013-03-16T00:00:00.000Z" itemprop="datePublished">13-03-16</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Courses/">Courses</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
 
 
   </div>
@@ -332,12 +447,28 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I’m enrolled at the University of Calgary in an electrical engineering post graduate diploma program with the eventual goal of switching into the biomedical engineering masters program.</p>
-<p>So far I’m taking:</p>
+        <p>Notes from a presentation on Meteor.js.  I’m dubious about this one.  History hasn’t been kind to technologies that promise to hide/erase the boundaries between client and server.</p>
 <ul>
-<li>BMEN601 Fundamentals of Biomedical Engineering - an overview of the biomedical engineering field with focus on presenting and writing research papers.</li>
-<li>ENEL563 Biomedical Signal Analysis - looks at the characteristics of different biomedical signals and how to use FIR filters and statistical analysis in Matlab to isolate and identify features of interest.</li>
-<li>NANS301 Introduction to Nanoscience and Nanotechnology - An introductory course on nanoscience, nanotechnology, and nanomaterials.</li>
+<li>A platform (client/server code are the same) as opposed to a framework (Angular/Backbone).</li>
+<li>Data is stored on both client and server.</li>
+<li>Publish/Subscribe model is used to move data between client and server.</li>
+<li>Reactive Variables - Data binding technique.<ul>
+<li>Reactive computations re-run when they change.</li>
+<li>Will re-render templates tied to the changed variable.</li>
+<li>Multiple widgets can react to variable change.</li>
+</ul>
+</li>
+<li>Latency Compensation - Mock server response while waiting for real one.<ul>
+<li>If you know it will be OK 99% why not simulate that while you wait?</li>
+<li>Doesn’t re-render when the real response arrives (provided success).</li>
+</ul>
+</li>
+<li>Node Fibers - Simulates multiple event loops on node’s single event loop.</li>
+<li>Folder structure matters: (/client/) to client, (/server/) to server, (/other/) sent to both, (/test/) only tests, (/public/) static assets, and (/private/) server only static assets.</li>
+<li>Variable scope is per JS file if declared with var and entire application (both client and server) without var.  <code>What could go wrong??? :-/</code><ul>
+<li>This can cause compatibility issues with other libraries.</li>
+</ul>
+</li>
 </ul>
 
       
@@ -358,13 +489,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Avoid-disregarding-datasheets" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Testing-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2009/03/08/Avoid-disregarding-datasheets/">Avoid disregarding data sheets</a>
+      <a class="article-title" href="/2013/03/02/Testing-Meetup/">Unit Testing</a>
     </h3>
   
 
@@ -373,14 +504,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2009/03/08/Avoid-disregarding-datasheets/" class="article-date"><time datetime="2009-03-09T00:00:00.000Z" itemprop="datePublished">09-03-09</time></a>
+  <a href="/2013/03/02/Testing-Meetup/" class="article-date"><time datetime="2013-03-03T00:00:00.000Z" itemprop="datePublished">13-03-03</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Electronics/">Electronics</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing/">Testing</a></li></ul>
 
 
   </div>
@@ -388,11 +519,112 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>There is a problem with high-efficiency LED drivers used for a lighting product.  One of the final steps in the build is to reduce the current to a set point, but this is causing the units to start strobing on/off.</p>
-<p>After testing the possible combinations of power supplies and product boards I was able to make the high-efficiency power supplies consistently to fail which pointed towards the power supply being the culprit.</p>
-<p>The high-efficiency power supply stabilized when the current was raised above the desired set point of 1.08A to 1.29A.  After the fixture &amp; electronics warmed up, it would start to strobe on/off again unless the current was again raised to 1.40A.  The power waveform on the oscilloscope showed the unit powering up, holding steady for a moment, dropping down and then powering back up again in a cyclic pattern.  The puzzling part was that performing the same test with a 48V standard efficiency version of the driver didn’t cause strobing.</p>
-<p>It turns out that that the design was under driving the supplies by providing only 36V when the data sheet required between 40V-50V.  This was tripping the short circuit protection on the driver causing the unit to reboot.</p>
-<p>While I suspect that component vendors add slack to their data sheet tolerances you are asking for trouble when you disregard them.</p>
+        <p>Notes from a .Net user group talk on unit testing.</p>
+<ul>
+<li>Ideal Test<ul>
+<li>Automated</li>
+<li>No complex dependencies</li>
+<li>Independent of each other.  No sequences!</li>
+<li>Describes intention.</li>
+<li>Shows you how the code should be used.</li>
+<li>Written at the same time or before the code being tested.  Code -&gt; Test -&gt; Code -&gt; Test -&gt; …</li>
+<li>No loops, no conditionals</li>
+<li>Hide any elaborate setup in a base fixture or private method.</li>
+<li>Avoid complex setup &amp; teardown (code smell!)</li>
+</ul>
+</li>
+<li>Obvious Benefits<ul>
+<li>Reduce time between code change and bug (test failing).  You want to reduce your feedback loop.</li>
+<li>Block regression bugs.</li>
+<li>Fewer bugs in next phase.</li>
+</ul>
+</li>
+<li>Hidden Benefit: Exerts design pressures on code<ul>
+<li>Avoid the debugger!  If you can’t tell what is wrong from the test maybe you need smaller more focused tests!</li>
+<li>Less coupling</li>
+<li>Explicit dependencies (elaborate setup is a code smell)</li>
+<li>Interface use for dependencies</li>
+<li>Keeping tests focused encourages single responsibility</li>
+<li>Smaller classes &amp; shorter methods</li>
+<li>Enables refactoring -&gt; Readable code</li>
+<li>You can gut your classes and refactor legacy code.</li>
+</ul>
+</li>
+<li>What to test<ul>
+<li>public methods (use a consumer’s point of view)</li>
+<li>pure functions</li>
+</ul>
+</li>
+<li>Clean tests<ul>
+<li>Have a standard naming scheme.  Ex: Method_Scenario_Result()</li>
+<li>Organise into sections Arrange / Act / Assert (TripleA Style)</li>
+<li>Ideally one assert per test</li>
+<li>Can you share private setup method over multiple tests?</li>
+<li>Can you put shared setup in test initialization method or base class?</li>
+</ul>
+</li>
+<li>Testing styles<ul>
+<li>State Verification (Good) - Verify state of the object.  Given these inputs, I expect these outputs.</li>
+<li>Behavior Verification (Bad) - Verify calls between SUT and collaborators using mocks.  Test code is coupled to code under test so it tends to be brittle and break whenever you change the code being tested.</li>
+</ul>
+</li>
+<li>Isolation<ul>
+<li>Avoid “new”</li>
+<li>Dependancy injection (Good)<ul>
+<li>Create collaborators outside of SUT and pass in (usually via constructor).</li>
+<li>Service container IOC usually used to create dependencies in code.</li>
+</ul>
+</li>
+<li>Service Location (Bad)<ul>
+<li>Have to setup global state of singleton factory for each test.</li>
+<li>Injecting the container into a parameter and then using it to new up is still a service locator.</li>
+</ul>
+</li>
+<li>Interception Frameworks (Bad)<ul>
+<li>Invasive testing that leads to test code that is tightly coupled to code under test.</li>
+<li>You lose the benefits of design pressure encouraging interface use and small classes.</li>
+<li>“Pointy tool” - Use with extreme caution</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Service Containers (IOC container)<ul>
+<li>Controls lifecycle of its objects.  Not just a service locator.</li>
+<li>Lazy - The first instance is new and the rest are copies.</li>
+<li>Being forced to write to interfaces is a design pressure that forces decoupling.</li>
+</ul>
+</li>
+<li>Test Doubles<ul>
+<li>Stub (Good) - Just works with minimal behavior.  Null and real objects with fake data are stubs. </li>
+<li>Mock (Meh) - Can set expectations and can tell you when they aren’t met.</li>
+<li>Fake (Meh) - Behaves like the real thing (more or less).  Created by hand.</li>
+<li>Spy (Bad) - Tells you what happened by recording calls and checking what SUT did.  Very brittle.</li>
+</ul>
+</li>
+<li>Mocks design pressure<ul>
+<li>Easier to check edge cases</li>
+<li>Wrap static methods</li>
+<li>Composed - Pressure away from deep inheritance</li>
+<li>Uses targeted interfaces</li>
+<li>Considers requests.  What kind of supported classes are needed?</li>
+<li>One object many interfaces</li>
+<li>Start coding anywhere!  Mock out what hasn’t been coded yet.</li>
+</ul>
+</li>
+<li>Mocking pros<ul>
+<li>Can record expected calls</li>
+<li>Have interface of expected object</li>
+<li>Can return expected call values.</li>
+<li>Can verify calls have been made.</li>
+<li>Fluent API</li>
+</ul>
+</li>
+<li>Mocking cons<ul>
+<li>Premature composition</li>
+<li>Premature interface injection</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -412,13 +644,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Avoid-Overlapping-Footprints" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Odds-Ends-March-2013" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2009/03/02/Avoid-Overlapping-Footprints/">Avoid Overlapping Footprints</a>
+      <a class="article-title" href="/2013/02/28/Odds-Ends-March-2013/">Odds &amp; Ends - March 2013</a>
     </h3>
   
 
@@ -427,14 +659,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2009/03/02/Avoid-Overlapping-Footprints/" class="article-date"><time datetime="2009-03-03T00:00:00.000Z" itemprop="datePublished">09-03-03</time></a>
+  <a href="/2013/02/28/Odds-Ends-March-2013/" class="article-date"><time datetime="2013-03-01T00:00:00.000Z" itemprop="datePublished">13-03-01</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Electronics/">Electronics</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
 
 
   </div>
@@ -442,10 +674,61 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I’m having problems while trying to do a power test for customer’s board.  The voltage measurements I’m reading on the +5VDC test point is too high (5.43VDC) and the current draw during start-up was 49.2ma when it should have been around 30ma.</p>
-<p>I removed the driver and wired it directly into the power supply by soldering some jumper wires to vias in an attempt to narrow the problem down to the component or the PCB itself.  After doing this is started working normally.</p>
-<p>The customer put down two overlapping sets of component footprints so they could build the board with two different driver components and the driver’s metal case is shorting on the unused pads :-/.</p>
-<p>Today’s corrective action = add tape.</p>
+        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
+<ul>
+<li>Lines of code represent an expenditure, not an accomplishment.</li>
+<li>In large systems interfaces matter.  There is a danger that people will start playing fast and loose with interfaces by passing around nested maps and lists and then expecting the other side to understand the encoding.  Be explicit!</li>
+<li>In ECMAScript one should use an object not an array for a set of key/value pairs.  If you use an array all you are getting is the extra baggage of an array’s methods what won’t work.</li>
+<li>Functions without side-effects are pure data transformations.  Something comes in and something comes out.  The results are predictable.  Functions that rely on side effects or additional inputs (databases) are complicated.</li>
+<li>Doing proper single responsibility principal often results in a class with one method … aka a function.</li>
+<li><em>Collections vs. Streams</em><ul>
+<li>Collection - (eager, a full warehouse) data structure which holds all values in memory.  Each element must be computed before it can be added.<ul>
+<li>Values are spread out in space (computer memory) (which all exist at one point in time).</li>
+</ul>
+</li>
+<li>Streams - (lazy, just in time) data structure where elements are computed on demand.  Liked producer/consumer or lazy version of a collection.<ul>
+<li>Values are spread out in time (which repeatedly appear at the same point.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>User interaction -&gt; data change -&gt; view render<ul>
+<li>Render on the data change, not the user interaction!  The model is a single source of truth!</li>
+</ul>
+</li>
+<li>Layers Pattern<ol>
+<li>UI - Views and models</li>
+<li>Controller - Application composition</li>
+<li>Service Layer - Business composition and coordination.</li>
+<li>Repositories (data access), Calculators (algorithms), and Query Objects (helpers).</li>
+</ol>
+</li>
+<li><em>C# Anonymous functions</em><ul>
+<li>Can declare a variable with the same name as static/instance variable of the outer class.</li>
+<li>Can access static/instance variables of enclosing class</li>
+<li>Cannot access any ref/out variables inside an anonymous method.</li>
+<li>Cannot declare a variable with the same name as a variable in the outer method.</li>
+</ul>
+</li>
+<li><em>Closure</em> - Is not a concrete element or synonym for an anonymous function or lambda expression!  It’s a behavior that allows us to declare an anonymous function that refers to local variables outside said function and not worry about that variables lifespan.</li>
+<li><em>Abstract Base Class vs. Interface</em><ul>
+<li>Abstract Base Class - “Is a”<ul>
+<li>Ex: Dog is a mammal</li>
+<li>This is core functionality of this class</li>
+<li>Adds constraint that there can be only one base class</li>
+</ul>
+</li>
+<li>Interface - “acts like”, “is verb”<ul>
+<li>Ex: Book is IWritable, Dog acts like an IEater</li>
+<li>This is trait of an object, not necessarily its core functionality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The key principal of HTTP is that resources are sent in the message body, using content negotiation to specify the representation of the resource.</li>
+<li>In C++ ptr[3] means <em>(ptr + 3) which can be written as </em>(3 + ptr) or 3[ptr] :-)</li>
+<li>To reduce stalls due to the GC we circumvented it by replacing all heap allocations with the use of pre-allocated arrays of values types, effectively implementing manual memory management inside a managed language.</li>
+</ul>
 
       
     </div>
@@ -465,13 +748,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Avoid-in-circuit-testing-ICT-vias" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Functional-vs-Imperative-Environments" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2009/01/08/Avoid-in-circuit-testing-ICT-vias/">Avoid in-circuit testing (ICT) vias</a>
+      <a class="article-title" href="/2013/02/22/Functional-vs-Imperative-Environments/">Functional vs. Imperative Environments</a>
     </h3>
   
 
@@ -480,14 +763,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2009/01/08/Avoid-in-circuit-testing-ICT-vias/" class="article-date"><time datetime="2009-01-09T00:00:00.000Z" itemprop="datePublished">09-01-09</time></a>
+  <a href="/2013/02/22/Functional-vs-Imperative-Environments/" class="article-date"><time datetime="2013-02-23T00:00:00.000Z" itemprop="datePublished">13-02-23</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Electronics/">Electronics</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Functional-Programming/">Functional Programming</a></li></ul>
 
 
   </div>
@@ -495,11 +778,24 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I’ve been stuck on a problem with a tester for a digital signal processor board we build for a customer.</p>
-<p>The failing test isn’t even one of the complicated ones.  It’s just looking for the proper voltage on a control line.  For the test, the DUT is re-booted to manufacturing mode, sent a control signal on the RS232 port which raises this control line to ~12 volts.  On boards that were failing the DAQ card was reading low voltages and sometimes no voltage.</p>
-<p>The puzzling part is that when I re-test the same boards they will start passing.  On multiple occasions, people set aside stacks of failing boards and when I come over to look at them they pass.</p>
-<p>By accident, I noticed that test set (customer supplied) is probing a via on the board instead of a proper test pad.  Normally that wouldn’t be the end of the world but we started solder tenting vias near the power supply to prevent flux from coming up through them during wave soldering process and being left on the top of the board.  The tenting is preventing the probes from making contact during the initial test but scraping off enough material that when I come over to re-test them they start passing :-/.</p>
-<p>I’m not sure exactly how much time was wasted between myself and the customer on this one but it was more than they saved by cutting corners by probing a via instead of designing a proper test pad.</p>
+        <p>What is the primary building block of your programs?</p>
+<ul>
+<li><p><em>Functional</em></p>
+<ul>
+<li>Mostly functional with imperative where needed.  Managing what state is intrinsic, necessary, and appropriate.</li>
+<li>The Basic building block is a referentially transparent function.  A function which returns the same output per given input every time.</li>
+<li>The environment does not affect the output of a  referentially transparent function so we can reason about it independently.</li>
+</ul>
+</li>
+<li><p><em>Imperative</em></p>
+<ul>
+<li>The Basic building block is a stateful action (object in OO).</li>
+<li>Without environmental knowledge it’s impossible to reason about and test.</li>
+<li>You must be able to control the environment in which the action occurs to know if it’s being done right.</li>
+<li>The environment is an <em>implicit</em> parameter on the action.  Making the environment explicit makes it referentially transparent.</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -522,7 +818,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/8/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-number" href="/page/8/">8</a></li><li class="active"><span class="page-number">9</span></li><li><a class="page-number" href="/page/10/">10</a></li><li><a class="page-next" rel="next" href="/page/10/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/8/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-number" href="/page/8/">8</a></li><li class="active"><span class="page-number">9</span></li><li><a class="page-number" href="/page/10/">10</a></li><li><a class="page-number" href="/page/11/">11</a></li><li><a class="page-next" rel="next" href="/page/10/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -561,7 +857,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Study/">Empirical Study</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development/">Software Development</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 

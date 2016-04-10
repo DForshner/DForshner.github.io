@@ -2,6 +2,111 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/01/28/Effective-Code-Reviews/</loc>
+    
+    <lastmod>2016-04-10T20:31:44.527Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/</loc>
+    
+    <lastmod>2016-04-10T20:12:18.040Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/</loc>
+    
+    <lastmod>2016-04-10T20:12:00.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/18/Exploding-Software-Engineering-Myths/</loc>
+    
+    <lastmod>2016-04-10T20:11:40.516Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/24/Why-Should-Software-Architects-Write-Code/</loc>
+    
+    <lastmod>2016-04-10T20:11:33.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/12/First-Look-at-React-js-Flux-Pattern/</loc>
+    
+    <lastmod>2016-04-10T20:02:19.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/03/15/Introduction-to-Meteor-js/</loc>
+    
+    <lastmod>2016-04-10T19:55:23.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/31/Odds-Ends-September-2015/</loc>
+    
+    <lastmod>2016-04-10T19:54:07.961Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/28/Odds-Ends-March-2013/</loc>
+    
+    <lastmod>2016-04-10T19:52:20.076Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/11/30/Odds-Ends-December-2015/</loc>
+    
+    <lastmod>2016-04-10T19:50:49.065Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/31/Odds-Ends-June-2013/</loc>
+    
+    <lastmod>2016-04-10T19:49:01.454Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/11/30/Odds-Ends-December-2013/</loc>
+    
+    <lastmod>2016-04-10T19:46:19.288Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/17/Google-I-O-Extended-2013/</loc>
+    
+    <lastmod>2016-04-10T19:38:02.396Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/22/Functional-vs-Imperative-Environments/</loc>
+    
+    <lastmod>2016-04-10T17:23:26.438Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/12/SortedList-vs-SortedDictionary/</loc>
+    
+    <lastmod>2016-04-10T17:09:01.702Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
     
     <lastmod>2016-04-10T02:12:38.727Z</lastmod>
@@ -93,20 +198,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/08/31/Odds-Ends-September-2015/</loc>
-    
-    <lastmod>2016-04-09T23:32:34.362Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/11/30/Odds-Ends-December-2015/</loc>
-    
-    <lastmod>2016-04-09T23:27:56.059Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
     
     <lastmod>2016-04-09T23:11:33.629Z</lastmod>
@@ -152,13 +243,6 @@
     <loc>https://dforshner.github.io/2014/02/28/Odds-Ends-March-2014/</loc>
     
     <lastmod>2016-04-08T20:30:07.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2012/11/30/Odds-Ends-December-2013/</loc>
-    
-    <lastmod>2016-04-08T20:27:23.301Z</lastmod>
     
   </url>
   
@@ -219,13 +303,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
-    
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
@@ -234,6 +311,13 @@
   
   <url>
     <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
+    
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
@@ -250,13 +334,6 @@
     <loc>https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/</loc>
     
     <lastmod>2016-04-05T00:28:21.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/12/First-Look-at-React-js-Flux-Pattern/</loc>
-    
-    <lastmod>2016-03-30T20:27:25.901Z</lastmod>
     
   </url>
   
@@ -285,13 +362,6 @@
     <loc>https://dforshner.github.io/2015/05/22/Table-Driven-Design-Example/</loc>
     
     <lastmod>2016-03-24T22:26:13.110Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/</loc>
-    
-    <lastmod>2016-03-24T16:00:57.546Z</lastmod>
     
   </url>
   
@@ -359,20 +429,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/24/Why-Should-Software-Architects-Write-Code/</loc>
-    
-    <lastmod>2016-03-21T19:08:37.599Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/02/18/Exploding-Software-Engineering-Myths/</loc>
-    
-    <lastmod>2016-03-21T18:57:02.047Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2016/01/01/One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second/</loc>
     
     <lastmod>2016-03-21T18:54:44.970Z</lastmod>
@@ -432,13 +488,6 @@
     <loc>https://dforshner.github.io/2016/02/24/The-Deadlock-Empire/</loc>
     
     <lastmod>2016-03-19T22:48:20.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/</loc>
-    
-    <lastmod>2016-03-19T22:47:13.530Z</lastmod>
     
   </url>
   
