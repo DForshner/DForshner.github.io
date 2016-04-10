@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2009 | ~ Blog</title>
+  <title>Exploring Classifying Documents Using Distribution Of Term Probabilities | ~ Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
-<meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
-<meta property="og:url" content="https://dforshner.github.io/archives/2009/index.html">
+  <meta name="description" content="I’m looking a way to classify product listings as either a product or a product accessory.  My current idea is to classify listings based on how their term probabilities are distributed.
+The idea is t">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Exploring Classifying Documents Using Distribution Of Term Probabilities">
+<meta property="og:url" content="https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/index.html">
 <meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:description" content="I’m looking a way to classify product listings as either a product or a product accessory.  My current idea is to classify listings based on how their term probabilities are distributed.
+The idea is t">
+<meta property="og:updated_time" content="2016-04-10T22:48:52.822Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="Exploring Classifying Documents Using Distribution Of Term Probabilities">
+<meta name="twitter:description" content="I’m looking a way to classify product listings as either a product or a product accessory.  My current idea is to classify listings based on how their term probabilities are distributed.
+The idea is t">
   
     <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
   
@@ -88,7 +92,7 @@ ga('send', 'pageview');
 			</li>
         
 		    <li>
-				<a class="active" href="/archives">
+				<a class="" href="/archives">
 					<i class="fa fa-archive"></i>Archives
 				</a>
 			</li>
@@ -133,100 +137,155 @@ ga('send', 'pageview');
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-  
+          <article id="post-Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
+  
+    <h3 class="article-title" itemprop="name">
+      Exploring Classifying Documents Using Distribution Of Term Probabilities
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/" class="article-date"><time datetime="2016-04-07T00:00:00.000Z" itemprop="datePublished">16-04-07</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I’m looking a way to classify product listings as either a product or a product accessory.  My current idea is to classify listings based on how their term probabilities are distributed.</p>
+<p>The idea is to find the probability of each term in a listing and use them to build a histogram to get an idea how the common and unique terms are distributed for a listing.</p>
+<p><strong>Examples of common words</strong>: camera, digital, zoom, optical, with, lcd, megapixel, lens, canon, black, and, mp, digitalkamera, cm, 27</p>
+<p><strong>Examples of unique words</strong>: rings, eb575152vu, i9000, galaxys, 1080mah, funtionality, bp511a, zs7, enel5, 1100mah, mll3, 228825, np20, negative, scanner</p>
+<p>I’m assuming that a <em>typical</em> product listing generally has one model number (unique) and a bunch of common terms while an accessory listing usually has multiple model numbers.  If this is true it should be possible to classify a listing as either a product or a product accessory from the distribution of term probabilities.</p>
+<p>From what I’m seeing so far, it seems to be possible to classify accessory listings that have a high ratio of unique terms.</p>
+<p><em>Note: I would have used a histogram graph but I couldn’t get the google charts histogram to work with a custom scale.</em></p>
+<p><strong>Examples of product listings:</strong></p>
+<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart367"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.ColumnChart(document.getElementById("googleChart367"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+      });
+    })();
+  }
+</script></p>
+<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart4010"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.ColumnChart(document.getElementById("googleChart4010"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+      });
+    })();
+  }
+</script></p>
+<p><strong>Examples of accessory listings:</strong></p>
+<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart6079"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.ColumnChart(document.getElementById("googleChart6079"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+      });
+    })();
+  }
+</script></p>
+<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart5557"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.ColumnChart(document.getElementById("googleChart5557"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+      });
+    })();
+  }
+</script></p>
+<p>I had to use a nonlinear scale (I used powers of 2) for the histogram buckets or all the unique (small probability) words ended up in the same bucket.</p>
+<p>There is a high rate of false positives (products being identified as accessories) when the listings are in languages other than English.  With so few non-English listings every word in these listings is unique across all listings.  It may be possible to figure out what language the listings are by using identifying listings which have unusual character n-grams distributions but I don’t now if there will be enough text per listing to do this reliably.</p>
+<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart9911"></div>
+<script>
+  if (!window.google) {
+    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
+    throw 'Google JS API is needed';
+  } else {
+    (function() {
+      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
+      google.setOnLoadCallback(function() {
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9911"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+      });
+    })();
+  }
+</script></p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/ClassifyingDocumentsUsingDistributionOfTermUniqueness.cs" target="_blank" rel="external">The messy code</a></p>
+
+      
+    </div>
+
     
       
+
+    
+
+    <footer class="article-footer">
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2009" class="archive-year">2009</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
+    </footer>
+  </div>
   
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2009/08/08/Going-Back-To-School/">Going back to school</a>
-    </h3>
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
   
+  <li role="presentation">
+    <a href="/2016/04/03/Designing-Data-Intensive-Applications/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Designing Data-Intensive Applications</span>
+    </a>
+  </li>
+  
+  
+  <li role="presentation">
+    <a href="/2016/04/07/Card-Sorting-Meetup/" id="article-nav-newer" class="article-nav-link-wrap">
+      <span class="article-nav-link-title">Card Sorting</span>
+      <i class="fa fa-chevron-right pull-right"></i>
+    </a>
+  </li>
+  
+</ul>
 
 
-    <div class="article-datetime">
-  <a href="/2009/08/08/Going-Back-To-School/" class="archive-article-date"><time datetime="2009-08-09T00:00:00.000Z" itemprop="datePublished">August 9th</time></a>
-</div>
-
-  </header>
+  
 </article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2009/03/08/Avoid-disregarding-datasheets/">Avoid disregarding data sheets</a>
-    </h3>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2009/03/08/Avoid-disregarding-datasheets/" class="archive-article-date"><time datetime="2009-03-09T00:00:00.000Z" itemprop="datePublished">March 9th</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2009/03/02/Avoid-Overlapping-Footprints/">Avoid Overlapping Footprints</a>
-    </h3>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2009/03/02/Avoid-Overlapping-Footprints/" class="archive-article-date"><time datetime="2009-03-03T00:00:00.000Z" itemprop="datePublished">March 3rd</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2009/01/08/Avoid-in-circuit-testing-ICT-vias/">Avoid in-circuit testing (ICT) vias</a>
-    </h3>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2009/01/08/Avoid-in-circuit-testing-ICT-vias/" class="archive-article-date"><time datetime="2009-01-09T00:00:00.000Z" itemprop="datePublished">January 9th</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-  
-    </div></section>
-  
 
 
 
