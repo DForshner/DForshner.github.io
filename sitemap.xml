@@ -2,6 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
+    
+    <lastmod>2016-04-10T02:12:38.727Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/11/03/M101P-MongoDB-for-Developers/</loc>
+    
+    <lastmod>2016-04-10T02:12:31.444Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
+    
+    <lastmod>2016-04-10T02:12:26.930Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
+    
+    <lastmod>2016-04-10T02:12:19.299Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
+    
+    <lastmod>2016-04-10T02:12:10.159Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/08/08/Going-Back-To-School/</loc>
+    
+    <lastmod>2016-04-10T02:10:32.969Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/01/08/Avoid-in-circuit-testing-ICT-vias/</loc>
+    
+    <lastmod>2016-04-10T02:02:47.637Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/03/02/Avoid-Overlapping-Footprints/</loc>
+    
+    <lastmod>2016-04-10T01:56:04.300Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/03/08/Avoid-disregarding-datasheets/</loc>
+    
+    <lastmod>2016-04-10T01:50:46.574Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2008/04/29/Avoid-tight-testing-tolerances-for-small-capacitance-values/</loc>
+    
+    <lastmod>2016-04-10T01:42:47.058Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
     
     <lastmod>2016-04-09T23:47:50.436Z</lastmod>
@@ -149,30 +219,9 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
+    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
     
-    <lastmod>2016-04-05T00:31:32.412Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
-    
-    <lastmod>2016-04-05T00:31:11.354Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
-    
-    <lastmod>2016-04-05T00:31:08.697Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
-    
-    <lastmod>2016-04-05T00:31:05.275Z</lastmod>
+    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
   </url>
   
@@ -185,13 +234,6 @@
   
   <url>
     <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
-    
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
@@ -292,13 +334,6 @@
     <loc>https://dforshner.github.io/2016/02/17/Boltmade-CodeRetreat-Rule110/</loc>
     
     <lastmod>2016-03-22T19:24:46.370Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/11/03/M101P-MongoDB-for-Developers/</loc>
-    
-    <lastmod>2016-03-22T18:45:16.601Z</lastmod>
     
   </url>
   
