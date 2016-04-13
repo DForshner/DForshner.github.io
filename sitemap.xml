@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
+    
+    <lastmod>2016-04-13T20:59:15.108Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/</loc>
     
     <lastmod>2016-04-10T22:48:52.822Z</lastmod>
@@ -317,14 +324,14 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
+    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
+    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
     
     <lastmod>2016-04-05T00:29:41.310Z</lastmod>
     

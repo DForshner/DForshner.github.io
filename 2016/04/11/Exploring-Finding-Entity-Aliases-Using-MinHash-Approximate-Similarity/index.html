@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014 | ~ Blog</title>
+  <title>Exploring Finding Entity Aliases Using MinHash Approximate Similarity | ~ Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
-<meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
-<meta property="og:url" content="https://dforshner.github.io/archives/2014/page/2/index.html">
+  <meta name="description" content="I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated wi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Exploring Finding Entity Aliases Using MinHash Approximate Similarity">
+<meta property="og:url" content="https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/index.html">
 <meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:description" content="I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated wi">
+<meta property="og:updated_time" content="2016-04-13T20:59:15.108Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="Exploring Finding Entity Aliases Using MinHash Approximate Similarity">
+<meta name="twitter:description" content="I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated wi">
   
     <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
   
@@ -88,7 +89,7 @@ ga('send', 'pageview');
 			</li>
         
 		    <li>
-				<a class="active" href="/archives">
+				<a class="" href="/archives">
 					<i class="fa fa-archive"></i>Archives
 				</a>
 			</li>
@@ -133,85 +134,104 @@ ga('send', 'pageview');
 
     <div class="row">
         <div class="col-sm-8 blog-main">
-          
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2014" class="archive-year">2014</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
+          <article id="post-Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
     
   
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2014/05/24/Exploring-Probabilistic-Data-Structures/">Exploring Probabilistic Data Structures</a>
+    <h3 class="article-title" itemprop="name">
+      Exploring Finding Entity Aliases Using MinHash Approximate Similarity
     </h3>
   
 
 
+  </header>
+
+  <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/05/24/Exploring-Probabilistic-Data-Structures/" class="archive-article-date"><time datetime="2014-05-25T00:00:00.000Z" itemprop="datePublished">May 25th</time></a>
+  <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
 </div>
 
-  </header>
-</article>
-
-  
     
     
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2014/04/16/Heterogeneous-Parallel-Programming/">Heterogeneous Parallel Programming</a>
-    </h3>
-  
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failure/">Failure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
 
 
-    <div class="article-datetime">
-  <a href="/2014/04/16/Heterogeneous-Parallel-Programming/" class="archive-article-date"><time datetime="2014-04-17T00:00:00.000Z" itemprop="datePublished">April 17th</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <header class="archive-article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="archive-article-title" href="/2014/02/28/Odds-Ends-March-2014/">Odds &amp; Ends - March 2014</a>
-    </h3>
-  
-
-
-    <div class="article-datetime">
-  <a href="/2014/02/28/Odds-Ends-March-2014/" class="archive-article-date"><time datetime="2014-03-01T00:00:00.000Z" itemprop="datePublished">March 1st</time></a>
-</div>
-
-  </header>
-</article>
-
-  
-  
-    </div></section>
-  
-
-
-  <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/archives/2014/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/archives/2014/">1</a></li><li class="active"><span class="page-number">2</span></li><li class="disabled"><span class="page-next">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated with it that are listed under its different aliases I should be able to generate a set of aliases by grouping similar documents together.</p>
+<p>The data I’m working with has multiple versions of the same manufacturer.</p>
+<table>
+<thead>
+<tr>
+<th>Manufacturer</th>
+<th>Listing Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fujifilm Canada</td>
+<td>Fujifilm FinePix JV100 12 MP Digital Camera with 3x Optical Zoom and 2.7-Inch LCD (Black)</td>
+</tr>
+<tr>
+<td>FUJIFILM</td>
+<td>Fujifilm FinePix XP10 12 MP Waterproof Digital Camera with 5x Optical Zoom and 2.7-Inch LCD (Black)</td>
+</tr>
+<tr>
+<td>Fujifilm Imaging Systems</td>
+<td>Fujifilm Finepix Z700EXR Digitalkamera (12 Megapixel, 5-fach opt.Zoom, 8,9 cm Display, Bildstabilisator) silber</td>
+</tr>
+<tr>
+<td>FUJIFILM Electronic Imaging Europe GmbH - Firstorder</td>
+<td>Fujifilm FINEPIX Z90 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 7,6 cm (3 Zoll) Display) silber</td>
+</tr>
+<tr>
+<td>Fuji Photo Film Europe GmbH</td>
+<td>Fujifilm FINEPIX JX280 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 6,9 cm (2,7 Zoll) Display) schwarz</td>
+</tr>
+</tbody>
+</table>
+<p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
+<p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
+<p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
+<p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+    
+<ul id="article-nav" class="nav nav-pills nav-justified">
+  
+  <li role="presentation">
+    <a href="/2016/04/07/Card-Sorting-Meetup/" id="article-nav-older" class="article-nav-link-wrap">
+      <i class="fa fa-chevron-left pull-left"></i>
+      <span class="article-nav-link-title">Card Sorting</span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+
+  
+</article>
+
 
 
 
