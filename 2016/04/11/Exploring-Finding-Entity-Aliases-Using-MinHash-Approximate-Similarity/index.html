@@ -11,7 +11,7 @@
 <meta property="og:url" content="https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/index.html">
 <meta property="og:site_name" content="~ Blog">
 <meta property="og:description" content="I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated wi">
-<meta property="og:updated_time" content="2016-04-14T15:04:31.340Z">
+<meta property="og:updated_time" content="2016-04-14T22:53:41.918Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Exploring Finding Entity Aliases Using MinHash Approximate Similarity">
 <meta name="twitter:description" content="I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated wi">
@@ -199,7 +199,7 @@ ga('send', 'pageview');
 <p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
 <p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
 <p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
-<p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
+<p>I’ll come back to this code and validate using longer texts.  The examples of MinHash I’ve seen are all on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
 <p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
 
       
@@ -228,7 +228,7 @@ ga('send', 'pageview');
   
   <li role="presentation">
     <a href="/2016/04/14/Postmortem-for-global-GCE-outage/" id="article-nav-newer" class="article-nav-link-wrap">
-      <span class="article-nav-link-title">Postmortem for a global GCE outage</span>
+      <span class="article-nav-link-title">Postmortem of a Global GCE Outage</span>
       <i class="fa fa-chevron-right pull-right"></i>
     </a>
   </li>

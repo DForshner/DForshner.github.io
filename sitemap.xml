@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/04/14/Postmortem-for-global-GCE-outage/</loc>
+    
+    <lastmod>2016-04-14T22:54:57.497Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
+    
+    <lastmod>2016-04-14T22:53:41.918Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/</loc>
+    
+    <lastmod>2016-04-14T22:49:30.661Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/01/28/Effective-Code-Reviews/</loc>
     
     <lastmod>2016-04-14T18:53:23.658Z</lastmod>
@@ -30,21 +51,7 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/</loc>
-    
-    <lastmod>2016-04-14T15:04:31.340Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
-    
-    <lastmod>2016-04-14T15:04:31.340Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
     
     <lastmod>2016-04-14T15:04:31.340Z</lastmod>
     
@@ -516,13 +523,6 @@
     <loc>https://dforshner.github.io/2009/03/02/Avoid-Overlapping-Footprints/</loc>
     
     <lastmod>2016-04-14T14:54:45.999Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/14/Postmortem-for-global-GCE-outage/</loc>
-    
-    <lastmod>2016-04-14T14:51:16.202Z</lastmod>
     
   </url>
   

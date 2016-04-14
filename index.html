@@ -141,7 +141,7 @@ ga('send', 'pageview');
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/14/Postmortem-for-global-GCE-outage/">Postmortem for a global GCE outage</a>
+      <a class="article-title" href="/2016/04/14/Postmortem-for-global-GCE-outage/">Postmortem of a Global GCE Outage</a>
     </h3>
   
 
@@ -165,8 +165,8 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Google computer engine was down globally for 18 minutes.  The usual culprit of configuration error was present but there was also a series of bugs that combined together to propagate a bad configuration into production.</p>
-<p>It’s fascinating how small things combine to wreak havoc on large scale systems.  Google is constantly testing so I imagine theses bugs have been quietly waiting in edge case land for a while until random chance brings them together.  With enough scale and complexity, the improbable becomes probable.</p>
+        <p>Google compute engine (GCE) was down globally for 18 minutes on the 11th.  The usual culprit of configuration error was present but there was also a series of bugs that combined together to propagate a bad configuration into production.</p>
+<p>It’s fascinating how small things combine to wreak havoc on large scale systems.  Google is constantly testing so I imagine theses bugs have been quietly waiting in edge case land until random chance brings them together.  With enough scale and complexity, the improbable becomes probable.</p>
 <p><a href="https://status.cloud.google.com/incident/compute/16007" target="_blank" rel="external">Incident Report</a></p>
 
       
@@ -252,7 +252,7 @@ ga('send', 'pageview');
 <p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
 <p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
 <p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
-<p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
+<p>I’ll come back to this code and validate using longer texts.  The examples of MinHash I’ve seen are all on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
 <p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
 
       
@@ -420,9 +420,9 @@ ga('send', 'pageview');
 <p><strong>Examples of unique words</strong>: rings, eb575152vu, i9000, galaxys, 1080mah, funtionality, bp511a, zs7, enel5, 1100mah, mll3, 228825, np20, negative, scanner</p>
 <p>I’m assuming that a <em>typical</em> product listing generally has one model number (unique) and a bunch of common terms while an accessory listing usually has multiple model numbers.  If this is true it should be possible to classify a listing as either a product or a product accessory from the distribution of term probabilities.</p>
 <p>From what I’m seeing so far, it seems to be possible to classify accessory listings that have a high ratio of unique terms.</p>
-<p><em>Note: I would have used a histogram graph but I couldn’t get the google charts histogram to work with a custom scale.</em></p>
+<p><strong>Note:</strong> <em>I wanted to use a histogram but I couldn’t get the hexo google charts plugin to make a histogram with a custom scale</em> 😕</p>
 <p><strong>Examples of product listings:</strong></p>
-<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart1929"></div>
+<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart8941"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -431,12 +431,12 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart1929"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart8941"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
-<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart774"></div>
+<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart9473"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -445,13 +445,13 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart774"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9473"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
 <p><strong>Examples of accessory listings:</strong></p>
-<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart8393"></div>
+<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart9211"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -460,12 +460,12 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart8393"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9211"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
-<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart8294"></div>
+<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart9372"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -474,14 +474,14 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart8294"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9372"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
 <p>I had to use a nonlinear scale (I used powers of 2) for the histogram buckets or all the unique (small probability) words ended up in the same bucket.</p>
 <p>There is a high rate of false positives (products being identified as accessories) when the listings are in languages other than English.  With so few non-English listings every word in these listings is unique across all listings.  It may be possible to figure out what language the listings are by using identifying listings which have unusual character n-grams distributions but I don’t now if there will be enough text per listing to do this reliably.</p>
-<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart9103"></div>
+<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart9023"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -490,7 +490,7 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart9103"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9023"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
