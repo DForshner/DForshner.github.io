@@ -95,19 +95,19 @@ ga('send', 'pageview');
         
 		    <li>
 				<a class="" href="https://github.com/dforshner/">
-					<i class="fa fa-github"></i>Github
+					<i class="fa fa-github-square"></i>GitHub
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="https://www.linkedin.com/in/dforshner/">
+					<i class="fa fa-linkedin-square"></i>LinkedIn
 				</a>
 			</li>
         
 		    <li>
 				<a class="" href="/pdfs/Resume.pdf">
 					<i class="fa fa-trophy"></i>Resume
-				</a>
-			</li>
-        
-		    <li>
-				<a class="" href="https://www.linkedin.com/in/dforshner/">
-					<i class="fa fa-linkedin"></i>LinkedIn
 				</a>
 			</li>
         
@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-Exploring-Min-Heap-Priority-Queue" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Raft-Understandable-Distributed-Consensus" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/">Exploring Min Heap Priority Queue</a>
+      <a class="article-title" href="/2015/10/10/Raft-Understandable-Distributed-Consensus/">Raft Understandable Distributed Consensus</a>
     </h3>
   
 
@@ -150,14 +150,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/" class="article-date"><time datetime="2015-03-15T00:00:00.000Z" itemprop="datePublished">15-03-15</time></a>
+  <a href="/2015/10/10/Raft-Understandable-Distributed-Consensus/" class="article-date"><time datetime="2015-10-11T00:00:00.000Z" itemprop="datePublished">15-10-11</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Visual-Learning/">Visual Learning</a></li></ul>
 
 
   </div>
@@ -165,8 +165,9 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>A heap-based implementation of a min priority queue.  I’m not sure why C# doesn’t have priority queues as part of the language.</p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/MinHeapPriorityQueue.cs" target="_blank" rel="external">The Code</a></p>
+        <p>This is one of best examples I’ve seen yet of using visualizations to explain something.  </p>
+<p>Raft is a distributed consensus algorithm designed to be understandable as opposed to PAXOS which as far as I can tell nobody understands (even people who have implemented it).</p>
+<p><a href="http://thesecretlivesofdata.com/raft/" target="_blank" rel="external">Raft Post</a><br><a href="http://thesecretlivesofdata.com" target="_blank" rel="external">Main Site</a></p>
 
       
     </div>
@@ -186,13 +187,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Cross-Platform-Localization-Strategies" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/">What&#39;s new in CPUs since the 80s and how does it affect programmers?</a>
+      <a class="article-title" href="/2015/09/09/Cross-Platform-Localization-Strategies/">Cross Platform Localization Strategies</a>
     </h3>
   
 
@@ -201,14 +202,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/" class="article-date"><time datetime="2015-03-15T00:00:00.000Z" itemprop="datePublished">15-03-15</time></a>
+  <a href="/2015/09/09/Cross-Platform-Localization-Strategies/" class="article-date"><time datetime="2015-09-09T18:00:00.000Z" itemprop="datePublished">15-09-09</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Optimization/">Optimization</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
 
 
   </div>
@@ -216,20 +217,8 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Amazing post about how CPU and memory architecture has changed over the years.</p>
-<blockquote>
-<p> using predictable memory access patterns and operating on chunks of data that are smaller than your CPU cache will get you most of the benefit of modern caches.</p>
-</blockquote>
-<ul>
-<li>Processor speed has increased much more than memory speed.  To work around this CPUs use:<ul>
-<li>Caching - Fast access to frequently used data.</li>
-<li>Prefetching - Fast access by pre-loading data into the cache if the access pattern is predictable.  Example: sequential access of 8 bytes in a loop can achieve 22Gb/sec on 3Ghz processor out of a maximum 24Gb/sec (3Ghz * 8 bytes = 24,000,000,000 bytes/sec).</li>
-</ul>
-</li>
-<li>Out of order execution - Speculatively execute and re-order executions to avoid stalling on a single resource.  Instructions with dependencies will execute in the correct order with respect to one another.</li>
-<li>There are no guarantees that interactions between cores will be ordered unless serializing instructors or memory fences are used.</li>
-</ul>
-<p><a href="http://danluu.com/new-cpu-features/" target="_blank" rel="external">Post</a></p>
+        <p>The main point seemed to be that it’s easier to consider localization at the start of a project (even for one language) than add it later.</p>
+<p><a href="http://www.meetup.com/CTTDNUG/events/223674975/" target="_blank" rel="external">Meetup Event</a></p>
 
       
     </div>
@@ -249,13 +238,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-First-Look-at-React-js-Flux-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Odds-Ends-September-2015" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/">First Look at React.js &amp; Flux Pattern</a>
+      <a class="article-title" href="/2015/08/31/Odds-Ends-September-2015/">Odds &amp; Ends - September 2015</a>
     </h3>
   
 
@@ -264,68 +253,7 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/" class="article-date"><time datetime="2015-03-13T00:00:00.000Z" itemprop="datePublished">15-03-13</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I took a crack at creating dashboards using Facebook’s React &amp; Flux libraries.</p>
-<ul>
-<li>It was easy to get something up working and then iterate on it.</li>
-<li>I found the functional concepts they are pushing a refreshing change from messing with jquery.  The code looks actually looks like code instead of a tangled rat’s nest of callbacks and dom mutations.</li>
-<li>It’s explicit about how state is stored and mutated.  People don’t think enough about this stuff and haveing it front and center is nice.</li>
-<li>The flux pattern is interesting.  I like how it separates concerns but it seems like there is a lot of code duplication.</li>
-<li>The idea of updating state and re-rendering reminds me of a game loop.</li>
-<li>I’m not sure how the virtual DOM will perform for larger views but the “native calls are slow” argument makes sense.  I’ve had screens with bad jank when lots of Backbone sub-views are re-rendered at the same time.</li>
-<li>The jsx concept of combining template(html) and code is a bit strange but I think they are on to something.  With Backbone, you usually end up editing the template/model/view files for most changes so I agree that they aren’t independent concerns.</li>
-<li>I also used Webstorm (support for jsx) for the first time and I’m not sure I can go back to using Visual Studio for JS.</li>
-</ul>
-<p><a href="https://github.com/DForshner/ReactFluxDashboardProto" target="_blank" rel="external">Prototype Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-March-2015" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/28/Odds-Ends-March-2015/">Odds &amp; Ends - March 2015</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/02/28/Odds-Ends-March-2015/" class="article-date"><time datetime="2015-03-01T00:00:00.000Z" itemprop="datePublished">15-03-01</time></a>
+  <a href="/2015/08/31/Odds-Ends-September-2015/" class="article-date"><time datetime="2015-09-01T00:00:00.000Z" itemprop="datePublished">15-09-01</time></a>
 </div>
 
     
@@ -342,14 +270,49 @@ ga('send', 'pageview');
       
         <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
 <ul>
-<li>Pretend you had to create a schedule before you knew the requirements or you need to estimate how long it will take to solve an unsolved problem.<ul>
-<li>When you don’t know what you are going to build then you cannot know how long it will take to build it.</li>
-<li>You only know for sure what you are going to build when you finish it.</li>
-<li>A good way to document requirements is to create a user manual.</li>
+<li>Mobile experiences fill gaps while we wait.  Nobody wants to wait while they wait.<ol>
+<li>Preform actions optimistically<ul>
+<li>Show +1/Like/Comment before the request is even sent.  Show an error if it fails.</li>
 </ul>
 </li>
-<li>Agile - build a little, test a little.</li>
-<li>Good tech leads shield engineers from distractions and give support when needed.  Enable people to do their jobs.</li>
+<li>Adaptively pre-load content<ul>
+<li>Load data before it’s needed.</li>
+<li>Re-prioritize what to load based on user interest.</li>
+</ul>
+</li>
+<li>Move bits when no one is watching<ul>
+<li>Send contact list while signing in.</li>
+<li>Start uploading files while the user is filling out the details.</li>
+<li>Send data as soon as part of it is ready to go and match it up on the server later.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>Code reviews are like having a shared brain.</li>
+<li>Shed load on social media sites by having shorter feeds.</li>
+<li>Achieve loose coupling using notifications, events, signals, etc.</li>
+<li><strong>Project scaling</strong><ul>
+<li>Code standards so everything looks the same</li>
+<li>Unit tests and design documents so it’s easy to switch implementations and modify.</li>
+<li>All you need a work priority queue with ideas and bugs.</li>
+<li>Be transparent.</li>
+<li>Don’t be date focused!  It’s too idealistic.</li>
+<li>Have short cycles, quick deliverables, and frequent estimates and re-estimates.</li>
+</ul>
+</li>
+<li><strong>Web crawling techniques</strong><ol>
+<li>Start at seed page and recursively follow all/subset of links.</li>
+<li>Identify a pattern in the URL for pages you want.  Ex: resource/id/ and check every valid id in range.</li>
+<li>Read the sitemap and choose which links to follow.</li>
+</ol>
+</li>
+<li><strong>Append only event stores</strong><ul>
+<li>Observations about the world are recorded for perpetuity and the results of observations are calculated on demand.</li>
+<li>Example: Changes -&gt; Append to transaction log -&gt; DB is a roll-up view of the changes captured in the transaction log.</li>
+<li>Don’t delete or update anything.  Just accrete new knowledge and distil new implications based upon your increasing knowledge.</li>
+<li>It’s like a warehouse.  Shipments come in, shipments go out, and at any point, we can check the current inventory levels.</li>
+</ul>
+</li>
 </ul>
 
       
@@ -370,13 +333,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Exploding-Software-Engineering-Myths" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Growing-Object-Oriented-Software-Guided-by-Tests" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/18/Exploding-Software-Engineering-Myths/">Exploding Software-Engineering Myths</a>
+      <a class="article-title" href="/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/">Growing Object-Oriented Software, Guided by Tests</a>
     </h3>
   
 
@@ -385,115 +348,7 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/02/18/Exploding-Software-Engineering-Myths/" class="article-date"><time datetime="2015-02-18T18:31:15.000Z" itemprop="datePublished">15-02-18</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>An overview of different empirical studies on software development methodologies.</p>
-<blockquote>
-<p>ongoing research in his quest to validate conventional software-engineering wisdom.</p>
-</blockquote>
-<p><a href="http://research.microsoft.com/apps/mobile/news.aspx?post=/en-us/news/features/nagappan-100609.aspx" target="_blank" rel="external">Link</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/">Ever have one of those days where your L1 cache collapses into a black hole?</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/" class="article-date"><time datetime="2015-02-12T18:20:47.000Z" itemprop="datePublished">15-02-12</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Complexity/">Complexity</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Interesting look at how to incorporate the cost of random access into complexity estimates.</p>
-<blockquote>
-<p>In short: if you try to squeeze too much L1 cache onto your CPU it will eventually collapse into a black hole, and that would make it awkward to get the results of the computation back to the user.</p>
-</blockquote>
-<p><a href="http://www.ilikebigbits.com/blog/2014/4/21/the-myth-of-ram-part-i" target="_blank" rel="external">The Myth of RAM - Part 1</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/28/the-myth-of-ram-part-ii" target="_blank" rel="external">The Myth of RAM - Part 2</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/29/the-myth-of-ram-part-iii" target="_blank" rel="external">The Myth of RAM - Part 3</a><br><a href="http://www.ilikebigbits.com/blog/2015/2/9/the-myth-of-ram-part-iv" target="_blank" rel="external">The Myth of RAM - Part 4</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Head-First-Design-Patterns" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/01/31/Head-First-Design-Patterns/">Head First Design Patterns</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/01/31/Head-First-Design-Patterns/" class="article-date"><time datetime="2015-02-01T00:00:00.000Z" itemprop="datePublished">15-02-01</time></a>
+  <a href="/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/" class="article-date"><time datetime="2015-08-27T00:00:00.000Z" itemprop="datePublished">15-08-27</time></a>
 </div>
 
     
@@ -508,8 +363,62 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I have a huge amount of respect for people who can distill ideas down into simple digestible parts.  The authors do an amazing job of communicating the ideas behind different patterns and illustrating the problems they are trying to solve.  I can easily recommend this to anyone interested in learning about design patterns.</p>
-<p><a href="https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
+        <ul>
+<li>Does a great job of showing how to use TDD and interfaces to build an application in pieces.</li>
+<li>I think it presents a more realistic picture of software development than most books by showing you how code evolves as you work on it.</li>
+<li>The case study section has long stretches of implementation details which I felt obscured the important points.</li>
+</ul>
+<p><a href="https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-CSS-Diner" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  <h3 itemprop="name">
+    <a class="article-title" href="https://flukeout.github.io"
+       target="_blank" itemprop="url">CSS Diner</a>
+  </h3>
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/08/20/CSS-Diner/" class="article-date"><time datetime="2015-08-20T16:54:28.000Z" itemprop="datePublished">15-08-20</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gamification/">Gamification</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Learn CSS selectors by selecting different objects on a table.</p>
+<p><a href="https://flukeout.github.io/" target="_blank" rel="external">Link</a></p>
 
       
     </div>
@@ -532,7 +441,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/5/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/4/">4</a></li><li><a class="page-number" href="/page/5/">5</a></li><li class="active"><span class="page-number">6</span></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-number" href="/page/8/">8</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/11/">11</a></li><li><a class="page-next" rel="next" href="/page/7/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/5/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/4/">4</a></li><li><a class="page-number" href="/page/5/">5</a></li><li class="active"><span class="page-number">6</span></li><li><a class="page-number" href="/page/7/">7</a></li><li><a class="page-number" href="/page/8/">8</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/15/">15</a></li><li><a class="page-next" rel="next" href="/page/7/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -541,7 +450,7 @@ ga('send', 'pageview');
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           
   <div class="sidebar-module sidebar-module-inset">
-  <h4>Ingredients</h4>
+  <h4>Blog Ingredients</h4>
   <p>⅓ notebook ⅓ bookmarks ⅓ random</p>
 
 </div>
@@ -571,7 +480,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 

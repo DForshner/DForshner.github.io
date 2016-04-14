@@ -95,19 +95,19 @@ ga('send', 'pageview');
         
 		    <li>
 				<a class="" href="https://github.com/dforshner/">
-					<i class="fa fa-github"></i>Github
+					<i class="fa fa-github-square"></i>GitHub
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="https://www.linkedin.com/in/dforshner/">
+					<i class="fa fa-linkedin-square"></i>LinkedIn
 				</a>
 			</li>
         
 		    <li>
 				<a class="" href="/pdfs/Resume.pdf">
 					<i class="fa fa-trophy"></i>Resume
-				</a>
-			</li>
-        
-		    <li>
-				<a class="" href="https://www.linkedin.com/in/dforshner/">
-					<i class="fa fa-linkedin"></i>LinkedIn
 				</a>
 			</li>
         
@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-Odds-Ends-December-2015" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Effective-Code-Reviews" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/11/30/Odds-Ends-December-2015/">Odds &amp; Ends - December 2015</a>
+      <a class="article-title" href="/2016/01/28/Effective-Code-Reviews/">Effective Code Reviews Presentation</a>
     </h3>
   
 
@@ -150,14 +150,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/11/30/Odds-Ends-December-2015/" class="article-date"><time datetime="2015-12-01T00:00:00.000Z" itemprop="datePublished">15-12-01</time></a>
+  <a href="/2016/01/28/Effective-Code-Reviews/" class="article-date"><time datetime="2016-01-29T00:00:00.000Z" itemprop="datePublished">16-01-29</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Presentations/">Presentations</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a></li></ul>
 
 
   </div>
@@ -165,26 +165,9 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>Tail call benefit - Callee is using the same stack space as caller which reduces memory pressure and makes it more likely that chunk of the stack will stay in the CPU cache.</li>
-<li>Cores are black boxes that instructions enter and leave from in a sequential manner.  Inside the black box instructions can run in any order.</li>
-<li><u>Out of order execution</u><ul>
-<li>Fetch multiple instructions each cycle and decode into µ-ops.</li>
-<li>µ-ops are put into the re-order buffer (ROB) where they can be processed out of order if data is ready.</li>
-<li>To prevent pipeline stalls speculative execution runs all the conditional branches in parallel until the core figures out which branch to take.</li>
-</ul>
-</li>
-<li><u>Hyperthreading</u> - Provides two virtual processors that share a reorder buffer.  Provides the core with more data during general workloads to keep execution units busy.</li>
-<li>Pipelines improve performance but can cause nightmares if they stall!<ul>
-<li>CPUs run best when instructions and data are in order.</li>
-<li>Keep data in order, adjacent, and consecutive to prevent data stalls.</li>
-<li>Don’t jump around because it won’t be able to predict where you want to go.</li>
-<li>Take comparisons out of loops to prevent mispredicted branches. For { If { … } } =&gt; If { For { … } }</li>
-</ul>
-</li>
-<li>Think about the period of time when we are waiting for followers to acknowledge a write as your uncertainty window.  As followers acknowledge the write we are increasingly certain that our write has been captured and eventually we can advance our uncertainty window.</li>
-</ul>
+        <p>I gave a presentation on doing effective code reviews at my company’s internal developer summit.  There were a <em>few</em> more people than I was expecting.  I’m told I didn’t look nervous which I’m guessing was due to the dark lighting ☺.</p>
+<p>Having worked on both teams that do code reviews and those that do not I’m convinced that they make a real difference.  They are even more important when people are new to a team (or to software development).  I’d put code reviews right up there with source control on the <strong>must do</strong> development practices list.</p>
+<p><a href="/pdfs/Effective Code Reviews.pdf">Presentation</a></p>
 
       
     </div>
@@ -204,13 +187,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Ensemble-Learning-Basics" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Engie-Award-2015" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/11/19/Ensemble-Learning-Basics/">Ensemble Learning Basics</a>
+      <a class="article-title" href="/2016/01/22/Engie-Award-2015/">Engie Award 2015</a>
     </h3>
   
 
@@ -219,14 +202,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/11/19/Ensemble-Learning-Basics/" class="article-date"><time datetime="2015-11-19T18:00:00.000Z" itemprop="datePublished">15-11-19</time></a>
+  <a href="/2016/01/22/Engie-Award-2015/" class="article-date"><time datetime="2016-01-22T15:17:49.000Z" itemprop="datePublished">16-01-22</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Science/">Data Science</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
 
 
   </div>
@@ -234,13 +217,8 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Interesting talk about how ensemble learning was used in the Netflix contest and a short presentation on statistical bootstrapping.</p>
-<ul>
-<li>The basic idea is that multiple models are used and they are fitted to the data they work best with.</li>
-<li>Usually, we compare models and take the best one but what if instead we combine different models and take the best characteristics of each?</li>
-<li>Cross-validation - using a portion of the sample data to check of over-fitting.</li>
-</ul>
-<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/226637424/" target="_blank" rel="external">Meetup Event</a></p>
+        <p>I won a thing :-)</p>
+<p><img src="/images/Engie-award-2015.jpg" alt=""></p>
 
       
     </div>
@@ -260,13 +238,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Raft-Understandable-Distributed-Consensus" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-4k-Demo-Flop" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/10/10/Raft-Understandable-Distributed-Consensus/">Raft Understandable Distributed Consensus</a>
+      <a class="article-title" href="/2016/01/03/4k-Demo-Flop/">4k Demo Flop</a>
     </h3>
   
 
@@ -275,14 +253,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/10/10/Raft-Understandable-Distributed-Consensus/" class="article-date"><time datetime="2015-10-11T00:00:00.000Z" itemprop="datePublished">15-10-11</time></a>
+  <a href="/2016/01/03/4k-Demo-Flop/" class="article-date"><time datetime="2016-01-04T00:00:00.000Z" itemprop="datePublished">16-01-04</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Visual-Learning/">Visual Learning</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failure/">Failure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
 
 
   </div>
@@ -290,9 +268,9 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>This is one of best examples I’ve seen yet of using visualizations to explain something.  </p>
-<p>Raft is a distributed consensus algorithm designed to be understandable as opposed to PAXOS which as far as I can tell nobody understands (even people who have implemented it).</p>
-<p><a href="http://thesecretlivesofdata.com/raft/" target="_blank" rel="external">Raft Post</a><br><a href="http://thesecretlivesofdata.com" target="_blank" rel="external">Main Site</a></p>
+        <p>This might have been more fun if I was familiar with the Windows API.  It felt like I was spending all my time hunting for bad documentation to puzzle over.</p>
+<p>It has a “fire effect” so I’m calling it a win and moving on. ☺</p>
+<p><a href="https://github.com/DForshner/UnEpic4KDemo" target="_blank" rel="external">Source Code</a></p>
 
       
     </div>
@@ -312,214 +290,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Cross-Platform-Localization-Strategies" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/09/09/Cross-Platform-Localization-Strategies/">Cross Platform Localization Strategies</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/09/09/Cross-Platform-Localization-Strategies/" class="article-date"><time datetime="2015-09-09T18:00:00.000Z" itemprop="datePublished">15-09-09</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>The main point seemed to be that it’s easier to consider localization at the start of a project (even for one language) than add it later.</p>
-<p><a href="http://www.meetup.com/CTTDNUG/events/223674975/" target="_blank" rel="external">Meetup Event</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-September-2015" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/08/31/Odds-Ends-September-2015/">Odds &amp; Ends - September 2015</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/08/31/Odds-Ends-September-2015/" class="article-date"><time datetime="2015-09-01T00:00:00.000Z" itemprop="datePublished">15-09-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>Mobile experiences fill gaps while we wait.  Nobody wants to wait while they wait.<ol>
-<li>Preform actions optimistically<ul>
-<li>Show +1/Like/Comment before the request is even sent.  Show an error if it fails.</li>
-</ul>
-</li>
-<li>Adaptively pre-load content<ul>
-<li>Load data before it’s needed.</li>
-<li>Re-prioritize what to load based on user interest.</li>
-</ul>
-</li>
-<li>Move bits when no one is watching<ul>
-<li>Send contact list while signing in.</li>
-<li>Start uploading files while the user is filling out the details.</li>
-<li>Send data as soon as part of it is ready to go and match it up on the server later.</li>
-</ul>
-</li>
-</ol>
-</li>
-<li>Code reviews are like having a shared brain.</li>
-<li>Shed load on social media sites by having shorter feeds.</li>
-<li>Achieve loose coupling using notifications, events, signals, etc.</li>
-<li><strong>Project scaling</strong><ul>
-<li>Code standards so everything looks the same</li>
-<li>Unit tests and design documents so it’s easy to switch implementations and modify.</li>
-<li>All you need a work priority queue with ideas and bugs.</li>
-<li>Be transparent.</li>
-<li>Don’t be date focused!  It’s too idealistic.</li>
-<li>Have short cycles, quick deliverables, and frequent estimates and re-estimates.</li>
-</ul>
-</li>
-<li><strong>Web crawling techniques</strong><ol>
-<li>Start at seed page and recursively follow all/subset of links.</li>
-<li>Identify a pattern in the URL for pages you want.  Ex: resource/id/ and check every valid id in range.</li>
-<li>Read the sitemap and choose which links to follow.</li>
-</ol>
-</li>
-<li><strong>Append only event stores</strong><ul>
-<li>Observations about the world are recorded for perpetuity and the results of observations are calculated on demand.</li>
-<li>Example: Changes -&gt; Append to transaction log -&gt; DB is a roll-up view of the changes captured in the transaction log.</li>
-<li>Don’t delete or update anything.  Just accrete new knowledge and distil new implications based upon your increasing knowledge.</li>
-<li>It’s like a warehouse.  Shipments come in, shipments go out, and at any point, we can check the current inventory levels.</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Growing-Object-Oriented-Software-Guided-by-Tests" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/">Growing Object-Oriented Software, Guided by Tests</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/" class="article-date"><time datetime="2015-08-27T00:00:00.000Z" itemprop="datePublished">15-08-27</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>Does a great job of showing how to use TDD and interfaces to build an application in pieces.</li>
-<li>I think it presents a more realistic picture of software development than most books by showing you how code evolves as you work on it.</li>
-<li>The case study section has long stretches of implementation details which I felt obscured the important points.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/4268826-growing-object-oriented-software-guided-by-tests?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-CSS-Diner" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   <h3 itemprop="name">
-    <a class="article-title" href="https://flukeout.github.io"
-       target="_blank" itemprop="url">CSS Diner</a>
+    <a class="article-title" href="https://computers-are-fast.github.io/"
+       target="_blank" itemprop="url">One second code: Do YOU know how much your computer can do in a second?</a>
   </h3>
 
 
@@ -527,14 +304,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/08/20/CSS-Diner/" class="article-date"><time datetime="2015-08-20T16:54:28.000Z" itemprop="datePublished">15-08-20</time></a>
+  <a href="/2016/01/01/One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second/" class="article-date"><time datetime="2016-01-01T16:54:02.000Z" itemprop="datePublished">16-01-01</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gamification/">Gamification</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gamification/">Gamification</a></li></ul>
 
 
   </div>
@@ -542,8 +319,153 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Learn CSS selectors by selecting different objects on a table.</p>
-<p><a href="https://flukeout.github.io/" target="_blank" rel="external">Link</a></p>
+        <p>A fun quiz on estimating how much work (iterations/requests/etc.) a computer can do in 1 second.</p>
+<p><a href="https://computers-are-fast.github.io/" target="_blank" rel="external">Link</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/">Hiring Hacks: How Stack Overflow Interviews Engineers</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/" class="article-date"><time datetime="2015-12-16T00:00:00.000Z" itemprop="datePublished">15-12-16</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Interviewing/">Interviewing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Notes from a webinar by Matt Sherman, Engineering Manager at Stack Overflow, on the company’s technical interview process.</p>
+<p>Key Traits to look for: <strong>Smart and gets things done</strong></p>
+<p><strong>General principals</strong></p>
+<ul>
+<li>Not a quiz! No gotchas! No brain teasers!</li>
+<li>You want to start a conversation that reveals how they think.</li>
+<li>Choose problems that lead to good conversations!</li>
+<li>Do you want to work with this person?</li>
+<li>Each interviewer must decide hire/no hire (no maybes)<ul>
+<li>“I think they are a good but not right for my team” is a red flag.</li>
+</ul>
+</li>
+<li>Interviewees (even no hires) should leave feeling they are respected!  <ul>
+<li>They may be future customers.  </li>
+<li>They may have friends you may want to interview.</li>
+</ul>
+</li>
+<li>Schedule 60 min but say 45 min so you can end early if they are struggling.  Be graceful about ending early.</li>
+<li>Look for depth, passion, interest in the product.  It’s hard to look for a “cultural fit”.</li>
+<li>Document technical questions and try to standardize interviews.</li>
+<li>Ask yourself: At the end of 60 min what information do I want to have about this person?</li>
+<li>Evaluate your own performance during interviews.  What could you have done better?</li>
+<li>It’s better to not hire than accidently hire a bad candidate.  Err on the side of no hire.</li>
+<li>Shadowing - Follow experienced interviewer for 6 months.  Do mock interviews with co-workers.</li>
+<li>Interview cycle should take 2-3 weeks max.<ul>
+<li>Feedback </li>
+<li>“You’re not there yet but we think you could be.”</li>
+<li>Provide list of books to read and things to work on</li>
+<li>NOTHING PERSONAL! (Legal Issues) </li>
+</ul>
+</li>
+</ul>
+<p><strong>Interview process</strong></p>
+<ol>
+<li>Resume Review<ul>
+<li><strong>T</strong>argeted - Is this a targeted application or a generic mass mailing?  Why do they want to work here?</li>
+<li><strong>E</strong>experienced - 4+ yrs. full stack</li>
+<li><strong>D</strong>epth - Tech is a stack of layers.  They use the software but they also know how to go deeper into guts of the system.</li>
+<li><strong>P</strong>assion - Do they enjoy programming?  Do they make games?  Code for fun?</li>
+<li><strong>G</strong>ets Things Done - Do they get things out the door?  Do they finish projects/products?</li>
+</ul>
+</li>
+<li>Remote Code Screen<ul>
+<li>30 min over hangouts using a shared document.</li>
+<li>Should be intentionally easy.  </li>
+<li>Any day to day programmer should be able to do it.</li>
+</ul>
+</li>
+<li>Smart interview<ul>
+<li>In-depth algorithm question</li>
+<li>How much complexity can they keep in their head at once time?</li>
+<li>Encourage them to think out loud.  It’s a conversation.</li>
+<li>Make it clear you want to know their thought process, not the answer.  It’s fine if they get it wrong and go back.</li>
+</ul>
+</li>
+<li>Gets things done interview<ul>
+<li>A larger system design question.</li>
+<li>At an architectural/high-level design an entire application.</li>
+<li>Look at a system and understand what each part is and how they work together.</li>
+<li>DB (SQL) + Web Server (C#/Ruby/etc.) + Browser (JS/HTML)</li>
+<li>Look for both breadth and macro understanding.</li>
+<li>Full-stack - They could do the whole thing on their own.</li>
+</ul>
+</li>
+<li>Product management interview<ul>
+<li>Talk to the people who decide what the products are.</li>
+<li>Do they understand users and the business?</li>
+<li>Do they care about customers?</li>
+<li>How would you design and test this product?</li>
+<li>How would you know if this product was successful?</li>
+<li>A lot of engineers do product management at some point.</li>
+</ul>
+</li>
+<li>Executive interviews<ul>
+<li>It’s your turn to sell yourself and convince them they want to work here.</li>
+<li>They probably have other offers.</li>
+<li>Start talking about a team they might fit on.</li>
+</ul>
+</li>
+<li>Make an offer  <ul>
+<li>Important to have a fast turnaround.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Finding candidates</strong></p>
+<ul>
+<li>Have a good brand<ul>
+<li>Recruiters are your brand! </li>
+<li>Go to events/meetups.</li>
+<li>Connect with people.</li>
+</ul>
+</li>
+<li>It’s much easier to develop a brand if it’s true :-)</li>
+<li>The ideal situation is when an engineer already working at company recommends another engineer.</li>
+</ul>
+<p><a href="http://event.on24.com/wcc/r/1102097/CEA34F635FCFA2F13182A0C1B6D33654" target="_blank" rel="external">Event Link</a></p>
 
       
     </div>
@@ -566,7 +488,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/3/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="active"><span class="page-number">4</span></li><li><a class="page-number" href="/page/5/">5</a></li><li><a class="page-number" href="/page/6/">6</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/11/">11</a></li><li><a class="page-next" rel="next" href="/page/5/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/3/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="active"><span class="page-number">4</span></li><li><a class="page-number" href="/page/5/">5</a></li><li><a class="page-number" href="/page/6/">6</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/15/">15</a></li><li><a class="page-next" rel="next" href="/page/5/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -575,7 +497,7 @@ ga('send', 'pageview');
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           
   <div class="sidebar-module sidebar-module-inset">
-  <h4>Ingredients</h4>
+  <h4>Blog Ingredients</h4>
   <p>⅓ notebook ⅓ bookmarks ⅓ random</p>
 
 </div>
@@ -605,7 +527,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 

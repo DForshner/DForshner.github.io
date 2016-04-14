@@ -2,513 +2,527 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
-    
-    <lastmod>2016-04-13T20:59:15.108Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/</loc>
-    
-    <lastmod>2016-04-10T22:48:52.822Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2016/01/28/Effective-Code-Reviews/</loc>
     
-    <lastmod>2016-04-10T20:31:44.527Z</lastmod>
+    <lastmod>2016-04-14T18:53:23.658Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/</loc>
+    <loc>https://dforshner.github.io/2016/04/11/Data-Structures-for-Web-Devs-Presentation/</loc>
     
-    <lastmod>2016-04-10T20:12:18.040Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/</loc>
-    
-    <lastmod>2016-04-10T20:12:00.770Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/02/18/Exploding-Software-Engineering-Myths/</loc>
-    
-    <lastmod>2016-04-10T20:11:40.516Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/02/24/Why-Should-Software-Architects-Write-Code/</loc>
-    
-    <lastmod>2016-04-10T20:11:33.068Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/12/First-Look-at-React-js-Flux-Pattern/</loc>
-    
-    <lastmod>2016-04-10T20:02:19.562Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/03/15/Introduction-to-Meteor-js/</loc>
-    
-    <lastmod>2016-04-10T19:55:23.714Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/08/31/Odds-Ends-September-2015/</loc>
-    
-    <lastmod>2016-04-10T19:54:07.961Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/02/28/Odds-Ends-March-2013/</loc>
-    
-    <lastmod>2016-04-10T19:52:20.076Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/11/30/Odds-Ends-December-2015/</loc>
-    
-    <lastmod>2016-04-10T19:50:49.065Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/05/31/Odds-Ends-June-2013/</loc>
-    
-    <lastmod>2016-04-10T19:49:01.454Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/11/30/Odds-Ends-December-2013/</loc>
-    
-    <lastmod>2016-04-10T19:46:19.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/05/17/Google-I-O-Extended-2013/</loc>
-    
-    <lastmod>2016-04-10T19:38:02.396Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/02/22/Functional-vs-Imperative-Environments/</loc>
-    
-    <lastmod>2016-04-10T17:23:26.438Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/02/12/SortedList-vs-SortedDictionary/</loc>
-    
-    <lastmod>2016-04-10T17:09:01.702Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
-    
-    <lastmod>2016-04-10T02:12:38.727Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/11/03/M101P-MongoDB-for-Developers/</loc>
-    
-    <lastmod>2016-04-10T02:12:31.444Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
-    
-    <lastmod>2016-04-10T02:12:26.930Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
-    
-    <lastmod>2016-04-10T02:12:19.299Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
-    
-    <lastmod>2016-04-10T02:12:10.159Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2009/08/08/Going-Back-To-School/</loc>
-    
-    <lastmod>2016-04-10T02:10:32.969Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2009/01/08/Avoid-in-circuit-testing-ICT-vias/</loc>
-    
-    <lastmod>2016-04-10T02:02:47.637Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2009/03/02/Avoid-Overlapping-Footprints/</loc>
-    
-    <lastmod>2016-04-10T01:56:04.300Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2009/03/08/Avoid-disregarding-datasheets/</loc>
-    
-    <lastmod>2016-04-10T01:50:46.574Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2008/04/29/Avoid-tight-testing-tolerances-for-small-capacitance-values/</loc>
-    
-    <lastmod>2016-04-10T01:42:47.058Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
-    
-    <lastmod>2016-04-09T23:47:50.436Z</lastmod>
+    <lastmod>2016-04-14T18:23:10.599Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/</loc>
     
-    <lastmod>2016-04-09T23:46:56.152Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/03/02/Testing-Meetup/</loc>
-    
-    <lastmod>2016-04-09T23:41:49.748Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
-    
-    <lastmod>2016-04-09T23:11:33.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/31/Odds-Ends-June-2015/</loc>
-    
-    <lastmod>2016-04-09T23:08:49.588Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/05/31/Odds-Ends-June-2014/</loc>
-    
-    <lastmod>2016-04-08T20:45:54.300Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/07/31/Odds-Ends-September-2013/</loc>
-    
-    <lastmod>2016-04-08T20:35:12.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/11/30/Odds-Ends-December-2014/</loc>
-    
-    <lastmod>2016-04-08T20:30:07.513Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/08/31/Odds-Ends-September-2014/</loc>
-    
-    <lastmod>2016-04-08T20:30:07.508Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/02/28/Odds-Ends-March-2014/</loc>
-    
-    <lastmod>2016-04-08T20:30:07.505Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/</loc>
-    
-    <lastmod>2016-04-08T20:19:40.375Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2013/11/10/Testable-JavaScript-Presentation/</loc>
-    
-    <lastmod>2016-04-08T19:57:13.825Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/</loc>
-    
-    <lastmod>2016-04-08T16:29:57.324Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
-    
-    <lastmod>2016-04-07T19:12:55.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/09/09/Cross-Platform-Localization-Strategies/</loc>
-    
-    <lastmod>2016-04-06T21:22:30.229Z</lastmod>
+    <lastmod>2016-04-14T17:05:59.431Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
     
-    <lastmod>2016-04-06T21:21:21.426Z</lastmod>
+    <lastmod>2016-04-14T17:03:12.420Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/</loc>
+    <loc>https://dforshner.github.io/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/</loc>
     
-    <lastmod>2016-04-06T21:19:50.392Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/01/03/4k-Demo-Flop/</loc>
-    
-    <lastmod>2016-04-06T20:59:39.868Z</lastmod>
+    <lastmod>2016-04-14T15:04:31.340Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
+    <loc>https://dforshner.github.io/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/</loc>
     
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
-    
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
+    <lastmod>2016-04-14T15:04:31.340Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
+    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
     
-    <lastmod>2016-04-05T00:29:41.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
-    
-    <lastmod>2016-04-05T00:29:41.295Z</lastmod>
+    <lastmod>2016-04-14T15:04:31.340Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/</loc>
+    <loc>https://dforshner.github.io/2008/04/29/Avoid-tight-testing-tolerances-for-small-capacitance-values/</loc>
     
-    <lastmod>2016-04-05T00:28:21.920Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/10/10/Raft-Understandable-Distributed-Consensus/</loc>
-    
-    <lastmod>2016-03-26T22:13:22.489Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/03/04/Explained-Visually/</loc>
-    
-    <lastmod>2016-03-26T22:12:22.513Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/03/22/Left-Pad-Libration/</loc>
-    
-    <lastmod>2016-03-26T21:45:53.417Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/22/Table-Driven-Design-Example/</loc>
-    
-    <lastmod>2016-03-24T22:26:13.110Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/11/19/Ensemble-Learning-Basics/</loc>
-    
-    <lastmod>2016-03-24T15:59:31.612Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/12/10/Feature-Extraction/</loc>
-    
-    <lastmod>2016-03-24T15:58:37.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/12/03/Expert-Android-Developers-Speak/</loc>
-    
-    <lastmod>2016-03-24T15:55:46.553Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/12/31/Patterns-of-Enterprise-Application-Architecture/</loc>
-    
-    <lastmod>2016-03-24T15:52:25.028Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/01/22/Engie-Award-2015/</loc>
-    
-    <lastmod>2016-03-22T19:25:32.739Z</lastmod>
+    <lastmod>2016-04-14T15:01:17.649Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2016/02/17/Boltmade-CodeRetreat-Rule110/</loc>
     
-    <lastmod>2016-03-22T19:24:46.370Z</lastmod>
+    <lastmod>2016-04-14T15:01:04.527Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/</loc>
+    <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
     
-    <lastmod>2016-03-21T22:06:59.881Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
-    
-    <lastmod>2016-03-21T19:29:04.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/31/The-Algorithm-Design-Manual/</loc>
-    
-    <lastmod>2016-03-21T19:27:34.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/01/01/One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second/</loc>
-    
-    <lastmod>2016-03-21T18:54:44.970Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/01/31/Head-First-Design-Patterns/</loc>
-    
-    <lastmod>2016-03-21T18:53:25.628Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/31/Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/</loc>
-    
-    <lastmod>2016-03-21T18:44:39.929Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/01/26/Cracking-the-Coding-Interview-150-Programming-Questions-and-Solutions/</loc>
-    
-    <lastmod>2016-03-21T18:44:36.688Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/08/20/CSS-Diner/</loc>
-    
-    <lastmod>2016-03-21T18:35:49.027Z</lastmod>
+    <lastmod>2016-04-14T15:01:00.240Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2014/12/31/Code-Complete-A-Practical-Handbook-of-Software-Construction/</loc>
     
-    <lastmod>2016-03-21T18:06:01.758Z</lastmod>
+    <lastmod>2016-04-14T15:00:56.573Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/05/31/Algorithms-in-a-Nutshell/</loc>
+    <loc>https://dforshner.github.io/2015/12/01/Coverage-Is-Not-Strongly-Correlated-With-Test-Suite-Effectiveness/</loc>
     
-    <lastmod>2016-03-21T18:02:11.194Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/</loc>
-    
-    <lastmod>2016-03-21T18:01:52.977Z</lastmod>
+    <lastmod>2016-04-14T15:00:50.080Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/02/24/The-Deadlock-Empire/</loc>
+    <loc>https://dforshner.github.io/2015/01/26/Cracking-the-Coding-Interview-150-Programming-Questions-and-Solutions/</loc>
     
-    <lastmod>2016-03-19T22:48:20.259Z</lastmod>
+    <lastmod>2016-04-14T15:00:46.303Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/09/09/Cross-Platform-Localization-Strategies/</loc>
+    
+    <lastmod>2016-04-14T15:00:42.650Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/20/CSS-Diner/</loc>
+    
+    <lastmod>2016-04-14T15:00:39.431Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/</loc>
+    
+    <lastmod>2016-04-14T15:00:31.368Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2015/01/26/Elements-of-Programming-Interviews-300-Questions-and-Solutions/</loc>
     
-    <lastmod>2016-03-19T22:13:07.290Z</lastmod>
+    <lastmod>2016-04-14T15:00:24.371Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/01/22/Engie-Award-2015/</loc>
+    
+    <lastmod>2016-04-14T15:00:21.119Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/11/19/Ensemble-Learning-Basics/</loc>
+    
+    <lastmod>2016-04-14T15:00:18.726Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/</loc>
+    
+    <lastmod>2016-04-14T15:00:15.679Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/12/03/Expert-Android-Developers-Speak/</loc>
+    
+    <lastmod>2016-04-14T15:00:12.304Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/03/04/Explained-Visually/</loc>
+    
+    <lastmod>2016-04-14T15:00:07.368Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/18/Exploding-Software-Engineering-Myths/</loc>
+    
+    <lastmod>2016-04-14T15:00:04.003Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/28/Exploring-Augmented-Interval-Trees/</loc>
+    
+    <lastmod>2016-04-14T15:00:00.470Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/06/30/Exploring-Data-Orientated-Game-Engines/</loc>
+    
+    <lastmod>2016-04-14T14:59:32.259Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/14/Exploring-Min-Heap-Priority-Queue/</loc>
+    
+    <lastmod>2016-04-14T14:59:07.593Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/05/24/Exploring-Probabilistic-Data-Structures/</loc>
+    
+    <lastmod>2016-04-14T14:59:04.322Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/12/10/Feature-Extraction/</loc>
+    
+    <lastmod>2016-04-14T14:58:42.305Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/12/First-Look-at-React-js-Flux-Pattern/</loc>
+    
+    <lastmod>2016-04-14T14:58:34.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/22/Functional-vs-Imperative-Environments/</loc>
+    
+    <lastmod>2016-04-14T14:58:28.700Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/08/08/Going-Back-To-School/</loc>
+    
+    <lastmod>2016-04-14T14:58:24.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/17/Google-I-O-Extended-2013/</loc>
+    
+    <lastmod>2016-04-14T14:58:21.228Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/26/Growing-Object-Oriented-Software-Guided-by-Tests/</loc>
+    
+    <lastmod>2016-04-14T14:58:17.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/01/31/Head-First-Design-Patterns/</loc>
+    
+    <lastmod>2016-04-14T14:58:13.899Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/04/16/Heterogeneous-Parallel-Programming/</loc>
+    
+    <lastmod>2016-04-14T14:58:10.571Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/03/15/Introduction-to-Meteor-js/</loc>
+    
+    <lastmod>2016-04-14T14:58:02.238Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/03/22/Left-Pad-Libration/</loc>
+    
+    <lastmod>2016-04-14T14:57:56.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/11/03/M101P-MongoDB-for-Developers/</loc>
+    
+    <lastmod>2016-04-14T14:57:53.434Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/03/30/Meetup-Efficient-Analysis-with-SQL/</loc>
+    
+    <lastmod>2016-04-14T14:57:50.007Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/11/30/Odds-Ends-December-2013/</loc>
+    
+    <lastmod>2016-04-14T14:57:46.793Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/11/30/Odds-Ends-December-2014/</loc>
+    
+    <lastmod>2016-04-14T14:57:43.443Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/11/30/Odds-Ends-December-2015/</loc>
+    
+    <lastmod>2016-04-14T14:57:39.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/31/Odds-Ends-June-2013/</loc>
+    
+    <lastmod>2016-04-14T14:57:36.270Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/05/31/Odds-Ends-June-2014/</loc>
+    
+    <lastmod>2016-04-14T14:57:32.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/Odds-Ends-June-2015/</loc>
+    
+    <lastmod>2016-04-14T14:57:29.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/28/Odds-Ends-March-2013/</loc>
+    
+    <lastmod>2016-04-14T14:57:24.680Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/02/28/Odds-Ends-March-2014/</loc>
+    
+    <lastmod>2016-04-14T14:57:21.161Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
+    
+    <lastmod>2016-04-14T14:57:17.231Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/07/31/Odds-Ends-September-2013/</loc>
+    
+    <lastmod>2016-04-14T14:57:11.629Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/08/31/Odds-Ends-September-2014/</loc>
+    
+    <lastmod>2016-04-14T14:57:08.375Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/08/31/Odds-Ends-September-2015/</loc>
+    
+    <lastmod>2016-04-14T14:57:02.436Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/01/01/One-second-code-Do-YOU-know-how-much-your-computer-can-do-in-a-second/</loc>
+    
+    <lastmod>2016-04-14T14:56:54.086Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/05/13/Pattern-Oriented-Software-Architectures-for-Concurrent-and-Networked-Software/</loc>
+    
+    <lastmod>2016-04-14T14:56:50.363Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/12/31/Patterns-of-Enterprise-Application-Architecture/</loc>
+    
+    <lastmod>2016-04-14T14:56:46.174Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/10/10/Raft-Understandable-Distributed-Consensus/</loc>
+    
+    <lastmod>2016-04-14T14:56:42.226Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/</loc>
+    
+    <lastmod>2016-04-14T14:56:38.601Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/03/31/Software-Engineering-as-a-Service/</loc>
+    
+    <lastmod>2016-04-14T14:56:34.148Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/02/12/SortedList-vs-SortedDictionary/</loc>
+    
+    <lastmod>2016-04-14T14:56:30.163Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/22/Table-Driven-Design-Example/</loc>
+    
+    <lastmod>2016-04-14T14:56:27.084Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/11/10/Testable-JavaScript-Presentation/</loc>
+    
+    <lastmod>2016-04-14T14:56:22.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2013/03/02/Testing-Meetup/</loc>
+    
+    <lastmod>2016-04-14T14:56:17.488Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/The-Algorithm-Design-Manual/</loc>
+    
+    <lastmod>2016-04-14T14:56:14.706Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/24/The-Deadlock-Empire/</loc>
+    
+    <lastmod>2016-04-14T14:56:10.159Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/25/What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team/</loc>
+    
+    <lastmod>2016-04-14T14:56:06.628Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/</loc>
+    
+    <lastmod>2016-04-14T14:56:02.898Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/24/Why-Should-Software-Architects-Write-Code/</loc>
+    
+    <lastmod>2016-04-14T14:56:00.085Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
+    
+    <lastmod>2016-04-14T14:55:56.640Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/01/03/4k-Demo-Flop/</loc>
+    
+    <lastmod>2016-04-14T14:55:50.659Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/01/26/Ace-the-Programming-Interview-160-Questions-and-Answers-for-Success/</loc>
+    
+    <lastmod>2016-04-14T14:55:04.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
+    
+    <lastmod>2016-04-14T14:55:00.280Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/Algorithms-in-a-Nutshell/</loc>
+    
+    <lastmod>2016-04-14T14:54:56.170Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/03/08/Avoid-disregarding-datasheets/</loc>
+    
+    <lastmod>2016-04-14T14:54:52.852Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/01/08/Avoid-in-circuit-testing-ICT-vias/</loc>
+    
+    <lastmod>2016-04-14T14:54:49.584Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2009/03/02/Avoid-Overlapping-Footprints/</loc>
+    
+    <lastmod>2016-04-14T14:54:45.999Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/14/Postmortem-for-global-GCE-outage/</loc>
+    
+    <lastmod>2016-04-14T14:51:16.202Z</lastmod>
     
   </url>
   

@@ -95,19 +95,19 @@ ga('send', 'pageview');
         
 		    <li>
 				<a class="" href="https://github.com/dforshner/">
-					<i class="fa fa-github"></i>Github
+					<i class="fa fa-github-square"></i>GitHub
+				</a>
+			</li>
+        
+		    <li>
+				<a class="" href="https://www.linkedin.com/in/dforshner/">
+					<i class="fa fa-linkedin-square"></i>LinkedIn
 				</a>
 			</li>
         
 		    <li>
 				<a class="" href="/pdfs/Resume.pdf">
 					<i class="fa fa-trophy"></i>Resume
-				</a>
-			</li>
-        
-		    <li>
-				<a class="" href="https://www.linkedin.com/in/dforshner/">
-					<i class="fa fa-linkedin"></i>LinkedIn
 				</a>
 			</li>
         
@@ -134,6 +134,58 @@ ga('send', 'pageview');
     <div class="row">
         <div class="col-sm-8 blog-main">
           
+  
+    <article id="post-Postmortem-for-global-GCE-outage" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/14/Postmortem-for-global-GCE-outage/">Postmortem for a global GCE outage</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/14/Postmortem-for-global-GCE-outage/" class="article-date"><time datetime="2016-04-14T10:23:48.000Z" itemprop="datePublished">16-04-14</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Google computer engine was down globally for 18 minutes.  The usual culprit of configuration error was present but there was also a series of bugs that combined together to propagate a bad configuration into production.</p>
+<p>It’s fascinating how small things combine to wreak havoc on large scale systems.  Google is constantly testing so I imagine theses bugs have been quietly waiting in edge case land for a while until random chance brings them together.  With enough scale and complexity, the improbable becomes probable.</p>
+<p><a href="https://status.cloud.google.com/incident/compute/16007" target="_blank" rel="external">Incident Report</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
 
@@ -202,6 +254,61 @@ ga('send', 'pageview');
 <p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
 <p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
 <p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Data-Structures-for-Web-Devs-Presentation" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/11/Data-Structures-for-Web-Devs-Presentation/">Data Structures for Web Devs Presentation</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/11/Data-Structures-for-Web-Devs-Presentation/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Presentations/">Presentations</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I did a ½ presentation ½ discussion on data structures for our web developer team.</p>
+<p>Where I work developers come from different backgrounds and not everyone has a computer science vocabulary.  It was interesting trying to talk about data structures without cheating by using CS jargon.  It was surprising how much I depend on having a shared specialized language when discussing algorithms and data structures.  They weren’t joking when they said the easiest way to learn something is to explain it to someone else.</p>
+<p>I only had 1.5 hours, so it was tricky fitting in everything I wanted to go over with enough time to discuss each slide.  My goal was to persuade people to use ES6’s new Map() and Set() data structures instead of arrays when appropriate.  We are also planning to increase the amount we use Immutable.js with React so I accepted to give a hand-wavey explanation of persistent data structures.</p>
+<p>I should have spent more time the persistent data structure section.  I think people got that we can check for changes in constant time (by reference equality) but I don’t think I did a great job of giving people a rough idea of how the internal bookkeeping works.</p>
+<p>An infinite amount of time to fact check my slides would also have been nice :-).</p>
+<p><a href="/pdfs/Data Structures for Web Devs.pdf">Presentation</a></p>
 
       
     </div>
@@ -315,7 +422,7 @@ ga('send', 'pageview');
 <p>From what I’m seeing so far, it seems to be possible to classify accessory listings that have a high ratio of unique terms.</p>
 <p><em>Note: I would have used a histogram graph but I couldn’t get the google charts histogram to work with a custom scale.</em></p>
 <p><strong>Examples of product listings:</strong></p>
-<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart367"></div>
+<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart1929"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -324,12 +431,12 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart367"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart1929"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
-<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart4010"></div>
+<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart774"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -338,13 +445,13 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart4010"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart774"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
 <p><strong>Examples of accessory listings:</strong></p>
-<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart6079"></div>
+<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart8393"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -353,12 +460,12 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart6079"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart8393"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
-<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart5557"></div>
+<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart8294"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -367,14 +474,14 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart5557"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart8294"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
 </script></p>
 <p>I had to use a nonlinear scale (I used powers of 2) for the histogram buckets or all the unique (small probability) words ended up in the same bucket.</p>
 <p>There is a high rate of false positives (products being identified as accessories) when the listings are in languages other than English.  With so few non-English listings every word in these listings is unique across all listings.  It may be possible to figure out what language the listings are by using identifying listings which have unusual character n-grams distributions but I don’t now if there will be enough text per listing to do this reliably.</p>
-<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart9911"></div>
+<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart9103"></div>
 <script>
   if (!window.google) {
     document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
@@ -383,7 +490,7 @@ ga('send', 'pageview');
     (function() {
       google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
       google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart9911"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
+        (new google.visualization.ColumnChart(document.getElementById("googleChart9103"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
       });
     })();
   }
@@ -408,268 +515,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Designing-Data-Intensive-Applications" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/03/Designing-Data-Intensive-Applications/">Designing Data-Intensive Applications</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/03/Designing-Data-Intensive-Applications/" class="article-date"><time datetime="2016-04-04T00:00:00.000Z" itemprop="datePublished">16-04-04</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This book is still in pre-release and I’ve enjoyed the first nine chapters.  It breaks a confusing field into logical pieces and then shows you how they fit together.  I’d recommend it to anyone who interested in databases or distributed systems.</p>
-<ul>
-<li>Does an amazing job of explaining the algorithms and data structures used to implement systems and what problems they are best at solving.</li>
-<li>Focuses on concepts and avoids the mistake of only talking about particular products or implementations.</li>
-<li>Explains different guarantees and the tradeoffs made in providing them.</li>
-<li>Shows how the CAP theorem is misleading when applied to real-world systems.  The author also has a <a href="https://martin.kleppmann.com/2015/05/11/please-stop-calling-databases-cp-or-ap.html" target="_blank" rel="external">Blog Post</a>.  Before this, I thought that quorum style systems with a majority were consistent but it turns out I didn’t even understand what the word consistent means.</li>
-<li>Lots of references and examples.  The author has pulled together a lot of material for this book.</li>
-</ul>
-<p><a href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads Page</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Meetup-Efficient-Analysis-with-SQL" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/03/30/Meetup-Efficient-Analysis-with-SQL/">Efficient Analysis with SQL</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/03/30/Meetup-Efficient-Analysis-with-SQL/" class="article-date"><time datetime="2016-03-31T00:00:00.000Z" itemprop="datePublished">16-03-31</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Science/">Data Science</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>The main part of the meetup was a presentation on tally tables, cross apply and normalization in SQL.  </p>
-<ul>
-<li>Talley tables are used to replace while loops and fill in missing data.  Examples are shift tables, fiscal day tables, and holiday tables.</li>
-<li>When creating tally tables set fill-rate to 100% as you won’t be adding/removing from them.</li>
-<li>Examples of using cross apply to pivot and unpivot (fold) data.</li>
-<li>Activity-based costing (task/material column/labor column/burden column) is denormalized whereas a debit-credit view is normalized (separate material row/labor row/ burden row).</li>
-<li>Interesting idea that normalization is about ‘fidelity’ and accurately modeling the real world.  I’ve always felt normalization was more a way of storing data in a general application-agnostic way so it didn’t need to change as the application evolves.</li>
-</ul>
-<p>This was followed by a short talk on scaling.</p>
-<ul>
-<li>Scaling is changing all the weights by the same factor so the ratio between weights remains unchanged.</li>
-<li>Scaling weights help pull them towards the unit circle.  If all the points are large values the get reduced and if they are all small they get increased.  Prevents numerical stability problems.</li>
-<li>If one axis has a small scale and the there large it can cause clustering algorithms to accidently combine clusters along the small scale axis.</li>
-<li>Other benefits of scaling are that gradient descent and learning rates will be faster.  It’s easier to find the minimum error of a circular cone.</li>
-<li>When scaling the mean and variance can be approximated by using a random sample of the data points.</li>
-<li>Interesting idea on finding anomalous events by treating them like n-grams and finding improbable chains of events.  For example, if event C has a high probability given event A and B then it not occurring could be considered anomalous.</li>
-</ul>
-<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/229944024/" target="_blank" rel="external">Meetup Event</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/">Exploring Shannon&#39;s Prediction And Entropy Of Printed English Paper</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/03/28/Exploring-Shannon-s-Prediction-And-Entropy-Of-Written-English/" class="article-date"><time datetime="2016-03-29T00:00:00.000Z" itemprop="datePublished">16-03-29</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Tried and mostly failing to replicate the results from <a href="http://languagelog.ldc.upenn.edu/myl/Shannon1950.pdf" target="_blank" rel="external">Shannon’s paper</a> using War and Peace as a stand in for “The English Language”.</p>
-<p>I say mostly because I’m pretty sure I am measuring the entropy measurements for different length n-grams in the English language but it turns out I’m calculating isolated symbols entropy while Shannon is calculating conditional n-gram entropy.<br><a href="https://stackoverflow.com/questions/9604460/how-to-find-out-the-entropy-of-the-english-language" target="_blank" rel="external">Helpful SO answer</a></p>
-<p>I did get interesting results for the top 10 unigrams and bigrams:</p>
-<div id="googleChart4606"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.PieChart(document.getElementById("googleChart4606"))).draw(google.visualization.arrayToDataTable([['Unigram', 'Probability'],['other', 0.24359794],['" "', 0.1826038],['e', 0.1017603],['t', 0.07308632],['a', 0.06643674],['o', 0.06226344],['n', 0.05945337],['i', 0.05626013],['h', 0.05403983],['s', 0.05258396],['r', 0.04791417]]),{"legend":"none","pieSliceText":"label","slices":{"0":{"color":"gray"}},"title":"Top 10 Unigrams","width":"500","height":400});
-      });
-    })();
-  }
-</script>
-<div id="googleChart8184"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.PieChart(document.getElementById("googleChart8184"))).draw(google.visualization.arrayToDataTable([['Bigram', 'Probability'],['other', 0.80588987],['"e "', 0.03586495],['" t"', 0.02825758],['"d "', 0.02448941],['"he"', 0.02429185],['"th"', 0.02381377],['" a"', 0.02245183],['"s "', 0.02028996],['"t "', 0.01880665],['" h"', 0.01607567],['"in"', 0.01563341]]),{"legend":{"position":"left"},"pieSliceText":"label","slices":{"0":{"color":"gray"},"1":{"offset":0.2}},"title":"Top 10 Bigrams","width":"500","height":400});
-      });
-    })();
-  }
-</script>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/ShannonPredictionAndEntropyOfPrintedEnglish.cs" target="_blank" rel="external">Source Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Left-Pad-Libration" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/03/22/Left-Pad-Libration/">Left Pad Liberation</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/03/22/Left-Pad-Libration/" class="article-date"><time datetime="2016-03-23T00:00:00.000Z" itemprop="datePublished">16-03-23</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>It looks like npm removed a module to avoid possible brand infringement leading to the author removing all of his modules from npm.  Among the modules removed is a widely used module called ‘left-pad’ which triggered a cascade of build failures in some of the most popular projects on npm.</p>
-<p>There was an interesting point made that this may be a consequence having a global namespace for package names instead of an origin.package style namespace.  The argument being it would make it more obvious that Azer.kik didn’t come from Kik (the company) removing possible confusion and weakening any brand infringement claims.</p>
-<p><a href="https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.iosd48tfi" target="_blank" rel="external">Author’s Post</a><br><a href="http://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/" target="_blank" rel="external">Register UK</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/11/">11</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/15/">15</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -678,7 +527,7 @@ ga('send', 'pageview');
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           
   <div class="sidebar-module sidebar-module-inset">
-  <h4>Ingredients</h4>
+  <h4>Blog Ingredients</h4>
   <p>⅓ notebook ⅓ bookmarks ⅓ random</p>
 
 </div>
@@ -708,7 +557,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/GDG/">GDG</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">17</span></li></ul>
   </div>
 
 
