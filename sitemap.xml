@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
+    
+    <lastmod>2016-04-15T21:15:19.887Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
+    
+    <lastmod>2016-04-15T21:13:01.898Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/03/Building-Microservices-Review/</loc>
+    
+    <lastmod>2016-04-15T21:12:14.465Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/04/14/Postmortem-for-global-GCE-outage/</loc>
     
     <lastmod>2016-04-14T22:54:57.497Z</lastmod>
@@ -40,13 +61,6 @@
     <loc>https://dforshner.github.io/2015/12/15/Hiring-Hacks-How-Stack-Overflow-Interviews-Engineers/</loc>
     
     <lastmod>2016-04-14T17:05:59.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
-    
-    <lastmod>2016-04-14T17:03:12.420Z</lastmod>
     
   </url>
   
@@ -467,13 +481,6 @@
     <loc>https://dforshner.github.io/2016/02/24/Why-Should-Software-Architects-Write-Code/</loc>
     
     <lastmod>2016-04-14T14:56:00.085Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
-    
-    <lastmod>2016-04-14T14:55:56.640Z</lastmod>
     
   </url>
   
