@@ -2,23 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
+    <loc>https://dforshner.github.io/2013/04/27/Web-Intelligence-and-Big-Data-Course/</loc>
     
-    <lastmod>2016-04-15T21:15:19.887Z</lastmod>
+    <lastmod>2016-04-22T17:23:36.005Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
+    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
     
-    <lastmod>2016-04-15T21:13:01.898Z</lastmod>
+    <lastmod>2016-04-22T16:59:52.882Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/29/Odds-Ends-March-2016/</loc>
+    
+    <lastmod>2016-04-22T16:46:51.198Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/08/31/Odds-Ends-September-2012/</loc>
+    
+    <lastmod>2016-04-22T16:46:13.892Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
+    
+    <lastmod>2016-04-22T16:45:15.068Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/20/DevOps-Amazingly-Awesome-Ansible-Meetup/</loc>
+    
+    <lastmod>2016-04-22T15:58:53.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2012/11/30/Odds-Ends-December-2012/</loc>
+    
+    <lastmod>2016-04-22T15:51:32.344Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
+    
+    <lastmod>2016-04-22T15:08:39.763Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2015/05/31/Algorithms-in-a-Nutshell/</loc>
+    
+    <lastmod>2016-04-22T15:05:06.743Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
+    
+    <lastmod>2016-04-21T19:12:16.149Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2016/02/03/Building-Microservices-Review/</loc>
     
-    <lastmod>2016-04-15T21:12:14.465Z</lastmod>
+    <lastmod>2016-04-21T19:11:49.243Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/03/Designing-Data-Intensive-Applications/</loc>
+    
+    <lastmod>2016-04-21T19:11:34.407Z</lastmod>
     
   </url>
   
@@ -26,13 +89,6 @@
     <loc>https://dforshner.github.io/2016/04/14/Postmortem-for-global-GCE-outage/</loc>
     
     <lastmod>2016-04-14T22:54:57.497Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/</loc>
-    
-    <lastmod>2016-04-14T22:53:41.918Z</lastmod>
     
   </url>
   
@@ -82,13 +138,6 @@
     <loc>https://dforshner.github.io/2016/02/17/Boltmade-CodeRetreat-Rule110/</loc>
     
     <lastmod>2016-04-14T15:01:04.527Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/04/07/Card-Sorting-Meetup/</loc>
-    
-    <lastmod>2016-04-14T15:01:00.240Z</lastmod>
     
   </url>
   
@@ -352,13 +401,6 @@
   </url>
   
   <url>
-    <loc>https://dforshner.github.io/2015/02/28/Odds-Ends-March-2015/</loc>
-    
-    <lastmod>2016-04-14T14:57:17.231Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dforshner.github.io/2013/07/31/Odds-Ends-September-2013/</loc>
     
     <lastmod>2016-04-14T14:57:11.629Z</lastmod>
@@ -502,13 +544,6 @@
     <loc>https://dforshner.github.io/2015/05/29/Algorithms-Design-and-Analysis-Part-II/</loc>
     
     <lastmod>2016-04-14T14:55:00.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2015/05/31/Algorithms-in-a-Nutshell/</loc>
-    
-    <lastmod>2016-04-14T14:54:56.170Z</lastmod>
     
   </url>
   

@@ -135,6 +135,71 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-DevOps-Amazingly-Awesome-Ansible-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/20/DevOps-Amazingly-Awesome-Ansible-Meetup/">DevOps - Amazingly Awesome Ansible Meetup</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/20/DevOps-Amazingly-Awesome-Ansible-Meetup/" class="article-date"><time datetime="2016-04-21T00:00:00.000Z" itemprop="datePublished">16-04-21</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DevOps/">DevOps</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Another great workshop with the people at <a href="www.boltmade.com">Boltmade</a>.  This time around, it was series of exercises to refactor the deployment of a cloud app using <a href="https://www.ansible.com/" target="_blank" rel="external">Ansible</a>.</p>
+<p>At its most basic Ansible is a way of replacing your app’s initialization shell scripts or manual deployment steps.</p>
+<p>Deployments will become complex over time.  Shell scripts hit a complexity wall where you have to give up and start over with a config management system.  Ansible is simple to start with and can evolve as complexity grows over time.  Extremely useful if you are deploying unusual combinations of software.</p>
+<p>Puppet &amp; Chef require a remote deploy server, so there is a centralized point of failure.  With Ansible, you just ssh in and start doing stuff so it can also provision a local server.</p>
+<p>Deployments are not static.  Ansible allows you to tie your deployment requirements to your source making deployment repeatable and easy.  By looking at your source history, you can see how your server requirements have changed over time.  You can look at old versions of your application and see what the infrastructure was like back then.  It also captures any workarounds required to deploy combinations of software and infrastructure versions.</p>
+<p>Ansible is a structured way of accomplishing a deployment.  It gives you a common language for how things are configured/deployed at your company.  The release engineers who follow you can understand your deployment process (playbook) because it has standard <em>style</em>.  Removes the need to have separate documents for how things should be setup.</p>
+<p>It’s possible to configure Ansible to do idempotent deployments so you can deploy again and again and get same results.  Ansible can be made smart enough to skip steps that aren’t needed.  You won’t need to comment out sections (like you have to with bash scripts) while doing iterative development.</p>
+<p>A potential downside of ansibles simplicity is that if you can forget about temporary fixes while getting things working that come back and haunt you later (ex: hardcoded/default passwords).</p>
+<p>Random Notes:</p>
+<ul>
+<li><u>Galaxy Roles</u> - Community built roles you can use but they can be overkill (for large server farms) and have poor practices.</li>
+<li>Ansible + Vagrant = Can deploy both a real server and setup a development environment using the same scripts.  You may have to do some extra work to make vagrant behave like a remove box.</li>
+<li><u>Ansible Vault</u> will encrypt data so it can be stored with the rest of the application code in source control.  It will only be decrypted when Ansible is provisioning a box.</li>
+<li>Could install Ansible on the load balancer which will have access to inner boxes.</li>
+</ul>
+<p><a href="http://www.meetup.com/boltmade-sessions/events/230344829/?rv=cr1&amp;_af=event&amp;_af_eid=230344829&amp;https=off" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Postmortem-for-global-GCE-outage" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -168,6 +233,92 @@ ga('send', 'pageview');
         <p>Google compute engine (GCE) was down globally for 18 minutes on the 11th.  The usual culprit of configuration error was present but there was also a series of bugs that combined together to propagate a bad configuration into production.</p>
 <p>It’s fascinating how small things combine to wreak havoc on large scale systems.  Google is constantly testing so I imagine theses bugs have been quietly waiting in edge case land until random chance brings them together.  With enough scale and complexity, the improbable becomes probable.</p>
 <p><a href="https://status.cloud.google.com/incident/compute/16007" target="_blank" rel="external">Incident Report</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/">Exploring Finding Entity Aliases Using MinHash Approximate Similarity</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failure/">Failure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I tried to use a MinHash to group similar product listings, but it didn’t work out.  I was trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated with it that are listed under its different aliases I should be able to generate a set of aliases by grouping similar documents together.</p>
+<p>The data I’m working with has multiple versions of the same manufacturer.</p>
+<table>
+<thead>
+<tr>
+<th>Manufacturer</th>
+<th>Listing Text</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fujifilm Canada</td>
+<td>Fujifilm FinePix JV100 12 MP Digital Camera with 3x Optical Zoom and 2.7-Inch LCD (Black)</td>
+</tr>
+<tr>
+<td>FUJIFILM</td>
+<td>Fujifilm FinePix XP10 12 MP Waterproof Digital Camera with 5x Optical Zoom and 2.7-Inch LCD (Black)</td>
+</tr>
+<tr>
+<td>Fujifilm Imaging Systems</td>
+<td>Fujifilm Finepix Z700EXR Digitalkamera (12 Megapixel, 5-fach opt.Zoom, 8,9 cm Display, Bildstabilisator) silber</td>
+</tr>
+<tr>
+<td>FUJIFILM Electronic Imaging Europe GmbH - Firstorder</td>
+<td>Fujifilm FINEPIX Z90 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 7,6 cm (3 Zoll) Display) silber</td>
+</tr>
+<tr>
+<td>Fuji Photo Film Europe GmbH</td>
+<td>Fujifilm FINEPIX JX280 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 6,9 cm (2,7 Zoll) Display) schwarz</td>
+</tr>
+</tbody>
+</table>
+<p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
+<p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
+<p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
+<p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
 
       
     </div>
@@ -242,99 +393,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/">Exploring Finding Entity Aliases Using MinHash Approximate Similarity</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failure/">Failure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I’m trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated with it that are listed under its different aliases I should be able to generate a set of aliases by grouping similar documents together.</p>
-<p>The data I’m working with has multiple versions of the same manufacturer.</p>
-<table>
-<thead>
-<tr>
-<th>Manufacturer</th>
-<th>Listing Text</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fujifilm Canada</td>
-<td>Fujifilm FinePix JV100 12 MP Digital Camera with 3x Optical Zoom and 2.7-Inch LCD (Black)</td>
-</tr>
-<tr>
-<td>FUJIFILM</td>
-<td>Fujifilm FinePix XP10 12 MP Waterproof Digital Camera with 5x Optical Zoom and 2.7-Inch LCD (Black)</td>
-</tr>
-<tr>
-<td>Fujifilm Imaging Systems</td>
-<td>Fujifilm Finepix Z700EXR Digitalkamera (12 Megapixel, 5-fach opt.Zoom, 8,9 cm Display, Bildstabilisator) silber</td>
-</tr>
-<tr>
-<td>FUJIFILM Electronic Imaging Europe GmbH - Firstorder</td>
-<td>Fujifilm FINEPIX Z90 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 7,6 cm (3 Zoll) Display) silber</td>
-</tr>
-<tr>
-<td>Fuji Photo Film Europe GmbH</td>
-<td>Fujifilm FINEPIX JX280 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 6,9 cm (2,7 Zoll) Display) schwarz</td>
-</tr>
-</tbody>
-</table>
-<p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
-<p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
-<p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
-<p>I’ll come back to this code and validate using longer texts.  The examples of MinHash I’ve seen are all on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-Card-Sorting-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/07/Card-Sorting-Meetup/">Card Sorting</a>
+      <a class="article-title" href="/2016/04/07/Card-Sorting-Meetup/">Card Sorting Meetup</a>
     </h3>
   
 
@@ -358,10 +423,10 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>The session centered on using the  <a href="https://en.wikipedia.org/wiki/Card_sorting" target="_blank" rel="external">card sorting</a> to develop intuitive layouts.  For example, developing a website navigation structure that is obvious to users.  Card sorting is considered a brainstorming step, so it’s important that users focus on grouping into categories and not on designing the site.</p>
+        <p>The session centered on using the <a href="https://en.wikipedia.org/wiki/Card_sorting" target="_blank" rel="external">card sorting</a> technique to develop intuitive layouts.  For example, developing a website navigation structure that is obvious to users.  Card sorting is considered a brainstorming step, so it’s important that users focus on grouping into categories and not on designing the site.</p>
 <p>Card sorting comprises grouping cards that describe features and content into groups.  The number of cards ranges from 30 Cards for a general user to 60 cards for a domain expert.  Users should aim for 5+ groupings.</p>
 <p>In the first half, we got into groups and did an open card sort in groups of 2-4 people.  In an open card sort, users generate their own categories when grouping the cards.  It’s a generative tool used to discover the categories and vocabulary that users use.</p>
-<p>The discussions that occur while a group is doing the sort are a valuable source for information you won’t get from an individual card sort.  Disagreements can be a good thing that allows the best ideas to rise to the top but you want to be careful to prevent an individual group member from dominating the conversation.</p>
+<p>The discussions that occur while a group is doing the sort are a valuable source for information you won’t get from an individual card sort.  Disagreements can be a good thing that allows the best ideas to rise to the top, but you want to be careful to prevent an individual group member from dominating the conversation.</p>
 <p>In the second half, we did a closed card sort as individuals using <a href="https://www.optimalworkshop.com/" target="_blank" rel="external">optimal workshop</a>.  Closed card sorts have pre-defined categories and are best for validating your design. </p>
 <p>The presenter pointed out that prototypes are the best way of validating that users can find stuff.  They use card sorting to help develop a prototype and then use the prototype to do their validation.  As an example, they showed a series of paper screen mock-ups they asked users to navigate while performing different tasks.</p>
 <p><a href="http://www.meetup.com/boltmade-sessions/events/229760347/" target="_blank" rel="external">Meetup Event</a></p>
@@ -384,141 +449,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/">Exploring Classifying Documents Using Distribution Of Term Probabilities</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/06/Exploring-Classifying-Documents-Using-Distribution-Of-Term-Uniqueness/" class="article-date"><time datetime="2016-04-07T00:00:00.000Z" itemprop="datePublished">16-04-07</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I’m looking a way to classify product listings as either a product or a product accessory.  My current idea is to classify listings based on how their term probabilities are distributed.</p>
-<p>The idea is to find the probability of each term in a listing and use them to build a histogram to get an idea how the common and unique terms are distributed for a listing.</p>
-<p><strong>Examples of common words</strong>: camera, digital, zoom, optical, with, lcd, megapixel, lens, canon, black, and, mp, digitalkamera, cm, 27</p>
-<p><strong>Examples of unique words</strong>: rings, eb575152vu, i9000, galaxys, 1080mah, funtionality, bp511a, zs7, enel5, 1100mah, mll3, 228825, np20, negative, scanner</p>
-<p>I’m assuming that a <em>typical</em> product listing generally has one model number (unique) and a bunch of common terms while an accessory listing usually has multiple model numbers.  If this is true it should be possible to classify a listing as either a product or a product accessory from the distribution of term probabilities.</p>
-<p>From what I’m seeing so far, it seems to be possible to classify accessory listings that have a high ratio of unique terms.</p>
-<p><strong>Note:</strong> <em>I wanted to use a histogram but I couldn’t get the hexo google charts plugin to make a histogram with a custom scale</em> 😕</p>
-<p><strong>Examples of product listings:</strong></p>
-<p><em>samsung sh100 142mp wifi digital camera with 5x optical zoom in silver 8gb accessory kit</em><br><div id="googleChart8399"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart8399"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 5, '#358452'],['25.0', 0, '#358452'],['12.05', 3, '#358452'],['6.025', 2, '#358452'],['3.0125', 1, '#358452'],['1.05625', 1, '#358452'],['0.7812', 1, '#358452'],['0.3906', 2, '#358452'],['0.1953', 0, '#358452'],['0.0976', 0, '#358452'],['0.0488', 0, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
-      });
-    })();
-  }
-</script></p>
-<p><em>canon eos rebel t3i 18 mp cmos digital slr camera and digic 4 imaging body only</em><br><div id="googleChart5120"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart5120"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 2, '#358452'],['25.0', 1, '#358452'],['12.05', 3, '#358452'],['6.025', 1, '#358452'],['3.0125', 4, '#358452'],['1.05625', 2, '#358452'],['0.7812', 0, '#358452'],['0.3906', 1, '#358452'],['0.1953', 0, '#358452'],['0.0976', 1, '#358452'],['0.0488', 1, '#358452'],['0.0244', 0, '#358452'],['0.0122', 0, '#358452'],['0.0061', 0, '#358452'],['0.0003', 0, '#358452']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
-      });
-    })();
-  }
-</script></p>
-<p><strong>Examples of accessory listings:</strong></p>
-<p><em>310 digital camera video mask now rated to 65 feet</em>)<br><div id="googleChart2756"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart2756"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 2, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 0, '#B65C49'],['1.05625', 0, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 1, '#B65C49'],['0.0976', 2, '#B65C49'],['0.0488', 0, '#B65C49'],['0.0244', 0, '#B65C49'],['0.0122', 1, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 3, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
-      });
-    })();
-  }
-</script></p>
-<p><em>optekas extreme travelers essentials kit by opteka package inlcudes excursion series c900 fullsize waterproof canvas bag 6501300mm and 500mm telephoto lenses heavy duty tripod and monopod and much more for pentax k10d k20d k100d k110d k200d ist digital slr cameras</em><br><div id="googleChart8245"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart8245"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 1, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 5, '#B65C49'],['3.0125', 1, '#B65C49'],['1.05625', 2, '#B65C49'],['0.7812', 5, '#B65C49'],['0.3906', 1, '#B65C49'],['0.1953', 4, '#B65C49'],['0.0976', 1, '#B65C49'],['0.0488', 9, '#B65C49'],['0.0244', 3, '#B65C49'],['0.0122', 5, '#B65C49'],['0.0061', 3, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
-      });
-    })();
-  }
-</script></p>
-<p>I had to use a nonlinear scale (I used powers of 2) for the histogram buckets or all the unique (small probability) words ended up in the same bucket.</p>
-<p>There is a high rate of false positives (products being identified as accessories) when the listings are in languages other than English.  With so few non-English listings every word in these listings is unique across all listings.  It may be possible to figure out what language the listings are by using identifying listings which have unusual character n-grams distributions but I don’t now if there will be enough text per listing to do this reliably.</p>
-<p><em>jendigital jd 5200 z3 digitalkamera 50 2560 x 1920 32mb</em><br><div id="googleChart6177"></div>
-<script>
-  if (!window.google) {
-    document.body.innerHTML = 'You need to include the script //google.com/jsapi on your template';
-    throw 'Google JS API is needed';
-  } else {
-    (function() {
-      google.load('visualization', '1.0', {'packages': ["corechart","geochart","table"]});
-      google.setOnLoadCallback(function() {
-        (new google.visualization.ColumnChart(document.getElementById("googleChart6177"))).draw(google.visualization.arrayToDataTable([["Probability", "Count", { role: 'style' }],['50.0', 0, '#B65C49'],['25.0', 0, '#B65C49'],['12.05', 0, '#B65C49'],['6.025', 0, '#B65C49'],['3.0125', 2, '#B65C49'],['1.05625', 1, '#B65C49'],['0.7812', 1, '#B65C49'],['0.3906', 0, '#B65C49'],['0.1953', 0, '#B65C49'],['0.0976', 0, '#B65C49'],['0.0488', 1, '#B65C49'],['0.0244', 1, '#B65C49'],['0.0122', 2, '#B65C49'],['0.0061', 0, '#B65C49'],['0.0003', 0, '#B65C49']]),{"legend":{"position":"none"},"title":"Term Probability Distribution","width":"600","height":"200"});
-      });
-    })();
-  }
-</script></p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/ClassifyingDocumentsUsingDistributionOfTermUniqueness.cs" target="_blank" rel="external">The messy code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/16/">16</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li class="disabled"><span class="page-prev"><i class="fa fa-chevron-left"></i> Prev</a></li><li class="active"><span class="page-number">1</span></li><li><a class="page-number" href="/page/2/">2</a></li><li><a class="page-number" href="/page/3/">3</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/17/">17</a></li><li><a class="page-next" rel="next" href="/page/2/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -557,7 +491,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">12</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Review/">Review</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 
