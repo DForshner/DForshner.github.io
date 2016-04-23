@@ -135,6 +135,110 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Odds-Ends-March-2013" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2013/02/28/Odds-Ends-March-2013/">Odds &amp; Ends - March 2013</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2013/02/28/Odds-Ends-March-2013/" class="article-date"><time datetime="2013-03-01T00:00:00.000Z" itemprop="datePublished">13-03-01</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
+<ul>
+<li>Lines of code represent an expenditure, not an accomplishment.</li>
+<li>In large systems interfaces matter.  There is a danger that people will start playing fast and loose with interfaces by passing around nested maps and lists and then expecting the other side to understand the encoding.  Be explicit!</li>
+<li>In ECMAScript one should use an object not an array for a set of key/value pairs.  If you use an array all you are getting is the extra baggage of an array’s methods what won’t work.</li>
+<li>Functions without side-effects are pure data transformations.  Something comes in and something comes out.  The results are predictable.  Functions that rely on side effects or additional inputs (databases) are complicated.</li>
+<li>Doing proper single responsibility principal often results in a class with one method … aka a function.</li>
+<li><em>Collections vs. Streams</em><ul>
+<li>Collection - (eager, a full warehouse) data structure which holds all values in memory.  Each element must be computed before it can be added.<ul>
+<li>Values are spread out in space (computer memory) (which all exist at one point in time).</li>
+</ul>
+</li>
+<li>Streams - (lazy, just in time) data structure where elements are computed on demand.  Liked producer/consumer or lazy version of a collection.<ul>
+<li>Values are spread out in time (which repeatedly appear at the same point.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>User interaction -&gt; data change -&gt; view render<ul>
+<li>Render on the data change, not the user interaction!  The model is a single source of truth!</li>
+</ul>
+</li>
+<li>Layers Pattern<ol>
+<li>UI - Views and models</li>
+<li>Controller - Application composition</li>
+<li>Service Layer - Business composition and coordination.</li>
+<li>Repositories (data access), Calculators (algorithms), and Query Objects (helpers).</li>
+</ol>
+</li>
+<li><em>C# Anonymous functions</em><ul>
+<li>Can declare a variable with the same name as static/instance variable of the outer class.</li>
+<li>Can access static/instance variables of enclosing class</li>
+<li>Cannot access any ref/out variables inside an anonymous method.</li>
+<li>Cannot declare a variable with the same name as a variable in the outer method.</li>
+</ul>
+</li>
+<li><em>Closure</em> - Is not a concrete element or synonym for an anonymous function or lambda expression!  It’s a behavior that allows us to declare an anonymous function that refers to local variables outside said function and not worry about that variables lifespan.</li>
+<li><em>Abstract Base Class vs. Interface</em><ul>
+<li>Abstract Base Class - “Is a”<ul>
+<li>Ex: Dog is a mammal</li>
+<li>This is core functionality of this class</li>
+<li>Adds constraint that there can be only one base class</li>
+</ul>
+</li>
+<li>Interface - “acts like”, “is verb”<ul>
+<li>Ex: Book is IWritable, Dog acts like an IEater</li>
+<li>This is trait of an object, not necessarily its core functionality</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The key principal of HTTP is that resources are sent in the message body, using content negotiation to specify the representation of the resource.</li>
+<li>In C++ ptr[3] means <em>(ptr + 3) which can be written as </em>(3 + ptr) or 3[ptr] :-)</li>
+<li>To reduce stalls due to the GC we circumvented it by replacing all heap allocations with the use of pre-allocated arrays of values types, effectively implementing manual memory management inside a managed language.</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Functional-vs-Imperative-Environments" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -403,81 +507,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Odds-Ends-September-2012" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2012/08/31/Odds-Ends-September-2012/">Odds &amp; Ends - September 2012</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2012/08/31/Odds-Ends-September-2012/" class="article-date"><time datetime="2012-09-01T00:00:00.000Z" itemprop="datePublished">12-09-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li><u>The three virtues of programmers</u> - Hubris, Impatience, and Laziness. <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris" target="_blank" rel="external">src</a></li>
-<li><u>The curse of the gifted</u> - A tendency to lean on your natural ability too much, because you have always been rewarded for doing that and self-discipline would take actual work.   <a href="https://lwn.net/2000/0824/a/esr-sharing.php3" target="_blank" rel="external">src</a></li>
-<li><u>Classic 3 Tier</u> - Presentation / Buisness Logic (rules) / Data Source (queries)</li>
-<li>Typing Types<ul>
-<li><u>Exact typing</u> - Only ducks are ducks</li>
-<li><u>Interface typing</u> - If it says it’s a duck, </li>
-<li><u>Duck typing</u> - If it quacks like a duck then we don’t care as long as it has the fields/methods we need.</li>
-</ul>
-</li>
-<li><u>Mark and Sweep GC</u> - Pause, find all variables in current scope, find all resources that are reachable from variables in scope and free the rest.  AKA “stop the world GC”.</li>
-<li><u>Reference counting GC</u> - Each resource has a count of # of places it’s being used (references).  When the code is done with the resource, the count will decrease to zero so it can’t be freed. Vulnerable to circular references because counts will never reach zero.</li>
-<li><u>Dynamic Dispatch</u> - Not knowing what function you will call until runtime.</li>
-<li><u>Encoding Scheme</u> - Encodes data for a specific purpose (easier to transmit, read, convert to new format).</li>
-<li>More code = Harder to fit in IL cache so more cache evictions and harder to inline.</li>
-<li>More branches = more branch predictions = more branch mispredictions.</li>
-<li><u>Dependancy Inversion Principle</u> - program to interfaces or abstract base classes.</li>
-<li><u>System call</u> - Userspace request of a kernel service.</li>
-<li><u>High Cohesion</u> - Keeping parts of a codebase that are related to each other in single place.</li>
-<li><u>Low coupling</u> - Separating unrelated parts of the codebase as much as possible.</li>
-<li><u>Domain Event</u> - Anything that happens that is of interest to a domain expert.</li>
-<li>You call a library, a framework calls you.  A library is a tool … A framework is a way of life. <a href="https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library" target="_blank" rel="external">src</a></li>
-<li>Pure functions &gt; Functions with state &gt; Functions with side effects &gt; Factory functions.</li>
-<li>A member function has a hidden argument called ‘’this’’ that is the specific object we are operating on (the context of the function call).</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
@@ -520,7 +549,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">13</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 
