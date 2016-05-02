@@ -135,6 +135,166 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Odds-Ends-June-2015" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/05/31/Odds-Ends-June-2015/">Odds &amp; Ends - June 2015</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/05/31/Odds-Ends-June-2015/" class="article-date"><time datetime="2015-06-01T00:00:00.000Z" itemprop="datePublished">15-06-01</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
+<ul>
+<li>Attention is the currency of our age</li>
+<li>Innovation is found at the boundaries between disciplines, not by narrowly focusing in one sphere.</li>
+<li>Many developers derive pleasure from removing bugs that they should not have created in the first place.  Instead, structure code so it correct the first time and make it as easy to debug as possible.</li>
+<li>Losing 20% of your data is worse than losing 100% because you don’t know what you have lost.</li>
+<li>Aside from making reasonable algorithm choices, cache misses are the main thing you need to worry about for performance.  Compared to cache misses, minor efficiency improvements just don’t matter.</li>
+<li>If you are waiting for the network it probably doesn’t matter how slow your network is.</li>
+<li>Idiomatic code: what the language wants you to do.</li>
+<li>If a language puts all your allocations on the heap it’s likely causing cache misses since you can’t decide how objects are organized in the heap.</li>
+<li>Each reference is 8 bytes on a 64-bit machine.</li>
+<li>Tell don’t ask - Rather than asking an object for data and acting on it, just tell the object what to do.  Let the object make its own decisions based on its own data.</li>
+<li>Interfaces break dependencies.<ul>
+<li>Runtime dependency - Flow of control leaves one module and enters another.</li>
+<li>Source code dependency - A name declared in one module appears in another module.</li>
+<li>If ModuleA.MethodA() calls ModuleB.MethodB() then ModuleA needs ModuleB to compile (source + runtime).</li>
+<li>If ModuleA.MethodA() calls InterfaceB.MethodB() then ModuleB need not exist to compile A (source only).</li>
+</ul>
+</li>
+<li>Acceptable Response Times<ul>
+<li>Loading - 1000mn - A splash screen helps</li>
+<li>Respond to finger down - 100ms<ul>
+<li>Users notice less than 100-150ms</li>
+<li>Remember that we may schedule a response but the engine may not get to it right away!</li>
+<li>Try for 100ms as it will be increased by scheduler delays.</li>
+</ul>
+</li>
+<li>Animation chunks - 6ms<ul>
+<li>60Hz so all work must take ~16ms (4ms for OS so 6ms left for work).</li>
+<li>Work must be schedulable in the 6ms available!</li>
+</ul>
+</li>
+<li>Idle/Cleanup - 50ms</li>
+</ul>
+</li>
+<li>Trees<ul>
+<li>Every path is a tree.  </li>
+<li>Trees are allowed to branch.  </li>
+<li>A tree is connected and n vertices have n-1 edges.</li>
+<li>Trees have unique chains of edges joining two vertices</li>
+<li>[A-B-C-D] Tree</li>
+<li>[A-B] [C-D] A forest containing two trees</li>
+<li>[A]→[B] Not a tree because there are 2 paths from A to D.<br> ↓   ↓<br>[C]→[D]</li>
+</ul>
+</li>
+<li>A chair is a resource.  A teammate is a human being.</li>
+<li>Projections - A piece of code that takes a series of events and produces a transient state from them.</li>
+<li>React - state flows down via properties and events flow up via callbacks.</li>
+<li>You only get one shot at encoding facts into a type system, and once you do you are stuck with them, so don’t try to encode too much, and make sure what you encode is fundamental (won’t change) about your business domain.</li>
+<li>ECMAScript Debugging tips: console.Table([1,2,3], [2,3,4]); object.observe(foo); console.trace(foo);</li>
+<li>Algorithm Correctness - Does it do what it is supposed to do?</li>
+<li>Algorithm Efficiency - Does it have a run-time that is polynomially bounded?</li>
+<li>Types of Equality - Reference equality, Identity Equality (same pk in DB), Logical Equality (value objects with identity fields)</li>
+<li>A hash is a fingerprint for data.  It takes data of any length and gives you a small fixed sized identifier that you can use to compare or identify the data.</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Algorithms-Design-and-Analysis-Part-II" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/05/29/Algorithms-Design-and-Analysis-Part-II/">Algorithms Design and Analysis - Part 2</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/05/29/Algorithms-Design-and-Analysis-Part-II/" class="article-date"><time datetime="2015-05-29T13:23:00.000Z" itemprop="datePublished">15-05-29</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Courses/">Courses</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MOOC/">MOOC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>Tim Roughgarden does an amazing job explaining how different algorithms work and the problems they are trying to solve.</li>
+<li>Great graph section covering different minimum spanning tree and shortest path algorithms.</li>
+<li>The best explanation of dynamic programming I’ve seen so far.</li>
+<li>The catchphrase ‘Can we do better?’ sticks in your head long after the course is over.</li>
+</ul>
+<p><a href="https://github.com/DForshner/Certificates/blob/master/Algorithms%20Design%20and%20Analysis%20-%20Part%202%20-%202015%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a><br><a href="https://www.coursera.org/course/algo2" target="_blank" rel="external">Course Link</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Table-Driven-Design-Example" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -169,57 +329,6 @@ ga('send', 'pageview');
 <p>Can be reduced to</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const fooByIsBarIsBaz = &#123;&#125;;</span><br><span class="line">fooByIsBarIsBaz[true] = &#123;&#125;;</span><br><span class="line">fooByIsBarIsBaz[true][true] = &apos;foo truetrue&apos;;</span><br><span class="line">fooByIsBarIsBaz[true][false] = &apos;foo truefalse&apos;;</span><br><span class="line">fooByIsBarIsBaz[false] = &#123;&#125;;</span><br><span class="line">fooByIsBarIsBaz[false][true] = &apos;foo falsetrue&apos;;</span><br><span class="line">fooByIsBarIsBaz[false][false] = &apos;foo falsefalse&apos;;</span><br><span class="line">const result = fooByIsBarIsBaz[isBar][isBaz];</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(fooByIsBarIsBaz); // &#123; false: &#123; false: &quot;foo falsefalse&quot;, true: &quot;foo falsetrue&quot; ...</span><br><span class="line">console.log(fooByIsBarIsBaz[true][false]); // foo truefalse</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Exploring-Min-Heap-Priority-Queue" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/">Exploring Min Heap Priority Queue</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/" class="article-date"><time datetime="2015-03-15T00:00:00.000Z" itemprop="datePublished">15-03-15</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>A heap-based implementation of a min priority queue.  I’m not sure why C# doesn’t have priority queues as part of the language.</p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/MinHeapPriorityQueue.cs" target="_blank" rel="external">The Code</a></p>
-
       
     </div>
 
@@ -301,13 +410,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-First-Look-at-React-js-Flux-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Exploring-Min-Heap-Priority-Queue" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/">First Look at React.js &amp; Flux Pattern</a>
+      <a class="article-title" href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/">Exploring Min Heap Priority Queue</a>
     </h3>
   
 
@@ -316,14 +425,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/" class="article-date"><time datetime="2015-03-13T00:00:00.000Z" itemprop="datePublished">15-03-13</time></a>
+  <a href="/2015/03/14/Exploring-Min-Heap-Priority-Queue/" class="article-date"><time datetime="2015-03-15T00:00:00.000Z" itemprop="datePublished">15-03-15</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
 
 
   </div>
@@ -331,88 +440,8 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>I took a crack at creating dashboards using Facebook’s React &amp; Flux libraries.</p>
-<ul>
-<li>It was easy to get something up working and then iterate on it.</li>
-<li>I found the functional concepts they are pushing a refreshing change from messing with jquery.  The code looks actually looks like code instead of a tangled rat’s nest of callbacks and dom mutations.</li>
-<li>It’s explicit about how state is stored and mutated.  People don’t think enough about this stuff and haveing it front and center is nice.</li>
-<li>The flux pattern is interesting.  I like how it separates concerns but it seems like there is a lot of code duplication.</li>
-<li>The idea of updating state and re-rendering reminds me of a game loop.</li>
-<li>I’m not sure how the virtual DOM will perform for larger views but the “native calls are slow” argument makes sense.  I’ve had screens with bad jank when lots of Backbone sub-views are re-rendered at the same time.</li>
-<li>The jsx concept of combining template(html) and code is a bit strange but I think they are on to something.  With Backbone, you usually end up editing the template/model/view files for most changes so I agree that they aren’t independent concerns.</li>
-<li>I also used Webstorm (support for jsx) for the first time and I’m not sure I can go back to using Visual Studio for JS.</li>
-</ul>
-<p><a href="https://github.com/DForshner/ReactFluxDashboardProto" target="_blank" rel="external">Prototype Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-March-2015" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2015/02/28/Odds-Ends-March-2015/">Odds &amp; Ends - March 2015</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2015/02/28/Odds-Ends-March-2015/" class="article-date"><time datetime="2015-03-01T00:00:00.000Z" itemprop="datePublished">15-03-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>Avoid misunderstandings by making the implicit explicit</li>
-<li>API Design - Don’t operate on one object if you can operate on many instead.  If you do something once, there is a good chance you will do it 100x times. <a href="https://medium.com/google-developers/if-i-ve-told-you-once-a0ccdb083e08#.r10n0j9ap" target="_blank" rel="external">src</a></li>
-<li>A good tech leads shield engineers from distractions and give support when needed.  Enable people to do their jobs.</li>
-<li>A good software architect makes the complex simple.  Your job is to reduce complexity.</li>
-<li>Pretend you had to create a schedule before you knew the requirements or you needed to estimate how long it will take to solve an unsolved problem.<ul>
-<li>When you don’t know what you are going to build then you cannot know how long it will take to build it.</li>
-<li>You only really know for sure what you are going to build when you finish it.</li>
-<li>A good way to document requirements is to create a user manual.</li>
-</ul>
-</li>
-<li>Code can be divided into algorithms that do work on data or coordinators that coordinate external dependencies with algorithms.  Algorithms are easy to test.</li>
-<li>Agile - build a little, test a little.</li>
-<li>When you have a mess of short functions plagued by lots of behavior modifying arguments the boundary between component and layers is slowly dissolved, and nobody is sure what particular effect a change may have anymore.</li>
-<li>Once you get rid of accidental complexity you are left with essential complexity, which cannot be reduced without removing functionality.</li>
-<li>Reference equality, value equality and identity (PK) equality … are not equal.</li>
-<li>One of the benefits of returning ASAP is the happy path isn’t identically nested anymore.</li>
-<li><u>Identity map pattern</u> - Ensures each object is only loaded once.  One copy of an entity will be loaded at a time per transaction.  One copy that everyone updates so, there are no update anomalies.</li>
-<li><u>Immutable Infrastructure</u> - Infrastructure built from golden images.  Changes are made to the images, and the entire infrastructure should be redeployed by destroying the old deployment.</li>
-</ul>
+        <p>A heap-based implementation of a min priority queue.  I’m not sure why C# doesn’t have priority queues as part of the language.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/MinHeapPriorityQueue.cs" target="_blank" rel="external">The Code</a></p>
 
       
     </div>
@@ -474,7 +503,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 

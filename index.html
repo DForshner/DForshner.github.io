@@ -135,6 +135,249 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/30/Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity/">Exploring Finding Entity Aliases Using N-Gram Similarity</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/30/Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity/" class="article-date"><time datetime="2016-05-01T00:00:00.000Z" itemprop="datePublished">16-05-01</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>This is my second attempt at generating entity aliases from a set of product listings.  In my <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/">first attempt</a> I tried to use MinHash to group similar product listings, but it didn’t work out.  This time, I’m going to be joining on n-grams of the manufacturer name and model number and then scoring the joins by the inverse term probability of the model n-grams.</p>
+<p>I’m planning to use this in a pre-processing stage so that when I block by canonical manufacturer names I can include listings that have different variations of the canonical name.</p>
+<p>For each listing, I’m attempting to find a <em>similar</em> canonical product record.  The criteria I’m using for something being similar are:</p>
+<ol>
+<li>Similar manufacture using character n-gram similarity</li>
+<li>Similar model using shingles made from model parts</li>
+</ol>
+<p>If I find enough instances where a listing is similar to a canonical product, I’ll consider the listing’s manufacturer name to be an alias for the canonical product’s manufacturer name.</p>
+<p>Here are some aliases I was able to find:</p>
+<table>
+<thead>
+<tr>
+<th>Canonical</th>
+<th>Alias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fujifilm</td>
+<td>fuji</td>
+</tr>
+<tr>
+<td>kodak</td>
+<td>eastman kodak company</td>
+</tr>
+<tr>
+<td>canon</td>
+<td>canon canada</td>
+</tr>
+<tr>
+<td>fujifilm</td>
+<td>fujifilm electronic imaging europe gmbh firstorder</td>
+</tr>
+<tr>
+<td>panasonic</td>
+<td>panasonic deutschland gmbh</td>
+</tr>
+<tr>
+<td>sony</td>
+<td>sony uk consumer electronics instock account</td>
+</tr>
+<tr>
+<td>fujifilm</td>
+<td>fuji photo film europe gmbh</td>
+</tr>
+<tr>
+<td>fujifilm</td>
+<td>fujifilm imaging systems</td>
+</tr>
+<tr>
+<td>kodak</td>
+<td>kodak stock account</td>
+</tr>
+<tr>
+<td>fujifilm</td>
+<td>fujifilm canada</td>
+</tr>
+<tr>
+<td>canon</td>
+<td>canon uk ltd</td>
+</tr>
+<tr>
+<td>olympus</td>
+<td>olympus canada</td>
+</tr>
+</tbody>
+</table>
+<p>My main goal was to relate listings with a manufacturer of <strong>fuji</strong> to <strong>fujifilm</strong> so it looks like this is going to work.  I had to change the scoring method to use the inverse term probably because some of the model names have common numbers or words <em>(ex: “zoom”)</em> which caused lots of false positives.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/AliasGenerationBySimilarManufacturerAndModel.cs" target="_blank" rel="external">Messy Source Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Text-Mining-with-Twitter-and-R-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/04/28/Text-Mining-with-Twitter-and-R-Meetup/">Text Mining with Twitter and R Meetup</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/04/28/Text-Mining-with-Twitter-and-R-Meetup/" class="article-date"><time datetime="2016-04-29T00:00:00.000Z" itemprop="datePublished">16-04-29</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>A follow along workshop on using R to do data mining on tweets.</p>
+<p><strong>Notes</strong></p>
+<ul>
+<li>Data pipeline: <strong>E</strong>xtract → <strong>C</strong>lean → <strong>T</strong>ransform → <strong>A</strong>nalyize</li>
+<li>Clean<ul>
+<li>Remove: Unicode emoji, punctuation, links, stop words, numbers, dates, URLs, white space</li>
+<li>Normalize to lowercase</li>
+<li><u>Stemming</u> - Truncate words to their radicals<ul>
+<li>Examples: cats → cat, ponies → poni</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Analysis<ul>
+<li><u>Part of speech tagging</u> - Tag each word with its part of speech in a sentence using definition and context.<ul>
+<li>Example: They refuse to permit -&gt; [pronoun] [verb] [to] [verb]</li>
+</ul>
+</li>
+<li><u>Word association</u> - Dot product of two words in a term document matrix gives correlation coefficient.</li>
+<li><u>Clustering</u> - Grouping similar tweets(docs) together<ul>
+<li><u>K-means</u> - Centroidal model, each cluster is represented by a single mean vector.<ul>
+<li>Algorithm: create random clusters → assign points to nearest cluster centroid → recalculate cluster centroids to the average of assigned data points → repeat.</li>
+</ul>
+</li>
+<li><u>Hierarchical</u> - Connectivity model</li>
+<li>Use cosine similarity as the distance function.  Cosine similarity normalizes for tweet(doc) length during the comparison.</li>
+</ul>
+</li>
+<li><u>Topic Mining</u> - Use probability of terms to discover information from documents.  Documents may belong to multiple topics.</li>
+</ul>
+</li>
+</ul>
+<p><em>Word association example:</em></p>
+<table>
+<thead>
+<tr>
+<th>Docs</th>
+<th>word 1</th>
+<th>word 2</th>
+<th>word 3</th>
+<th>word 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Correlation(word 2, word 3) = DotProduct([1,0,0,0], [1,1,0,0]) = 0.5</p>
+<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/230320500/" target="_blank" rel="external">Meetup Event</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Float-Toy" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -302,147 +545,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Data-Structures-for-Web-Devs-Presentation" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/11/Data-Structures-for-Web-Devs-Presentation/">Data Structures for Web Devs Presentation</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/11/Data-Structures-for-Web-Devs-Presentation/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Presentations/">Presentations</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I did a ½ presentation ½ discussion on data structures for our web developer team.</p>
-<p>Where I work developers come from different backgrounds and not everyone has a computer science vocabulary.  It was interesting trying to talk about data structures without cheating by using CS jargon.  It was surprising how much I depend on having a shared specialized language when discussing algorithms and data structures.  They weren’t joking when they said the easiest way to learn something is to explain it to someone else.</p>
-<p>I only had 1.5 hours, so it was tricky fitting in everything I wanted to go over with enough time to discuss each slide.  My goal was to persuade people to use ES6’s new Map() and Set() data structures instead of arrays when appropriate.  We are also planning to increase the amount we use Immutable.js with React so I accepted to give a hand-wavey explanation of persistent data structures.</p>
-<p>I should have spent more time the persistent data structure section.  I think people got that we can check for changes in constant time (by reference equality) but I don’t think I did a great job of giving people a rough idea of how the internal bookkeeping works.</p>
-<p>An infinite amount of time to fact check my slides would also have been nice :-).</p>
-<p><a href="/pdfs/Data Structures for Web Devs.pdf">Presentation</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/">Exploring Finding Entity Aliases Using MinHash Approximate Similarity</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/" class="article-date"><time datetime="2016-04-12T00:00:00.000Z" itemprop="datePublished">16-04-12</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Failure/">Failure</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I tried to use a MinHash to group similar product listings, but it didn’t work out.  I was trying to generate a list of aliases for entities by finding similar documents that have different entity names as attributes.  Assuming that an entity has multiple similar documents associated with it that are listed under its different aliases I should be able to generate a set of aliases by grouping similar documents together.</p>
-<p>The data I’m working with has multiple versions of the same manufacturer.</p>
-<table>
-<thead>
-<tr>
-<th>Manufacturer</th>
-<th>Listing Text</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fujifilm Canada</td>
-<td>Fujifilm FinePix JV100 12 MP Digital Camera with 3x Optical Zoom and 2.7-Inch LCD (Black)</td>
-</tr>
-<tr>
-<td>FUJIFILM</td>
-<td>Fujifilm FinePix XP10 12 MP Waterproof Digital Camera with 5x Optical Zoom and 2.7-Inch LCD (Black)</td>
-</tr>
-<tr>
-<td>Fujifilm Imaging Systems</td>
-<td>Fujifilm Finepix Z700EXR Digitalkamera (12 Megapixel, 5-fach opt.Zoom, 8,9 cm Display, Bildstabilisator) silber</td>
-</tr>
-<tr>
-<td>FUJIFILM Electronic Imaging Europe GmbH - Firstorder</td>
-<td>Fujifilm FINEPIX Z90 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 7,6 cm (3 Zoll) Display) silber</td>
-</tr>
-<tr>
-<td>Fuji Photo Film Europe GmbH</td>
-<td>Fujifilm FINEPIX JX280 Digitalkamera (14 Megapixel, 5-fach opt. Zoom, 6,9 cm (2,7 Zoll) Display) schwarz</td>
-</tr>
-</tbody>
-</table>
-<p>While these are all Finepix listings the manufacture name is different for each one.  This prevents me from blocking on the manufacturer’s name as a first stage when matching products to listings.</p>
-<p>I tried using the <a href="https://en.wikipedia.org/wiki/MinHash" target="_blank" rel="external">MinHash</a> technique to find approximately similar documents but I don’t think there’s enough text per listing to get a good join.  Using only unique tokens to generate the min hashes helped but I’m getting too many false negatives on the Fuji listings for this to be useful.</p>
-<p>Next, I’m going to generate n-grams using model numbers from the products file and doing a plain old <a href="https://en.wikipedia.org/wiki/Jaccard_index" target="_blank" rel="external">Jaccard similarity coefficient</a> instead.  Hopefully, that can let me group listings for the same model together.</p>
-<p>I’ll  probably come back to this code and try using it for another problem with long texts.  The examples of MinHash I’ve seen are on longer documents where they use shingles(n-grams where n &gt; 1) instead of just unigrams.</p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/FindingEntityAliasesUsingMinHashApproximateDocumentSimilarity.cs" target="_blank" rel="external">Messy Source Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
@@ -485,7 +587,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">8</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">18</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 

@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/04/28/Text-Mining-with-Twitter-and-R-Meetup/</loc>
+    
+    <lastmod>2016-05-02T15:40:39.840Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/04/30/Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity/</loc>
+    
+    <lastmod>2016-05-02T15:30:14.643Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/04/20/DevOps-Amazingly-Awesome-Ansible-Meetup/</loc>
     
     <lastmod>2016-04-27T16:13:02.577Z</lastmod>
