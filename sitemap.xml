@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dforshner.github.io/2016/05/11/Record-Linkage-Pipeline/</loc>
+    
+    <lastmod>2016-05-12T22:22:52.593Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dforshner.github.io/2016/05/05/Exploring-Classifying-Listings-Using-A-Naive-Bayes-Classifier/</loc>
     
     <lastmod>2016-05-06T21:00:45.880Z</lastmod>
