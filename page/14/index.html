@@ -135,6 +135,116 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Exploring-Probabilistic-Data-Structures" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2014/05/24/Exploring-Probabilistic-Data-Structures/">Exploring Probabilistic Data Structures</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2014/05/24/Exploring-Probabilistic-Data-Structures/" class="article-date"><time datetime="2014-05-25T00:00:00.000Z" itemprop="datePublished">14-05-25</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The Bloom filter and Count-Min Sketch data structures keep cropping while I’m reading so I figured I would try to implement them.  They are both part of a family of probabilistic data structures that give up accuracy to store a lot of information in a tiny amount of space.</p>
+<p><a href="https://en.wikipedia.org/wiki/Bloom_filter" target="_blank" rel="external">Bloom Filter</a> - Could I have seen this before?<br><a href="https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch" target="_blank" rel="external">Count–Min Sketch</a> - What’s the maximum number of times I could have seen this?</p>
+<p>It’s also worth looking at:<br><a href="https://en.wikipedia.org/wiki/HyperLogLog" target="_blank" rel="external">HyperLogLog</a> - Approximately how many unique elements have I seen?<br><a href="https://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/" target="_blank" rel="external">Great post on probabilistic data structures</a></p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/BloomFilter.cs" target="_blank" rel="external">Bloom Filter code</a><br><a href="https://github.com/DForshner/CSharpExperiments/blob/master/CountMinSketch.cs" target="_blank" rel="external">Count-Min Sketch code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Working-Out-Bayes-Theorem" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2014/05/02/Working-Out-Bayes-Theorem/">Working Out Bayes&#39; Theorem</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2014/05/02/Working-Out-Bayes-Theorem/" class="article-date"><time datetime="2014-05-03T00:00:00.000Z" itemprop="datePublished">14-05-03</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>This is mostly an excuse to play around with the MathJax library</em></p>
+<img src="/images/BayesDemo.png" width="200" height="200">
+<p>$Num(A) = 50$<br>$Num(B) = 15$<br>$Num(A∩B) = 5$<br>$Num(A∪B) = 65$</p>
+<p>Get probabilities from counts<br>$P(A) = \frac{50}{65} \approx 0.769$<br>$P(B) = \frac{15}{65} \approx 0.231$<br>$P(A∩B) = \frac{5}{65} \approx 0.0769$</p>
+<p>Get conditional probabilities from counts<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)} = \frac{5}{15} \approx 0.333$<br>$P(B|A) = \frac{Num(A∩B)}{Num(A)} = \frac{5}{65} \approx 0.077$</p>
+<p>Use the above to get counts from probabilities<br>$Num(A) = P(A) \times Num(A∪B) = \frac{0.769}{65} = 50$<br>$Num(B) = P(B) \times Num(A∪B) = \frac{0.231}{65} = 15$<br>$Num(A∩B) = P(A|B) \times Num(B) = \frac{0.333}{15} = 5$<br>$Num(A∩B) = P(B|A) \times Num(A) = \frac{0.077}{65} = 5$</p>
+<p>Turn counts into probabilities to get the conditional probability from other probabilities<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)}$<br>$P(A|B) = \frac{P(B|A) \times Num(A)}{P(B) \times Num(A∪B)}$<br>$P(A|B) = \frac{P(B|A) \times P(A) \times Num(A∪B)}{P(B) \times Num(A∪B)}$</p>
+<p>$Bayes’ Theorem = P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$</p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Heterogeneous-Parallel-Programming" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -332,155 +442,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Testable-JavaScript-Presentation" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2013/11/10/Testable-JavaScript-Presentation/">Testable JavaScript Presentation</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2013/11/10/Testable-JavaScript-Presentation/" class="article-date"><time datetime="2013-11-11T00:00:00.000Z" itemprop="datePublished">13-11-11</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing/">Testing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Mark Trostler has a <a href="http://www.infoq.com/presentations/javascript-testing" target="_blank" rel="external">great presentation</a> on creating testable JavaScript.</p>
-<ul>
-<li>Create all of the objects the system will ever need at the start (composition root) by building a tree of dependencies.  <ul>
-<li>Create general objects at application start and user/session specific objects at the request start.<ul>
-<li>Use an IOC/DI framework that is configured once at the start to constructor inject the dependencies.</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Cross-cutting concerns - Concerns that affect many areas of your application.  They cut across your application and do not align with modules.<ul>
-<li>Keep orthogonal responsibilities separate.</li>
-<li>Examples: Logging, validation, auditing, caching, security, profiling, exception handling, retry logic, authentication, authorization, encryption, etc.</li>
-<li>Use decorator pattern to create wrappers around your business objects that handle the cross-cutting concerns.</li>
-<li>Use your IOC container to wire up decorator chains.</li>
-</ul>
-</li>
-<li>Run-time (short-lived) dependancies - Can’t pass into constructor because we don’t know what they will need until run-time (user has to pick).<ul>
-<li>Pass run-time values into a factory pattern to get dependencies.</li>
-<li>Factory implementation is created at composition root and injected as a dependency via the constructor.</li>
-</ul>
-</li>
-<li>Program and test to interfaces.  <ul>
-<li>Interfaces are the API.</li>
-<li>Don’t worry about hiding via closures (revealing module pattern) just use the interfaces.</li>
-<li>Create many small interfaces that have a single responsibility.</li>
-</ul>
-</li>
-</ul>
-<p><a href="http://www.infoq.com/presentations/javascript-testing" target="_blank" rel="external">Presentation Link</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-September-2013" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2013/07/31/Odds-Ends-September-2013/">Odds &amp; Ends - September 2013</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2013/07/31/Odds-Ends-September-2013/" class="article-date"><time datetime="2013-08-01T00:00:00.000Z" itemprop="datePublished">13-08-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>An entity is identified by an ID whereas a value object is identified by its value.</li>
-<li>Enumerators flatten a collection so that the members can be accessed sequentially.</li>
-<li>The heart of OO is the encapsulation of data and members in a coherent class/object.<ul>
-<li>A class should fulfill the contact implied by its interface(s) so the caller need not know how it’s implemented.</li>
-<li>Objects communicate by sending each other messages through method calls.</li>
-</ul>
-</li>
-<li>Critique code, not people.  Teach people they are not their code.</li>
-<li>Null return values should be avoided.  It leads to null guard clauses at the top of every method which clutters the code.</li>
-<li>String and int make good hashmap keys because they are immutable.  If the key could be altered in a way the changed its hashcode we wouldn’t be able to find the object in the hashmap anymore!</li>
-<li>Building software is the process of finding solutions to complex problems, which involves perspective (understanding the problem) and heuristics (a means of solving it).  Experts tend to have similar viewpoints while novices bring new ways of thinking.  </li>
-<li>Give novices projects that involve:<ul>
-<li>Autonomy - Something to be responsible for.  Don’t just leave novices alone in the corner to “figure it out”.</li>
-<li>Mastery - People are incentivized by a challenge.</li>
-<li>Purpose - a meaningful part of the project.  Not just a pile of IE6 bugs to slog through.</li>
-</ul>
-</li>
-<li>Cache Lines - Get the byte you asked for and the rest of the 64-byte block for free.</li>
-<li>Async/Await gives the illusion of sequential behavior.  Await marks the position where a task should resume.  It may not resume on the same thread of execution which causes GUI to blow up.</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
@@ -523,7 +484,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Math/">Math</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">19</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Math/">Math</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">19</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 
@@ -551,6 +512,23 @@ ga('send', 'pageview');
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
