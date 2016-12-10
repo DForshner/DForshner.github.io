@@ -135,6 +135,57 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
+    <article id="post-Exploring-Augmented-Interval-Trees" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2016/02/28/Exploring-Augmented-Interval-Trees/">Exploring Augmented Interval Trees</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/02/28/Exploring-Augmented-Interval-Trees/" class="article-date"><time datetime="2016-02-29T00:00:00.000Z" itemprop="datePublished">16-02-29</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Interval trees store a set of intervals and can be used to find all intervals that overlap with the query interval.  In the augmented variant, each node maintains the maximum end value of the node and all of its children.  We can use this extra information during searches to rule out subtrees that cannot possibly contain the query interval.</p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/AugmentedIntervalTree.cs" target="_blank" rel="external">The Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-What-Google-Learned-From-Its-Quest-to-Build-the-Perfect-Team" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
@@ -346,133 +397,6 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Building-Microservices-Review" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/02/03/Building-Microservices-Review/">Building Microservices Review</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/02/03/Building-Microservices-Review/" class="article-date"><time datetime="2016-02-04T00:00:00.000Z" itemprop="datePublished">16-02-04</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reviews/">Reviews</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Architectures/">Software Architectures</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I thought I was getting a book on architecture patterns but I got a book on applying Conway’s Law to an organization while migrating to microservices.  This book appears to be aimed at people working with a traditional n-tier architecture with a shared database who are having problems scaling both their application and organization.  The author gives a high-level overview of microservices and the patterns used but this book is about organizational change.</p>
-<p>After reading this, I don’t think microservices are a good fit for the products I work on.  I’ve been associating microservices with things like automated deployment, centralized logging and performance monitoring, etc. but these are actually prerequisites to get into microservices.  I don’t think the additional complexity that a microservices architecture brings are going to be worth it in my case.</p>
-<p><a href="https://www.goodreads.com/book/show/22512931-building-microservices?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Good Reads Link</a></p>
-<p><strong>Chapter Notes</strong></p>
-<ol>
-<li><em>Microservices</em><ul>
-<li>If shared libraries are specific to a business domain or talk to particular services they can limit the ability to independently scale and deploy different parts of the system.</li>
-</ul>
-</li>
-<li><em>The Evolutionary Architect</em><ul>
-<li>Helping people grow so they can understand the overall technical vision and can be active participants in shaping and implementing it.</li>
-<li>Great software comes from great people. If you worry only about the technology side of the equation, you’re missing the picture.</li>
-</ul>
-</li>
-<li><em>How to Model Services</em><ul>
-<li>By aligning services to the seams between bounded contexts we ensure the services are built around relatively stable boundaries.</li>
-</ul>
-</li>
-<li><em>Integration</em><ul>
-<li><u>Expand Only Types</u> - Types sent over the wire using binary serialization can become a mass of fields, some of which are no longer used but can’t be removed safely.</li>
-<li>Don’t violate DRY within a microservice, but be relaxed about violating DRY across services.  The evils of too much coupling between services are far worse than the problems caused by code duplication.</li>
-<li><u>The Strangler Pattern</u> - Capture and intercept calls to the old system and either route these calls the existing or new code.  This allows you to replace functionality over time instead of doing a re-write.</li>
-<li>Database integration makes it very hard to avoid breaking changes.  Prefer REST because changes to internal implementation detail are less likely to result in a change to the service interface.</li>
-<li><u>Tolerant Reader</u> - A reader able to ignore changes we don’t care about.</li>
-<li><u>Semantic Versioning</u> - Outlines the expectations of clients can have of changes to the API and simplifies the process of communicating about whether changes should impact consumers.</li>
-</ul>
-</li>
-<li><em>Splitting the Monolith</em><ul>
-<li>Bounded contexts make great seams because they represent cohesive  units that are the loosely coupled boundaries in an organization.</li>
-</ul>
-</li>
-<li><em>Deployment</em><ul>
-<li>Focus on the ability to release each service independently of each other.</li>
-<li>One source control repository, one CI build, and one host/container per service.</li>
-<li>Culture of automation is key to managing everything.</li>
-</ul>
-</li>
-<li><em>Testing</em><ul>
-<li><u>Service Test</u> - Test a slice of functionality across the whole service but isolate yourself from other services by using stubbed collaborators.</li>
-<li><u>Normalization of deviance</u> - Over time we become accustomed to things being wrong and we start to accept that as being normal and not a problem.  Ex: flakey tests, alarms that should be warnings, etc.</li>
-<li>Anything that causes multiple service versions to be deployed in a specific order will eventually destroy the ability to deploy one service by itself.</li>
-<li>Focus on a small number of core journeys to test for the whole system when developing end-to-end tests.</li>
-<li><u>Consumer-Driven Tests</u> - Capture the expectations of how a consumer will use a service in tests to make sure that when new versions of the service go to production it won’t break consumers.</li>
-<li><u>Smoke tests</u> - Set of tests designed to run against newly deployed software to confirm the deployment worked.</li>
-<li><u>Blue/Green Deployment</u> - Have two copies of software deployed at the same time, but only one version if receiving real requests.  Allows you to switch back quickly if something goes wrong.</li>
-<li><u>Canary Releasing</u> - Verify a deployment by directing small amounts of production traffic against to see if it performs as expected.  Can send either divert a portion of real traffic or can shadow production traffic and direct it to the canary.</li>
-<li><u>Optimizing mean time between failures (MTBF) vs. mean time to repair (MTTR)</u> - Expending the same effort into getting better at remediation of a release can be more beneficial than adding more automated tests.</li>
-</ul>
-</li>
-<li><em>Monitoring</em><ul>
-<li><u>Service metrics</u> - Generate service specific events for monitoring. Examples: web requests, number of times customers view past orders, transactions per second, etc.</li>
-<li><u>Synthetic transaction</u> - A fake event inserted into the system to show the it is still working.  Like a heartbeat.</li>
-<li>Correlation ids allow us to reconstruct the flow of calls in order to reproduce and fix a problem.  Allows us to trace inter-service calls.</li>
-<li>At a minimum track inbound response time, error rates, and the response times of downstream calls.</li>
-</ul>
-</li>
-<li><em>Security</em><ul>
-<li><u>Confused deputy problem</u> - A malicious party tricks a deputy service into making calls to a downstream service on their behalf.</li>
-<li>Many high profile security breaches involve data at rest being acquired by an attacker and that data being readable by that attacker.</li>
-<li>Prevent services from allowing bulk retrieval of customer data.</li>
-<li>VPNs allow us to segregate the network by team and/or risk level.</li>
-<li>If you don’t store it, no one can steal it.</li>
-</ul>
-</li>
-<li><em>Conway’s Law and System Design</em><ul>
-<li>A team owning a service is responsible for making changes to that service.  The team should feel free to restructure the code however it wants, as long as the change doesn’t break consuming services.</li>
-<li>Feature teams don’t produce functioning custodians and technology oriented teams waste time coordinating changes.  Align teams along business domains.</li>
-<li>Try to align service ownership to colocated teams, which themselves are aligned around the bounded contexts of the organization.</li>
-</ul>
-</li>
-<li><em>Microservices at Scale</em></li>
-<li><em>Bringing It All Together</em><ul>
-<li>Avoid orchestration systems (ex: enterprise service bus) which lead to centralization of business logic and dumb services.  Instead, prefer choreography over orchestration and dumb middleware, with smart endpoints.</li>
-<li>The less you understand a domain, the harder it will be to find proper bounded contexts for your services.  Identify clean boundaries prior to splitting out services or you will have to make lots of expensive changes to service-to-service collaborators.</li>
-<li>Consider starting green-field projects as a monolith and breaking them up once they are stable.</li>
-</ul>
-</li>
-</ol>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
@@ -515,7 +439,7 @@ ga('send', 'pageview');
   
   <div class="sidebar-module">
     <h4>Tags</h4>
-    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Math/">Math</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">19</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
+    <ul class="sidebar-module-list"><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Algorithms/">Algorithms</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Books/">Books</a><span class="sidebar-module-list-count">14</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/C/">C++</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Complexity/">Complexity</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Concurrency/">Concurrency</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Conferences/">Conferences</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Courses/">Courses</a><span class="sidebar-module-list-count">7</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Orientated-Design/">Data Orientated Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Science/">Data Science</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Data-Structures/">Data Structures</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Databases/">Databases</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/DevOps/">DevOps</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Distributed-Systems/">Distributed Systems</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/ECMAScript/">ECMAScript</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Electronics/">Electronics</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a><span class="sidebar-module-list-count">4</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Exploring/">Exploring</a><span class="sidebar-module-list-count">9</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Failure/">Failure</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Functional-Programming/">Functional Programming</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Game-Engines/">Game Engines</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Gamification/">Gamification</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Interviewing/">Interviewing</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/MOOC/">MOOC</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Machine-Learning/">Machine Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Math/">Math</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Meetup/">Meetup</a><span class="sidebar-module-list-count">10</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a><span class="sidebar-module-list-count">6</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Odds-Ends/">Odds & Ends</a><span class="sidebar-module-list-count">15</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Optimization/">Optimization</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Presentations/">Presentations</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Purposeful-Practice/">Purposeful Practice</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Random/">Random</a><span class="sidebar-module-list-count">19</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/React/">React</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reduction/">Reduction</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Reviews/">Reviews</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Architectures/">Software Architectures</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a><span class="sidebar-module-list-count">5</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Testing/">Testing</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/User-Experience-Design/">User Experience Design</a><span class="sidebar-module-list-count">1</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Visual-Learning/">Visual Learning</a><span class="sidebar-module-list-count">3</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/Web/">Web</a><span class="sidebar-module-list-count">2</span></li><li class="sidebar-module-list-item"><a class="sidebar-module-list-link" href="/tags/μReview/">μReview</a><span class="sidebar-module-list-count">15</span></li></ul>
   </div>
 
 
