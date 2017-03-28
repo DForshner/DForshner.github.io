@@ -3,19 +3,19 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>~ Blog</title>
+  <title>David Forshner&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+  <meta name="description" content="David Forshner&apos;s blog about software and making.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
+<meta property="og:title" content="David Forshner's Blog">
 <meta property="og:url" content="https://dforshner.github.io/page/14/index.html">
-<meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:site_name" content="David Forshner's Blog">
+<meta property="og:description" content="David Forshner&apos;s blog about software and making.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="David Forshner's Blog">
+<meta name="twitter:description" content="David Forshner&apos;s blog about software and making.">
   
-    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="David Forshner&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -50,8 +50,8 @@ ga('send', 'pageview');
 	{
 	  "@context" : "http://schema.org",
 	  "@type" : "WebSite",
-	  "name" : "~ Blog",
-	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "name" : "David Forshner&#39;s Blog",
+	  "alternateName" : "David Forshner&#39;s blog about software and making.",
 	  "url" : "https://dforshner.github.io"
 	}
 	</script>
@@ -127,7 +127,7 @@ ga('send', 'pageview');
   <div class="container">
 	<div class="blog-header">
   
-    <p class="lead blog-description">David Forshner&#39;s blog/notebook/bookmarks/random</p>
+    <p class="lead blog-description">A blog about software and making.</p>
   
 </div>
 
@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-Odds-Ends-December-2014" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/11/30/Odds-Ends-December-2014/">Odds &amp; Ends - December 2014</a>
+      <a class="article-title" href="/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/">What&#39;s new in CPUs since the 80s and how does it affect programmers?</a>
     </h3>
   
 
@@ -150,7 +150,131 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/11/30/Odds-Ends-December-2014/" class="article-date"><time datetime="2014-12-01T00:00:00.000Z" itemprop="datePublished">14-12-01</time></a>
+  <a href="/2015/03/14/What-s-new-in-CPUs-since-the-80s-and-how-does-it-affect-programmers/" class="article-date"><time datetime="2015-03-15T00:00:00.000Z" itemprop="datePublished">15-03-15</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Optimization/">Optimization</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Amazing post about how CPU and memory architecture has changed over the years.</p>
+<blockquote>
+<p> using predictable memory access patterns and operating on chunks of data that are smaller than your CPU cache will get you most of the benefit of modern caches.</p>
+</blockquote>
+<ul>
+<li>Processor speed has increased much more than memory speed.  To work around this CPUs use:<ul>
+<li>Caching - Fast access to frequently used data.</li>
+<li>Prefetching - Fast access by pre-loading data into the cache if the access pattern is predictable.  Example: sequential access of 8 bytes in a loop can achieve 22Gb/sec on 3Ghz processor out of a maximum 24Gb/sec (3Ghz * 8 bytes = 24,000,000,000 bytes/sec).</li>
+</ul>
+</li>
+<li>Out of order execution - Speculatively execute and re-order executions to avoid stalling on a single resource.  Instructions with dependencies will execute in the correct order with respect to one another.</li>
+<li>There are no guarantees that interactions between cores will be ordered unless serializing instructors or memory fences are used.</li>
+</ul>
+<p><a href="http://danluu.com/new-cpu-features/" target="_blank" rel="external">Post</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-First-Look-at-React-js-Flux-Pattern" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/">First Look at React.js &amp; Flux Pattern</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/03/12/First-Look-at-React-js-Flux-Pattern/" class="article-date"><time datetime="2015-03-13T00:00:00.000Z" itemprop="datePublished">15-03-13</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ECMAScript/">ECMAScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/React/">React</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I took a crack at creating dashboards using Facebook’s React &amp; Flux libraries.</p>
+<ul>
+<li>It was easy to get something up working and then iterate on it.</li>
+<li>I found the functional concepts they are pushing a refreshing change from messing with jquery.  The code looks actually looks like code instead of a tangled rat’s nest of callbacks and dom mutations.</li>
+<li>It’s explicit about how state is stored and mutated.  People don’t think enough about this stuff and haveing it front and center is nice.</li>
+<li>The flux pattern is interesting.  I like how it separates concerns but it seems like there is a lot of code duplication.</li>
+<li>The idea of updating state and re-rendering reminds me of a game loop.</li>
+<li>I’m not sure how the virtual DOM will perform for larger views but the “native calls are slow” argument makes sense.  I’ve had screens with bad jank when lots of Backbone sub-views are re-rendered at the same time.</li>
+<li>The jsx concept of combining template(html) and code is a bit strange but I think they are on to something.  With Backbone, you usually end up editing the template/model/view files for most changes so I agree that they aren’t independent concerns.</li>
+<li>I also used Webstorm (support for jsx) for the first time and I’m not sure I can go back to using Visual Studio for JS.</li>
+</ul>
+<p><a href="https://github.com/DForshner/ReactFluxDashboardProto" target="_blank" rel="external">Prototype Code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Odds-Ends-March-2015" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2015/02/28/Odds-Ends-March-2015/">Odds &amp; Ends - March 2015</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2015/02/28/Odds-Ends-March-2015/" class="article-date"><time datetime="2015-03-01T00:00:00.000Z" itemprop="datePublished">15-03-01</time></a>
 </div>
 
     
@@ -167,60 +291,24 @@ ga('send', 'pageview');
       
         <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
 <ul>
-<li>Kruskal’s minimum spanning tree algorithm<ul>
-<li>O(Elog(V)) for sparse graphs (typical case).</li>
-<li>Better constants than Prims because built with simpler data structures (union-find).</li>
-<li>Add shortest (min weight) edge that does not create a cycle each pass.  Risks a cycle being created so much check for cycle each pass.</li>
-<li>If you stop early you may have disconnected tree/forests.</li>
+<li>Avoid misunderstandings by making the implicit explicit</li>
+<li>API Design - Don’t operate on one object if you can operate on many instead.  If you do something once, there is a good chance you will do it 100x times. <a href="https://medium.com/google-developers/if-i-ve-told-you-once-a0ccdb083e08#.r10n0j9ap" target="_blank" rel="external">src</a></li>
+<li>A good tech leads shield engineers from distractions and give support when needed.  Enable people to do their jobs.</li>
+<li>A good software architect makes the complex simple.  Your job is to reduce complexity.</li>
+<li>Pretend you had to create a schedule before you knew the requirements or you needed to estimate how long it will take to solve an unsolved problem.<ul>
+<li>When you don’t know what you are going to build then you cannot know how long it will take to build it.</li>
+<li>You only really know for sure what you are going to build when you finish it.</li>
+<li>A good way to document requirements is to create a user manual.</li>
 </ul>
 </li>
-<li>Prim’s minimum spanning tree algorithm<ul>
-<li>O(E + Vlog(V)) if use Fibonacci heap</li>
-<li>Best for dense graphs (E &gt;&gt;V).</li>
-<li>Adds one vertex at a time and the next vertex is always the nearest to the current one on the graph.</li>
-<li>If you stop early you will still have a connected graph.</li>
-</ul>
-</li>
-<li>GUIDs hurt RDMS inserts because the data isn’t ordered which causes a lot of I/O work to re-arrange the B-Tree leafs.</li>
-<li>Dynamic Content Management System<ul>
-<li>Dynamically generate website each request.</li>
-<li>Each request eats CPU which allows DDos attacks.</li>
-<li>The server shouldn’t be executing any code on behalf of the user until they are logged on!</li>
-<li>Use static stylesheets, graphics, movies, etc. that can be pre-generated and stored as files.</li>
-<li>Static Objects (graphics/Js/CSS) can be marked as cacheable and CDN can distribute them across their network.</li>
-</ul>
-</li>
-<li>Database generated ids may hurt insert performance.  To auto-generate a PK id it has to take a lock.  Shows up during multi-row or bulk inserts.</li>
-<li>Await Keyword - Turns the rest of the method into a closure that will asynchronously execute upon completion of the task being awaited without blocking the executing thread.</li>
-<li>Why Microservices?  Independent scaling, service isolation, and separate service life-cycles.</li>
-<li>Flake Ids - Unique semi-time sorted ids.  The top bits are time and the bottom bits are the node.  Example: 41 bits ms since epoch + 10 bits node id + 12 bits sequential counter</li>
-<li>Big O is not about time.  It’s a tool that describes how a function grows with respect to some input.</li>
-<li>You want a small pool saturated with threads waiting for connections.    <ul>
-<li>More threads only perform better when blocking creates opportunities for executing.  Less blocking needs fewer threads.</li>
-<li>Example: Connections = (# Cores * 2) + # HDDs</li>
-<li>It’s not about how many threads but how few threads we can get away with.  Limited by disk and network blocking.</li>
-</ul>
-</li>
-<li>Improving performance<ul>
-<li>Motivation - Money, personal growth, make a difference.</li>
-<li>Plan Smarter - Focus on important tasks first.  Remove unnecessary to-do lists, reduce the number of tasks on to-do lists (1-week window).</li>
-<li>Do not interrupt - Try to minimize interruptions as much as possible.   You want to achieve flow.</li>
-<li>Minimise overhead - Fewer meetings, fewer chats, and avoid checking email.  Water cooler chats about code are fine.</li>
-</ul>
-</li>
-<li>The longer architects stay in their role decoupled from implementations, the less qualified they are to judge the maturation and risk profile of new tools, processes, and paradigms.</li>
-<li>Comprehensions (map, fold, each) - Operates on entire data structures.  Higher order functions.</li>
-<li>Properties - Values that change over time (time-varying values) bound to an expression or relationship.</li>
-<li>Constructors can’t reveal intent<ul>
-<li>Limit to building objects and not to connecting to external resources.</li>
-<li>Limit to specific behavior so you can guess intent.</li>
-<li>Only initialize new instances of a class to a rational state.</li>
-<li>Don’t let it invoke an instance method on the instance being creating.  The existence of this method call shows the constructor is doing two things.</li>
-</ul>
-</li>
-<li>Factories - Create object while hiding exact class instantiated.</li>
-<li>Static creation method - Static method on a class that returns an instance.</li>
-<li>Architecture is concerned with aspects that are hard to change (i.e. the important stuff).  Irreversibility is a core driver of complexity.  Past decisions cannot be reversed and we are constantly working around limitations.  Try to make your decisions reversible when possible.</li>
+<li>Code can be divided into algorithms that do work on data or coordinators that coordinate external dependencies with algorithms.  Algorithms are easy to test.</li>
+<li>Agile - build a little, test a little.</li>
+<li>When you have a mess of short functions plagued by lots of behavior modifying arguments the boundary between component and layers is slowly dissolved, and nobody is sure what particular effect a change may have anymore.</li>
+<li>Once you get rid of accidental complexity you are left with essential complexity, which cannot be reduced without removing functionality.</li>
+<li>Reference equality, value equality and identity (PK) equality … are not equal.</li>
+<li>One of the benefits of returning ASAP is the happy path isn’t identically nested anymore.</li>
+<li><u>Identity map pattern</u> - Ensures each object is only loaded once.  One copy of an entity will be loaded at a time per transaction.  One copy that everyone updates so, there are no update anomalies.</li>
+<li><u>Immutable Infrastructure</u> - Infrastructure built from golden images.  Changes are made to the images, and the entire infrastructure should be redeployed by destroying the old deployment.</li>
 </ul>
 
       
@@ -241,13 +329,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-M101P-MongoDB-for-Developers" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Exploding-Software-Engineering-Myths" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/11/03/M101P-MongoDB-for-Developers/">M101P MongoDB for Developers</a>
+      <a class="article-title" href="/2015/02/18/Exploding-Software-Engineering-Myths/">Exploding Software-Engineering Myths</a>
     </h3>
   
 
@@ -256,14 +344,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/11/03/M101P-MongoDB-for-Developers/" class="article-date"><time datetime="2014-11-04T00:00:00.000Z" itemprop="datePublished">14-11-04</time></a>
+  <a href="/2015/02/18/Exploding-Software-Engineering-Myths/" class="article-date"><time datetime="2015-02-18T18:31:15.000Z" itemprop="datePublished">15-02-18</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Courses/">Courses</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MOOC/">MOOC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Empirical-Studies/">Empirical Studies</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software-Development-Practices/">Software Development Practices</a></li></ul>
 
 
   </div>
@@ -271,264 +359,11 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>Good course on how to build APIs with python and mongoDB. </li>
-<li>Does a good job explaining the sweet spot where document databases work well.</li>
-<li>I’m not sure about the long-term viability of document databases.  It seems like RDMS vendors are just going to adopt document database features.</li>
-</ul>
-<p><a href="https://github.com/DForshner/Certificates/blob/master/M101P%20MongoDB%20for%20Developers%202013%20-%20MongoDB%20University.pdf" target="_blank" rel="external">Certificate</a><br><a href="https://university.mongodb.com/courses/M101P/about" target="_blank" rel="external">Course Link</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-September-2014" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2014/08/31/Odds-Ends-September-2014/">Odds &amp; Ends - September 2014</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2014/08/31/Odds-Ends-September-2014/" class="article-date"><time datetime="2014-09-01T00:00:00.000Z" itemprop="datePublished">14-09-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>Errors are values.</li>
-<li>DRY - Is having a single source of truth not avoiding copying and pasting code.</li>
-<li>When you cross a service boundary things that appear to be the same may have a different context and different data store.  Avoid sharing code between boundaries that have different contexts (Microservices).</li>
-<li>Repository Pattern - Layer that exists between business logic and data store.  Isolates your code that interacts with your data store in one place.</li>
-<li>Decorator Pattern - Enabling a chain of behavior determined by composition not inheritance.</li>
-<li>A bad test breaks in response to any change in production code without verifying correct behavior.</li>
-<li>Map - Go over a large data set without mutating it.</li>
-<li>Reduce - Aggregate or merge results</li>
-<li>Scope - Where variables and functions are accessible and in what context they are being executed.</li>
-<li>Closures - Expressions (usually functions) that work with variables set within a certain context.  An inner function referring to local variables of its outer function.<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">y</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x + y; <span class="comment">// When returned this closes over the value of x = 5</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> add5 = add(<span class="number">5</span>);</span><br><span class="line"><span class="built_in">console</span>.log(add5(<span class="number">3</span>)); <span class="comment">// 8</span></span><br></pre></td></tr></table></figure></li>
-<li>Enumerable - Pull-based.  The consumer pulls from the producer.</li>
-<li>Observable - Push-based.  The producer pushes new values to the consumer.</li>
-<li>Functional Reactive Programming<ul>
-<li>Properties - Values that change over time.  Every property is a function f(t) that gives a value at a given moment in time.</li>
-<li>Functional - Compose together functions to create complex behavior.  Functions can have time dependant relationships.</li>
-<li>Immutable - Values are something that happened in the past so they need not change.</li>
-<li>Event streams - Events at a particular point in time.  Capture event changes in a discrete manner.  Operators (map/filter/reduce) create new streams out of old streams (no mutation).</li>
-<li>Switching - Change the system in response to events.  A stream of streams (meta-stream).  Ex: stream URLs, map to requests, return responses in future stream of promises.</li>
-</ul>
-</li>
-<li>68-95-99.7 Rule - 68% of values at one standard deviation, 95% at two, and 99.7% of values at three.</li>
-<li>Fit indexes in RAM if possible.  Index on the hash of a string instead of the string itself.</li>
-<li>Use cache as write-back to do batched database writes to the back-end.</li>
-<li>Use locking to make sure that when the cache expires the database doesn’t get slammed with multiple copies of the same query.</li>
-<li>You can decouple a sender and receiver with the command pattern and observer pattern but to decouple them in time you will want to use an event queue.</li>
-<li>Keep data structures flat and linear (array &gt; linked list).  Every pointer you have to chase to find data adds a likely cache miss while flat arrays can be pre-fetched by the memory system.<ul>
-<li>Adding/Removing values from the middle of std::vector is faster than std::list if the elements are POD types and no bigger than 64 bytes (one cache line).  Lists have too many cache misses.</li>
-<li>For larger POD types, non-POD types, or if you already have a pointer into the list then std::list will win.</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Google-I-O-Extended-2014" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2014/06/24/Google-I-O-Extended-2014/">Google I/O Extended 2014</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2014/06/24/Google-I-O-Extended-2014/" class="article-date"><time datetime="2014-06-25T00:00:00.000Z" itemprop="datePublished">14-06-25</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Conferences/">Conferences</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I attended the Google I/O Extended conference at Google’s KW location.  The main theme this year seemed to be about getting the rest of the world online.</p>
-<p><em>Event Notes</em></p>
-<ul>
-<li>Currently there are 2.6 billion people on the internet, but there will be 5 billion in the future.</li>
-<li>Free and open information access can lead to regime change.</li>
-<li>+4% GDP due to internet access.</li>
-<li>It’s not just search.  We have to drive the information by making it relevant and fun.</li>
-<li>Information access -&gt; open communication -&gt; drives change by allowing silent groups to have a voice.</li>
-<li>~300 people at the KW office.</li>
-<li>Most effective ad length on YouTube is 12 seconds maximum.</li>
-<li>google.com/design - Unified design guidelines that are driven by material design.</li>
-<li>Minimize interactions with the device by showing relevant data first.  Use sensors to understand the user’s current context.</li>
-<li>Maps Features: Fast, Accurate, Easy</li>
-<li>One Android SDK for all platforms: TV, phone, car, watch, etc.</li>
-<li>Chromebook Features: Speed, Simplicity, Security</li>
-<li>Google Drive encrypts your data in both during transit and storage.</li>
-<li><strong>Google cloud</strong><ul>
-<li>Allows small teams to run big operations.</li>
-<li>Cloud.Debug allows live debugging on servers</li>
-<li>Request tracing to see all service requests</li>
-<li>Can set custom alerts on metrics</li>
-</ul>
-</li>
-<li><strong>Cloud DataFlow</strong><ul>
-<li>Same code for both batch and streaming</li>
-<li>Parallel data pipelines.</li>
-<li>One pipeline for both batch (ETL) and streaming (continuous analysis).</li>
-</ul>
-</li>
-<li><u>Blink</u> - Chromes rendering engine</li>
-<li><strong>Cross Platform Design</strong><ul>
-<li><a href="http://www.google.com/design/spec" target="_blank" rel="external">Link</a></li>
-<li>Material Metaphor: Shared experience, Shared knowledge, back story for design, pre-defined information.</li>
-<li>Ex: Paper has a long history, exists in the world, is tangible.</li>
-<li>Magical Material - Not for the sake of artifice but for information.  Ex: on touch the surface rises to the finger.</li>
-<li>One typeface with various sizes and weights.</li>
-<li>Use a color hierarchy to focus the gaze.</li>
-<li>Material lives at the same scale as the device and expands to fill space.</li>
-<li>Obey physics so no teleporting.</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-June-2014" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2014/05/31/Odds-Ends-June-2014/">Odds &amp; Ends - June 2014</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2014/05/31/Odds-Ends-June-2014/" class="article-date"><time datetime="2014-06-01T00:00:00.000Z" itemprop="datePublished">14-06-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>There is no such thing as “plain text”.  Text is binary data plus an encoding scheme.<ul>
-<li>When someone says “plain text” always ask “what encoding?”</li>
-<li>Try to use UTF-8 if possible.</li>
-<li>Try to always make encoding explicit in code.  Don’t rely on the platform/system default encoding.  String text = convert(byte[] byteArray, Encoding.UTF);</li>
-<li>Glyph - Visual representation (a).</li>
-<li>Code Point - Numeric representation in character set being used (65).</li>
-<li>Code Unit - Binary representation determined by the encoding scheme (0100001).</li>
-</ul>
-</li>
-<li>Slow Database Table Scans - Query requests a row or range of rows and there are no available indexes to support it.  This causes a sequential scan from to bottom of the table.<ul>
-<li>Any routine query that takes more than second will be a problem eventually.</li>
-<li>A table scan might not be noticeable if the table is small enough to fit in memory or disk cache but as it grows it will increasingly be pulled from disk (slow).  This also adds to the disk contention with any other running queries.</li>
-</ul>
-</li>
-<li>Database Concurrency Contention -  Too many users competing for the same resources.   Sometimes caused by table scans.<ul>
-<li>Database locks up resources waiting to serve requests.</li>
-<li>Transactions lock row/tables for writes and other users cannot read from those rows.</li>
-<li>Transactions that span too many rows cause problems if a query has a table scan or update.  Resources are locked for the duration of the transaction so try to limit it to under 1 second.</li>
-<li>There is a limited number of connections to the RDMS available and it’s possible to have them all blocked waiting on resources.</li>
-</ul>
-</li>
-<li>Slow Database Writes - As the table grows in size they often show a “hockey stick” curve for write speeds.<ul>
-<li>The typical culprit are table indexes.  This is especially true when there are multiple indexes on a single large table.</li>
-<li>B-Tree requires more computational and disk resources as they index tree grows in size.</li>
-<li>Limit indexes to what is required and use caution when data gets big.</li>
-</ul>
-</li>
-</ul>
+        <p>An overview of different empirical studies on software development methodologies.</p>
+<blockquote>
+<p>ongoing research in his quest to validate conventional software-engineering wisdom.</p>
+</blockquote>
+<p><a href="http://research.microsoft.com/apps/mobile/news.aspx?post=/en-us/news/features/nagappan-100609.aspx" target="_blank" rel="external">Link</a></p>
 
       
     </div>
@@ -551,7 +386,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/13/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/12/">12</a></li><li><a class="page-number" href="/page/13/">13</a></li><li class="active"><span class="page-number">14</span></li><li><a class="page-number" href="/page/15/">15</a></li><li><a class="page-number" href="/page/16/">16</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/19/">19</a></li><li><a class="page-next" rel="next" href="/page/15/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/13/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/12/">12</a></li><li><a class="page-number" href="/page/13/">13</a></li><li class="active"><span class="page-number">14</span></li><li><a class="page-number" href="/page/15/">15</a></li><li><a class="page-number" href="/page/16/">16</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/24/">24</a></li><li><a class="page-next" rel="next" href="/page/15/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -565,25 +400,12 @@ ga('send', 'pageview');
 
 </div>
 
-
   
   <div class="sidebar-module">
-    <h4>Currently Reading</h4>
-    <ul class="sidebar-module-list">
-        
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/17346997-doing-data-science?utm_medium=api&amp;amp;utm_source=blog_book">Doing Data Science</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;amp;utm_source=blog_book">Designing Data-Intensive Applications</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/25531393-patterns-principles-and-practices-of-domain-driven-design?utm_medium=api&amp;amp;utm_source=blog_book">Patterns Principles and Practices of Domain Driven Design</a>
-		  </li>
-		
-    </ul>
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Algorithms/" style="font-size: 10.91px;">Algorithms</a> <a href="/tags/Books/" style="font-size: 18.18px;">Books</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Complexity/" style="font-size: 10px;">Complexity</a> <a href="/tags/Concurrency/" style="font-size: 10px;">Concurrency</a> <a href="/tags/Conferences/" style="font-size: 11.82px;">Conferences</a> <a href="/tags/Courses/" style="font-size: 15.45px;">Courses</a> <a href="/tags/DIY/" style="font-size: 11.82px;">DIY</a> <a href="/tags/Data-Orientated-Design/" style="font-size: 10px;">Data Orientated Design</a> <a href="/tags/Data-Science/" style="font-size: 11.82px;">Data Science</a> <a href="/tags/Data-Structures/" style="font-size: 13.64px;">Data Structures</a> <a href="/tags/Databases/" style="font-size: 10px;">Databases</a> <a href="/tags/DevOps/" style="font-size: 10px;">DevOps</a> <a href="/tags/Distributed-Systems/" style="font-size: 12.73px;">Distributed Systems</a> <a href="/tags/ECMAScript/" style="font-size: 12.73px;">ECMAScript</a> <a href="/tags/Electronics/" style="font-size: 12.73px;">Electronics</a> <a href="/tags/Empirical-Studies/" style="font-size: 12.73px;">Empirical Studies</a> <a href="/tags/Exploring/" style="font-size: 16.36px;">Exploring</a> <a href="/tags/Failure/" style="font-size: 11.82px;">Failure</a> <a href="/tags/Functional-Programming/" style="font-size: 10px;">Functional Programming</a> <a href="/tags/Game-Engines/" style="font-size: 10px;">Game Engines</a> <a href="/tags/Gamification/" style="font-size: 13.64px;">Gamification</a> <a href="/tags/Interviewing/" style="font-size: 10.91px;">Interviewing</a> <a href="/tags/MOOC/" style="font-size: 13.64px;">MOOC</a> <a href="/tags/Machine-Learning/" style="font-size: 11.82px;">Machine Learning</a> <a href="/tags/Makerspace/" style="font-size: 11.82px;">Makerspace</a> <a href="/tags/Making/" style="font-size: 11.82px;">Making</a> <a href="/tags/Math/" style="font-size: 10px;">Math</a> <a href="/tags/Meetup/" style="font-size: 17.27px;">Meetup</a> <a href="/tags/Natural-Language-Processing/" style="font-size: 14.55px;">Natural Language Processing</a> <a href="/tags/Odds-Ends/" style="font-size: 19.09px;">Odds & Ends</a> <a href="/tags/Optimization/" style="font-size: 10px;">Optimization</a> <a href="/tags/Presentations/" style="font-size: 10.91px;">Presentations</a> <a href="/tags/Purposeful-Practice/" style="font-size: 10px;">Purposeful Practice</a> <a href="/tags/Random/" style="font-size: 20px;">Random</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/Reduction/" style="font-size: 10px;">Reduction</a> <a href="/tags/Reviews/" style="font-size: 13.64px;">Reviews</a> <a href="/tags/Software-Architectures/" style="font-size: 10px;">Software Architectures</a> <a href="/tags/Software-Development-Practices/" style="font-size: 13.64px;">Software Development Practices</a> <a href="/tags/Testing/" style="font-size: 11.82px;">Testing</a> <a href="/tags/User-Experience-Design/" style="font-size: 10px;">User Experience Design</a> <a href="/tags/Visual-Learning/" style="font-size: 11.82px;">Visual Learning</a> <a href="/tags/Web/" style="font-size: 10.91px;">Web</a> <a href="/tags/μReview/" style="font-size: 19.09px;">μReview</a>
+    </p>
   </div>
 
 

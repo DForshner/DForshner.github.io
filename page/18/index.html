@@ -3,19 +3,19 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>~ Blog</title>
+  <title>David Forshner&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+  <meta name="description" content="David Forshner&apos;s blog about software and making.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
+<meta property="og:title" content="David Forshner's Blog">
 <meta property="og:url" content="https://dforshner.github.io/page/18/index.html">
-<meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:site_name" content="David Forshner's Blog">
+<meta property="og:description" content="David Forshner&apos;s blog about software and making.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="David Forshner's Blog">
+<meta name="twitter:description" content="David Forshner&apos;s blog about software and making.">
   
-    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="David Forshner&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -50,8 +50,8 @@ ga('send', 'pageview');
 	{
 	  "@context" : "http://schema.org",
 	  "@type" : "WebSite",
-	  "name" : "~ Blog",
-	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "name" : "David Forshner&#39;s Blog",
+	  "alternateName" : "David Forshner&#39;s blog about software and making.",
 	  "url" : "https://dforshner.github.io"
 	}
 	</script>
@@ -127,7 +127,7 @@ ga('send', 'pageview');
   <div class="container">
 	<div class="blog-header">
   
-    <p class="lead blog-description">David Forshner&#39;s blog/notebook/bookmarks/random</p>
+    <p class="lead blog-description">A blog about software and making.</p>
   
 </div>
 
@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-SortedList-vs-SortedDictionary" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Google-I-O-Extended-2014" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2013/02/12/SortedList-vs-SortedDictionary/">SortedList vs. SortedDictionary</a>
+      <a class="article-title" href="/2014/06/24/Google-I-O-Extended-2014/">Google I/O Extended 2014</a>
     </h3>
   
 
@@ -150,14 +150,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2013/02/12/SortedList-vs-SortedDictionary/" class="article-date"><time datetime="2013-02-13T00:00:00.000Z" itemprop="datePublished">13-02-13</time></a>
+  <a href="/2014/06/24/Google-I-O-Extended-2014/" class="article-date"><time datetime="2014-06-25T00:00:00.000Z" itemprop="datePublished">14-06-25</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Conferences/">Conferences</a></li></ul>
 
 
   </div>
@@ -165,232 +165,47 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Both are useful if you need to iterate over elements in sorted order.  As a rule of thumb if you creating it once and not modifying it than a SortedList has a faster construction time and uses less memory than a SortedDictionary.</p>
-<table>
-<thead>
-<tr>
-<th>Operation</th>
-<th>SortedList</th>
-<th>SortedDictionary</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>retrieval by key</td>
-<td>O(log(n))</td>
-<td>O(log(n))</td>
-</tr>
-<tr>
-<td>insert and remove elements</td>
-<td>O(n)</td>
-<td>O(log(n))</td>
-</tr>
-<tr>
-<td>contains key</td>
-<td>O(log(n))</td>
-<td>O(log(n))</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Sorted Dictionary</strong></p>
+        <p>I attended the Google I/O Extended conference at Google’s KW location.  The main theme this year seemed to be about getting the rest of the world online.</p>
+<p><em>Event Notes</em></p>
 <ul>
-<li>Implemented as binary search tree for fast lookups while keeping elements in sorted order.</li>
-</ul>
-<p><strong>Sorted List</strong></p>
-<ul>
-<li>Implemented as two arrays (keys, values) kept in sorted order.</li>
-<li>Faster construction time when being populated in one go.</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-December-2012" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2012/11/30/Odds-Ends-December-2012/">Odds &amp; Ends - December 2012</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2012/11/30/Odds-Ends-December-2012/" class="article-date"><time datetime="2012-12-01T00:00:00.000Z" itemprop="datePublished">12-12-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li><u>Write in terms of services</u> - independent, concurrent objects behind well-defined, consistent interfaces.</li>
-<li><u>Eliminate effects between unrelated things</u> - Design components to be self-contained, independent, and have a single well-defined purpose.</li>
-<li><u>Program close the problem domain</u> - Design and code in your user’s language.</li>
-<li><u>Test state coverage, not code coverage</u> - Identify and test significate program states.  Just testing lines is useless.</li>
-<li><u>Test early, test Often, test automatically</u> - Tests that run with every build are much more effective than test plans that sit on a shelf.</li>
-<li><u>Always design for concurrency</u> - Cleaner interfaces with fewer assumptions.</li>
-<li><u>Put abstractions in code, details in metadata</u> - Program fro the general case, and put specifics outside the compiled code base (config files).</li>
-<li><u>Keep knowledge in plain text</u> - Won’t become obsolete.</li>
-<li><u>Use blackboards to coordinate workflow</u> - Use to coordinate disparate facts and agents, while maintaining independence and isolation among parts.</li>
-<li><u>Use a project glossery</u> - Single source for specific terms and vocabulary for a project.</li>
-<li><u>Find bugs once</u> - Once a human finds a bug, it should be the last time a human finds that bug.  Automated tests should check for it from then on.</li>
-<li><u>Crash early</u> - A dead program normally does less damage than a corrupt one.</li>
-<li><u>Organize teams around functionality</u> - Build teams the way you build code (designers + coders + testers + data modelers).</li>
-<li><u>Design to contracts</u> - Use contracts to document and verify code does no more and no less than it claims.</li>
-<li><u>Don’t use return values for errors</u> - Eventually a component will ignore a value and an error will silently be ignored.  Dead software doesn’t lie.</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Returning-ptr-to-stack-vs-heap-allocated-instance-in-C" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/">Returning ptr to stack vs. heap allocated instance in C++</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2012/09/30/Returning-ptr-to-stack-vs-heap-allocated-instance-in-C/" class="article-date"><time datetime="2012-10-01T00:00:00.000Z" itemprop="datePublished">12-10-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Thingy;</span><br><span class="line"></span><br><span class="line"><span class="function">Thingy* <span class="title">foo</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a; <span class="comment">// Stack</span></span><br><span class="line">  Thingy b; <span class="comment">// Created on stack</span></span><br><span class="line">  Thingy *ptr_to_b = &amp;b;  <span class="comment">// Points to address on stack</span></span><br><span class="line">  Thingy *ptr_to_c = <span class="keyword">new</span> Thingy(); <span class="comment">// Points to address of thingy created on heap</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pointer_to_c; <span class="comment">// Safe - Thingy lives on heap and outlives foo().  Remember to delete.</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> pointer_to_b; <span class="comment">// BOOM! Because b lives on stack and will be deleted when foo() returns.</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-September-2012" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2012/08/31/Odds-Ends-September-2012/">Odds &amp; Ends - September 2012</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2012/08/31/Odds-Ends-September-2012/" class="article-date"><time datetime="2012-09-01T00:00:00.000Z" itemprop="datePublished">12-09-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li><u>The three virtues of programmers</u> - Hubris, Impatience, and Laziness. <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris" target="_blank" rel="external">src</a></li>
-<li><u>The curse of the gifted</u> - A tendency to lean on your natural ability too much, because you have always been rewarded for doing that and self-discipline would take actual work.   <a href="https://lwn.net/2000/0824/a/esr-sharing.php3" target="_blank" rel="external">src</a></li>
-<li><u>Classic 3 Tier</u> - Presentation / Buisness Logic (rules) / Data Source (queries)</li>
-<li>Typing Types<ul>
-<li><u>Exact typing</u> - Only ducks are ducks</li>
-<li><u>Interface typing</u> - If it says it’s a duck, </li>
-<li><u>Duck typing</u> - If it quacks like a duck then we don’t care as long as it has the fields/methods we need.</li>
+<li>Currently there are 2.6 billion people on the internet, but there will be 5 billion in the future.</li>
+<li>Free and open information access can lead to regime change.</li>
+<li>+4% GDP due to internet access.</li>
+<li>It’s not just search.  We have to drive the information by making it relevant and fun.</li>
+<li>Information access -&gt; open communication -&gt; drives change by allowing silent groups to have a voice.</li>
+<li>~300 people at the KW office.</li>
+<li>Most effective ad length on YouTube is 12 seconds maximum.</li>
+<li>google.com/design - Unified design guidelines that are driven by material design.</li>
+<li>Minimize interactions with the device by showing relevant data first.  Use sensors to understand the user’s current context.</li>
+<li>Maps Features: Fast, Accurate, Easy</li>
+<li>One Android SDK for all platforms: TV, phone, car, watch, etc.</li>
+<li>Chromebook Features: Speed, Simplicity, Security</li>
+<li>Google Drive encrypts your data in both during transit and storage.</li>
+<li><strong>Google cloud</strong><ul>
+<li>Allows small teams to run big operations.</li>
+<li>Cloud.Debug allows live debugging on servers</li>
+<li>Request tracing to see all service requests</li>
+<li>Can set custom alerts on metrics</li>
 </ul>
 </li>
-<li><u>Mark and Sweep GC</u> - Pause, find all variables in current scope, find all resources that are reachable from variables in scope and free the rest.  AKA “stop the world GC”.</li>
-<li><u>Reference counting GC</u> - Each resource has a count of # of places it’s being used (references).  When the code is done with the resource, the count will decrease to zero so it can’t be freed. Vulnerable to circular references because counts will never reach zero.</li>
-<li><u>Dynamic Dispatch</u> - Not knowing what function you will call until runtime.</li>
-<li><u>Encoding Scheme</u> - Encodes data for a specific purpose (easier to transmit, read, convert to new format).</li>
-<li>More code = Harder to fit in IL cache so more cache evictions and harder to inline.</li>
-<li>More branches = more branch predictions = more branch mispredictions.</li>
-<li><u>Dependancy Inversion Principle</u> - program to interfaces or abstract base classes.</li>
-<li><u>System call</u> - Userspace request of a kernel service.</li>
-<li><u>High Cohesion</u> - Keeping parts of a codebase that are related to each other in single place.</li>
-<li><u>Low coupling</u> - Separating unrelated parts of the codebase as much as possible.</li>
-<li><u>Domain Event</u> - Anything that happens that is of interest to a domain expert.</li>
-<li>You call a library, a framework calls you.  A library is a tool … A framework is a way of life. <a href="https://stackoverflow.com/questions/148747/what-is-the-difference-between-a-framework-and-a-library" target="_blank" rel="external">src</a></li>
-<li>Pure functions &gt; Functions with state &gt; Functions with side effects &gt; Factory functions.</li>
-<li>A member function has a hidden argument called ‘’this’’ that is the specific object we are operating on (the context of the function call).</li>
+<li><strong>Cloud DataFlow</strong><ul>
+<li>Same code for both batch and streaming</li>
+<li>Parallel data pipelines.</li>
+<li>One pipeline for both batch (ETL) and streaming (continuous analysis).</li>
+</ul>
+</li>
+<li><u>Blink</u> - Chromes rendering engine</li>
+<li><strong>Cross Platform Design</strong><ul>
+<li><a href="http://www.google.com/design/spec" target="_blank" rel="external">Link</a></li>
+<li>Material Metaphor: Shared experience, Shared knowledge, back story for design, pre-defined information.</li>
+<li>Ex: Paper has a long history, exists in the world, is tangible.</li>
+<li>Magical Material - Not for the sake of artifice but for information.  Ex: on touch the surface rises to the finger.</li>
+<li>One typeface with various sizes and weights.</li>
+<li>Use a color hierarchy to focus the gaze.</li>
+<li>Material lives at the same scale as the device and expands to fill space.</li>
+<li>Obey physics so no teleporting.</li>
+</ul>
+</li>
 </ul>
 
       
@@ -411,13 +226,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Software-Engineering-as-a-Service" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Odds-Ends-June-2014" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2012/03/31/Software-Engineering-as-a-Service/">Software Engineering as a Service</a>
+      <a class="article-title" href="/2014/05/31/Odds-Ends-June-2014/">Odds &amp; Ends - June 2014</a>
     </h3>
   
 
@@ -426,14 +241,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2012/03/31/Software-Engineering-as-a-Service/" class="article-date"><time datetime="2012-04-01T00:00:00.000Z" itemprop="datePublished">12-04-01</time></a>
+  <a href="/2014/05/31/Odds-Ends-June-2014/" class="article-date"><time datetime="2014-06-01T00:00:00.000Z" itemprop="datePublished">14-06-01</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Courses/">Courses</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MOOC/">MOOC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
 
 
   </div>
@@ -441,11 +256,146 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>I was impressed with how quickly I was able to put something together with Ruby on Rails.</li>
-<li>It seems like the course has disappeared from Coursera and moved to edX?</li>
+        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
+<ul>
+<li>There is no such thing as “plain text”.  Text is binary data plus an encoding scheme.<ul>
+<li>When someone says “plain text” always ask “what encoding?”</li>
+<li>Try to use UTF-8 if possible.</li>
+<li>Try to always make encoding explicit in code.  Don’t rely on the platform/system default encoding.  String text = convert(byte[] byteArray, Encoding.UTF);</li>
+<li>Glyph - Visual representation (a).</li>
+<li>Code Point - Numeric representation in character set being used (65).</li>
+<li>Code Unit - Binary representation determined by the encoding scheme (0100001).</li>
 </ul>
-<p><a href="https://github.com/DForshner/Certificates/blob/master/Software%20Engineering%20as%20a%20Service%202012%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a></p>
+</li>
+<li>Slow Database Table Scans - Query requests a row or range of rows and there are no available indexes to support it.  This causes a sequential scan from to bottom of the table.<ul>
+<li>Any routine query that takes more than second will be a problem eventually.</li>
+<li>A table scan might not be noticeable if the table is small enough to fit in memory or disk cache but as it grows it will increasingly be pulled from disk (slow).  This also adds to the disk contention with any other running queries.</li>
+</ul>
+</li>
+<li>Database Concurrency Contention -  Too many users competing for the same resources.   Sometimes caused by table scans.<ul>
+<li>Database locks up resources waiting to serve requests.</li>
+<li>Transactions lock row/tables for writes and other users cannot read from those rows.</li>
+<li>Transactions that span too many rows cause problems if a query has a table scan or update.  Resources are locked for the duration of the transaction so try to limit it to under 1 second.</li>
+<li>There is a limited number of connections to the RDMS available and it’s possible to have them all blocked waiting on resources.</li>
+</ul>
+</li>
+<li>Slow Database Writes - As the table grows in size they often show a “hockey stick” curve for write speeds.<ul>
+<li>The typical culprit are table indexes.  This is especially true when there are multiple indexes on a single large table.</li>
+<li>B-Tree requires more computational and disk resources as they index tree grows in size.</li>
+<li>Limit indexes to what is required and use caution when data gets big.</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Exploring-Probabilistic-Data-Structures" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2014/05/24/Exploring-Probabilistic-Data-Structures/">Exploring Probabilistic Data Structures</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2014/05/24/Exploring-Probabilistic-Data-Structures/" class="article-date"><time datetime="2014-05-25T00:00:00.000Z" itemprop="datePublished">14-05-25</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The Bloom filter and Count-Min Sketch data structures keep cropping while I’m reading so I figured I would try to implement them.  They are both part of a family of probabilistic data structures that give up accuracy to store a lot of information in a tiny amount of space.</p>
+<p><a href="https://en.wikipedia.org/wiki/Bloom_filter" target="_blank" rel="external">Bloom Filter</a> - Could I have seen this before?<br><a href="https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch" target="_blank" rel="external">Count–Min Sketch</a> - What’s the maximum number of times I could have seen this?</p>
+<p>It’s also worth looking at:<br><a href="https://en.wikipedia.org/wiki/HyperLogLog" target="_blank" rel="external">HyperLogLog</a> - Approximately how many unique elements have I seen?<br><a href="https://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/" target="_blank" rel="external">Great post on probabilistic data structures</a></p>
+<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/BloomFilter.cs" target="_blank" rel="external">Bloom Filter code</a><br><a href="https://github.com/DForshner/CSharpExperiments/blob/master/CountMinSketch.cs" target="_blank" rel="external">Count-Min Sketch code</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Working-Out-Bayes-Theorem" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  
+    <h3 itemprop="name">
+      <a class="article-title" href="/2014/05/02/Working-Out-Bayes-Theorem/">Working Out Bayes&#39; Theorem</a>
+    </h3>
+  
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2014/05/02/Working-Out-Bayes-Theorem/" class="article-date"><time datetime="2014-05-03T00:00:00.000Z" itemprop="datePublished">14-05-03</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>This is mostly an excuse to play around with the MathJax library</em></p>
+<img src="/images/BayesDemo.png" width="200" height="200">
+<p>$Num(A) = 50$<br>$Num(B) = 15$<br>$Num(A∩B) = 5$<br>$Num(A∪B) = 65$</p>
+<p>Get probabilities from counts<br>$P(A) = \frac{50}{65} \approx 0.769$<br>$P(B) = \frac{15}{65} \approx 0.231$<br>$P(A∩B) = \frac{5}{65} \approx 0.0769$</p>
+<p>Get conditional probabilities from counts<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)} = \frac{5}{15} \approx 0.333$<br>$P(B|A) = \frac{Num(A∩B)}{Num(A)} = \frac{5}{65} \approx 0.077$</p>
+<p>Use the above to get counts from probabilities<br>$Num(A) = P(A) \times Num(A∪B) = \frac{0.769}{65} = 50$<br>$Num(B) = P(B) \times Num(A∪B) = \frac{0.231}{65} = 15$<br>$Num(A∩B) = P(A|B) \times Num(B) = \frac{0.333}{15} = 5$<br>$Num(A∩B) = P(B|A) \times Num(A) = \frac{0.077}{65} = 5$</p>
+<p>Turn counts into probabilities to get the conditional probability from other probabilities<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)}$<br>$P(A|B) = \frac{P(B|A) \times Num(A)}{P(B) \times Num(A∪B)}$<br>$P(A|B) = \frac{P(B|A) \times P(A) \times Num(A∪B)}{P(B) \times Num(A∪B)}$</p>
+<p>$Bayes’ Theorem = P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$</p>
 
       
     </div>
@@ -468,7 +418,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/17/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/16/">16</a></li><li><a class="page-number" href="/page/17/">17</a></li><li class="active"><span class="page-number">18</span></li><li><a class="page-number" href="/page/19/">19</a></li><li><a class="page-next" rel="next" href="/page/19/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/17/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/16/">16</a></li><li><a class="page-number" href="/page/17/">17</a></li><li class="active"><span class="page-number">18</span></li><li><a class="page-number" href="/page/19/">19</a></li><li><a class="page-number" href="/page/20/">20</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/24/">24</a></li><li><a class="page-next" rel="next" href="/page/19/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -482,25 +432,12 @@ ga('send', 'pageview');
 
 </div>
 
-
   
   <div class="sidebar-module">
-    <h4>Currently Reading</h4>
-    <ul class="sidebar-module-list">
-        
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/17346997-doing-data-science?utm_medium=api&amp;amp;utm_source=blog_book">Doing Data Science</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;amp;utm_source=blog_book">Designing Data-Intensive Applications</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/25531393-patterns-principles-and-practices-of-domain-driven-design?utm_medium=api&amp;amp;utm_source=blog_book">Patterns Principles and Practices of Domain Driven Design</a>
-		  </li>
-		
-    </ul>
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Algorithms/" style="font-size: 10.91px;">Algorithms</a> <a href="/tags/Books/" style="font-size: 18.18px;">Books</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Complexity/" style="font-size: 10px;">Complexity</a> <a href="/tags/Concurrency/" style="font-size: 10px;">Concurrency</a> <a href="/tags/Conferences/" style="font-size: 11.82px;">Conferences</a> <a href="/tags/Courses/" style="font-size: 15.45px;">Courses</a> <a href="/tags/DIY/" style="font-size: 11.82px;">DIY</a> <a href="/tags/Data-Orientated-Design/" style="font-size: 10px;">Data Orientated Design</a> <a href="/tags/Data-Science/" style="font-size: 11.82px;">Data Science</a> <a href="/tags/Data-Structures/" style="font-size: 13.64px;">Data Structures</a> <a href="/tags/Databases/" style="font-size: 10px;">Databases</a> <a href="/tags/DevOps/" style="font-size: 10px;">DevOps</a> <a href="/tags/Distributed-Systems/" style="font-size: 12.73px;">Distributed Systems</a> <a href="/tags/ECMAScript/" style="font-size: 12.73px;">ECMAScript</a> <a href="/tags/Electronics/" style="font-size: 12.73px;">Electronics</a> <a href="/tags/Empirical-Studies/" style="font-size: 12.73px;">Empirical Studies</a> <a href="/tags/Exploring/" style="font-size: 16.36px;">Exploring</a> <a href="/tags/Failure/" style="font-size: 11.82px;">Failure</a> <a href="/tags/Functional-Programming/" style="font-size: 10px;">Functional Programming</a> <a href="/tags/Game-Engines/" style="font-size: 10px;">Game Engines</a> <a href="/tags/Gamification/" style="font-size: 13.64px;">Gamification</a> <a href="/tags/Interviewing/" style="font-size: 10.91px;">Interviewing</a> <a href="/tags/MOOC/" style="font-size: 13.64px;">MOOC</a> <a href="/tags/Machine-Learning/" style="font-size: 11.82px;">Machine Learning</a> <a href="/tags/Makerspace/" style="font-size: 11.82px;">Makerspace</a> <a href="/tags/Making/" style="font-size: 11.82px;">Making</a> <a href="/tags/Math/" style="font-size: 10px;">Math</a> <a href="/tags/Meetup/" style="font-size: 17.27px;">Meetup</a> <a href="/tags/Natural-Language-Processing/" style="font-size: 14.55px;">Natural Language Processing</a> <a href="/tags/Odds-Ends/" style="font-size: 19.09px;">Odds & Ends</a> <a href="/tags/Optimization/" style="font-size: 10px;">Optimization</a> <a href="/tags/Presentations/" style="font-size: 10.91px;">Presentations</a> <a href="/tags/Purposeful-Practice/" style="font-size: 10px;">Purposeful Practice</a> <a href="/tags/Random/" style="font-size: 20px;">Random</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/Reduction/" style="font-size: 10px;">Reduction</a> <a href="/tags/Reviews/" style="font-size: 13.64px;">Reviews</a> <a href="/tags/Software-Architectures/" style="font-size: 10px;">Software Architectures</a> <a href="/tags/Software-Development-Practices/" style="font-size: 13.64px;">Software Development Practices</a> <a href="/tags/Testing/" style="font-size: 11.82px;">Testing</a> <a href="/tags/User-Experience-Design/" style="font-size: 10px;">User Experience Design</a> <a href="/tags/Visual-Learning/" style="font-size: 11.82px;">Visual Learning</a> <a href="/tags/Web/" style="font-size: 10.91px;">Web</a> <a href="/tags/μReview/" style="font-size: 19.09px;">μReview</a>
+    </p>
   </div>
 
 
@@ -535,6 +472,23 @@ ga('send', 'pageview');
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>

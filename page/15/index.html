@@ -3,19 +3,19 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>~ Blog</title>
+  <title>David Forshner&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+  <meta name="description" content="David Forshner&apos;s blog about software and making.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
+<meta property="og:title" content="David Forshner's Blog">
 <meta property="og:url" content="https://dforshner.github.io/page/15/index.html">
-<meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:site_name" content="David Forshner's Blog">
+<meta property="og:description" content="David Forshner&apos;s blog about software and making.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="David Forshner's Blog">
+<meta name="twitter:description" content="David Forshner&apos;s blog about software and making.">
   
-    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="David Forshner&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -50,8 +50,8 @@ ga('send', 'pageview');
 	{
 	  "@context" : "http://schema.org",
 	  "@type" : "WebSite",
-	  "name" : "~ Blog",
-	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "name" : "David Forshner&#39;s Blog",
+	  "alternateName" : "David Forshner&#39;s blog about software and making.",
 	  "url" : "https://dforshner.github.io"
 	}
 	</script>
@@ -127,7 +127,7 @@ ga('send', 'pageview');
   <div class="container">
 	<div class="blog-header">
   
-    <p class="lead blog-description">David Forshner&#39;s blog/notebook/bookmarks/random</p>
+    <p class="lead blog-description">A blog about software and making.</p>
   
 </div>
 
@@ -135,13 +135,13 @@ ga('send', 'pageview');
         <div class="col-sm-8 blog-main">
           
   
-    <article id="post-Exploring-Probabilistic-Data-Structures" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/05/24/Exploring-Probabilistic-Data-Structures/">Exploring Probabilistic Data Structures</a>
+      <a class="article-title" href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/">Ever have one of those days where your L1 cache collapses into a black hole?</a>
     </h3>
   
 
@@ -150,14 +150,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/05/24/Exploring-Probabilistic-Data-Structures/" class="article-date"><time datetime="2014-05-25T00:00:00.000Z" itemprop="datePublished">14-05-25</time></a>
+  <a href="/2015/02/12/Ever-have-one-of-those-days-where-your-L1-cache-collapses-into-a-black-hole/" class="article-date"><time datetime="2015-02-12T18:20:47.000Z" itemprop="datePublished">15-02-12</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Data-Structures/">Data Structures</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Complexity/">Complexity</a></li></ul>
 
 
   </div>
@@ -165,10 +165,11 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>The Bloom filter and Count-Min Sketch data structures keep cropping while I’m reading so I figured I would try to implement them.  They are both part of a family of probabilistic data structures that give up accuracy to store a lot of information in a tiny amount of space.</p>
-<p><a href="https://en.wikipedia.org/wiki/Bloom_filter" target="_blank" rel="external">Bloom Filter</a> - Could I have seen this before?<br><a href="https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch" target="_blank" rel="external">Count–Min Sketch</a> - What’s the maximum number of times I could have seen this?</p>
-<p>It’s also worth looking at:<br><a href="https://en.wikipedia.org/wiki/HyperLogLog" target="_blank" rel="external">HyperLogLog</a> - Approximately how many unique elements have I seen?<br><a href="https://highlyscalable.wordpress.com/2012/05/01/probabilistic-structures-web-analytics-data-mining/" target="_blank" rel="external">Great post on probabilistic data structures</a></p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/BloomFilter.cs" target="_blank" rel="external">Bloom Filter code</a><br><a href="https://github.com/DForshner/CSharpExperiments/blob/master/CountMinSketch.cs" target="_blank" rel="external">Count-Min Sketch code</a></p>
+        <p>Interesting look at how to incorporate the cost of random access into complexity estimates.</p>
+<blockquote>
+<p>In short: if you try to squeeze too much L1 cache onto your CPU it will eventually collapse into a black hole, and that would make it awkward to get the results of the computation back to the user.</p>
+</blockquote>
+<p><a href="http://www.ilikebigbits.com/blog/2014/4/21/the-myth-of-ram-part-i" target="_blank" rel="external">The Myth of RAM - Part 1</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/28/the-myth-of-ram-part-ii" target="_blank" rel="external">The Myth of RAM - Part 2</a><br><a href="http://www.ilikebigbits.com/blog/2014/4/29/the-myth-of-ram-part-iii" target="_blank" rel="external">The Myth of RAM - Part 3</a><br><a href="http://www.ilikebigbits.com/blog/2015/2/9/the-myth-of-ram-part-iv" target="_blank" rel="external">The Myth of RAM - Part 4</a></p>
 
       
     </div>
@@ -188,13 +189,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Working-Out-Bayes-Theorem" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Head-First-Design-Patterns" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/05/02/Working-Out-Bayes-Theorem/">Working Out Bayes&#39; Theorem</a>
+      <a class="article-title" href="/2015/01/31/Head-First-Design-Patterns/">Head First Design Patterns</a>
     </h3>
   
 
@@ -203,14 +204,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/05/02/Working-Out-Bayes-Theorem/" class="article-date"><time datetime="2014-05-03T00:00:00.000Z" itemprop="datePublished">14-05-03</time></a>
+  <a href="/2015/01/31/Head-First-Design-Patterns/" class="article-date"><time datetime="2015-02-01T00:00:00.000Z" itemprop="datePublished">15-02-01</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/">Math</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
 
 
   </div>
@@ -218,14 +219,8 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p><em>This is mostly an excuse to play around with the MathJax library</em></p>
-<img src="/images/BayesDemo.png" width="200" height="200">
-<p>$Num(A) = 50$<br>$Num(B) = 15$<br>$Num(A∩B) = 5$<br>$Num(A∪B) = 65$</p>
-<p>Get probabilities from counts<br>$P(A) = \frac{50}{65} \approx 0.769$<br>$P(B) = \frac{15}{65} \approx 0.231$<br>$P(A∩B) = \frac{5}{65} \approx 0.0769$</p>
-<p>Get conditional probabilities from counts<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)} = \frac{5}{15} \approx 0.333$<br>$P(B|A) = \frac{Num(A∩B)}{Num(A)} = \frac{5}{65} \approx 0.077$</p>
-<p>Use the above to get counts from probabilities<br>$Num(A) = P(A) \times Num(A∪B) = \frac{0.769}{65} = 50$<br>$Num(B) = P(B) \times Num(A∪B) = \frac{0.231}{65} = 15$<br>$Num(A∩B) = P(A|B) \times Num(B) = \frac{0.333}{15} = 5$<br>$Num(A∩B) = P(B|A) \times Num(A) = \frac{0.077}{65} = 5$</p>
-<p>Turn counts into probabilities to get the conditional probability from other probabilities<br>$P(A|B) = \frac{Num(A∩B)}{Num(B)}$<br>$P(A|B) = \frac{P(B|A) \times Num(A)}{P(B) \times Num(A∪B)}$<br>$P(A|B) = \frac{P(B|A) \times P(A) \times Num(A∪B)}{P(B) \times Num(A∪B)}$</p>
-<p>$Bayes’ Theorem = P(A|B) = \frac{P(B|A) \times P(A)}{P(B)}$</p>
+        <p>I have a huge amount of respect for people who can distill ideas down into simple digestible parts.  The authors do an amazing job of communicating the ideas behind different patterns and illustrating the problems they are trying to solve.  I can easily recommend this to anyone interested in learning about design patterns.</p>
+<p><a href="https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
 
       
     </div>
@@ -245,13 +240,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Heterogeneous-Parallel-Programming" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Introduction-to-the-Theory-of-Computation-Review" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/04/16/Heterogeneous-Parallel-Programming/">Heterogeneous Parallel Programming</a>
+      <a class="article-title" href="/2015/01/31/Introduction-to-the-Theory-of-Computation-Review/">Introduction to the Theory of Computation Review</a>
     </h3>
   
 
@@ -260,14 +255,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/04/16/Heterogeneous-Parallel-Programming/" class="article-date"><time datetime="2014-04-17T00:00:00.000Z" itemprop="datePublished">14-04-17</time></a>
+  <a href="/2015/01/31/Introduction-to-the-Theory-of-Computation-Review/" class="article-date"><time datetime="2015-02-01T00:00:00.000Z" itemprop="datePublished">15-02-01</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Courses/">Courses</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MOOC/">MOOC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reviews/">Reviews</a></li></ul>
 
 
   </div>
@@ -275,11 +270,60 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
-<li>About two weeks in I realized I had bitten off more than I could chew.  I passed (with distinction even) but I burned way more hours on this than I had budgeted for.  The course says 6-8hr/week but I was easily doubling that.  I really should have brushed up on my C and explored CUDA on my own first.</li>
-<li>Changed how I look at processors and memory and I’m not sure that I’m better off after seeing how the sausage is made.  It’s amazing computers work half as well as they do.</li>
+        <p>A friend was cleaning our their bookshelf and gave me their spare copy of this book.  If you are interested in turning machines, intractability, P = NP or P != NP this is probably the textbook for you.  Not having a formal compute science background I had a hard time following some sections.</p>
+<p><a href="https://www.goodreads.com/book/show/22077089-introduction-to-the-theory-of-computation-by-sipser?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">GoodReads</a></p>
+<p><strong> Chapter Notes &amp; Quotes </strong></p>
+<ol>
+<li><em>Regular Languages</em><ul>
+<li>Pretend to be an automaton, you receive and input string and must determine whether it is a member of the language the automaton is supposed to recognize.  You see the symbols in the string one by one and after each, you must decide whether the string so far is in the language.</li>
+<li><u>Deterministic finite automaton (DFA)</u> - When the machine is in a given state and given the next symbol we know with 100% certainty what the next state will be.</li>
+<li><u>Nondeterministic finite automaton (NFA)</u> - When the machine is in a given state and given the next symbol several choices may exist for the next state.</li>
+<li>After an NFA reads a symbol it splits into multiple copies of itself and follows all possible paths in parallel.  Each copy proceeds as before, and if there are subsequent choices, it splits again.  If the next symbol doesn’t appear on any of the arrows exiting this path’s state, the copy dies.  If any copy are in the accept state then the input string is considered accepted.</li>
+<li>NFAs are like a parallel computation where several processes are running concurrently.</li>
+<li>Every deterministic finite automaton is automatically a nondeterministic finite automaton.</li>
+<li>Every NFA can be converted into an equivalent DFA.</li>
 </ul>
-<p><a href="https://github.com/DForshner/Certificates/blob/master/Heterogeneous%20Parallel%20Programming%202014%20-%20Coursera.pdf" target="_blank" rel="external">Certificate</a><br><a href="https://www.coursera.org/course/hetero" target="_blank" rel="external">Course Link</a></p>
+</li>
+<li><em>Context-Free Languages</em><ul>
+<li><u>Pushdown automata</u> - Like a nondeterministic finite automata but have a stack.</li>
+</ul>
+</li>
+<li><em>The Church-Turing Thesis</em></li>
+<li><em>Decidability</em><ul>
+<li>Certain problems are algorithmically solvable and others are not.</li>
+<li>Knowing a problem is unsolvable is useful because you know it must be simplified or altered before you can find a solution.</li>
+<li>Even some ordinary problems that people want to solve turn out to be computationally unsolvable.</li>
+</ul>
+</li>
+<li><em>Reducibility</em><ul>
+<li>Primary method for proving that a problem is computationally unsolvable.</li>
+<li><u>Reduction</u> - Converting one problem to another problem so the solution to the first problem can be used to solve the second.  Ex: Problem of measuring rectangle’s area reduced to measuring its width and height.</li>
+</ul>
+</li>
+<li><em>Advanced Topics in Computability Theory</em><ul>
+<li>Any incompressible string has roughly an equal number of 0s and 1s.</li>
+</ul>
+</li>
+<li><em>Time Complexity</em><ul>
+<li>Exponential time algorithms typically arise when we search through a space of solutions (brute-force search).</li>
+<li><u>Polynomially Equivalent</u> - The algorithm can simulate another with only a polynomial increase in running time.</li>
+<li><u>Polynomially Verifiablity</u> - Verifying the answer can be done in polynomial time.</li>
+<li>If a polynomial time algorithm exists for an NP-complete problem then all problems in NP would be polynomial time solvable.</li>
+<li><u>P</u> = membership can be decided quickly.</li>
+<li><u>NP</u> = membership can be verified quickly.</li>
+</ul>
+</li>
+<li><em>Space Complexity</em></li>
+<li><em>Intractability</em></li>
+<li><em>Advanced topics in complexity theory</em><ul>
+<li><u>Optimization problems</u> seek to find the best solution among a set of possible solutions.</li>
+<li><u>Fermat test</u> provides a probabilistic test for primality.   We call a number <u>pseudoprime</u> if it passes all Fermat tests.</li>
+<li>Gain evidence of a code’s security by showing that the complexity of breaking the code is linked to a the complexity of some other problem for which there is compelling evidence of intractability.</li>
+<li><u>Private-Key Cryptosystem</u> - The same key is used for both encryption and decryption.</li>
+<li><u>Public-Key Cryptosystem</u> - The private decryption key is different than the public encryption key.</li>
+</ul>
+</li>
+</ol>
 
       
     </div>
@@ -299,13 +343,13 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Odds-Ends-March-2014" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Cracking-the-Coding-Interview-150-Programming-Questions-and-Solutions" class="article article-type-post" itemscope itemprop="blogPost">
 
   <header class="article-header">
     
   
     <h3 itemprop="name">
-      <a class="article-title" href="/2014/02/28/Odds-Ends-March-2014/">Odds &amp; Ends - March 2014</a>
+      <a class="article-title" href="/2015/01/26/Cracking-the-Coding-Interview-150-Programming-Questions-and-Solutions/">Cracking the Coding Interview: 150 Programming Questions and Solutions</a>
     </h3>
   
 
@@ -314,14 +358,14 @@ ga('send', 'pageview');
 
   <div class="article-meta">
     <div class="article-datetime">
-  <a href="/2014/02/28/Odds-Ends-March-2014/" class="article-date"><time datetime="2014-03-01T00:00:00.000Z" itemprop="datePublished">14-03-01</time></a>
+  <a href="/2015/01/26/Cracking-the-Coding-Interview-150-Programming-Questions-and-Solutions/" class="article-date"><time datetime="2015-01-27T00:00:00.000Z" itemprop="datePublished">15-01-27</time></a>
 </div>
 
     
     
 
 	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Books/">Books</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/μReview/">μReview</a></li></ul>
 
 
   </div>
@@ -329,100 +373,10 @@ ga('send', 'pageview');
 
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>5 questions to ask when creating tests:<ul>
-<li>What if null?</li>
-<li>What if zero?</li>
-<li>What if one item?</li>
-<li>What if three items?  (Bugs often show up on middle rows not the first/last)</li>
-<li>What if many items?</li>
-</ul>
-</li>
-<li>Don’t add cross-cutting concerns via inheritance.  If you extend a class to add support for logging/caching you are adding a new responsibility (violating SRP).</li>
-<li>Update performance suffers from denormalization.  When you update a duplicated value on a 1NF table you will have to update every row that has that value instead of just one row in 3NF.  Solutions:<ul>
-<li>Don’t update - It’s not a problem if you are only inserting into an OLAP database.</li>
-<li>Normalize your schema (3NF) - Why are you updating a denormalized data warehouse style database?</li>
-<li>Accept inconsistent data - Update a few rows at a time in a commit.</li>
-<li>Accept locking penalty - Page/Row locks will have to be taken out for the row being updated potentially blocking other sessions.</li>
-</ul>
-</li>
-<li>Normalized Schema<ul>
-<li>Less storage used</li>
-<li>Affect fewer records when updating</li>
-</ul>
-</li>
-<li>Denormalized Schema<ul>
-<li>Possibly better at PK lookups as you may only need to hit one table.</li>
-<li>Suffers from concurrency and deadlock issues if updating.</li>
-</ul>
-</li>
-<li>Distributed Consensus Algorithm - Agreement on a single value by multiple nodes.</li>
-</ul>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Odds-Ends-December-2013" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2013/11/30/Odds-Ends-December-2013/">Odds &amp; Ends - December 2013</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2013/11/30/Odds-Ends-December-2013/" class="article-date"><time datetime="2013-12-01T00:00:00.000Z" itemprop="datePublished">13-12-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Odds-Ends/">Odds & Ends</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Random/">Random</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Thoughts, terms, and ideas I’ve come across over the last few months.</p>
-<ul>
-<li>Objects on the stack are much more likely to be in the cache than arbitrary heap lines.</li>
-<li>Closure - When a function closes over the area it is defined in so it can access variables that are not in its parameter list.</li>
-<li>Anonymous functions (ECMAScript) - Functions that do not have a name associated with them.  Used to manage the scope of objects, modules, and namespaces.</li>
-<li>Control Technique (testing) - A method by which you control your test by factoring out the portion of your program which has side effects outside the scope of control of the code you intend to test.  You need to control the side effects when testing.  Example: stubbing external dependencies.</li>
-<li>Mutable - Can change contents without changing identity.</li>
-<li>Immutable - Cannot change contents without changing identity.  Values are unchangeable once they are created.</li>
-<li>Good C++: Avoid mutation, avoid side effects, don’t use raw loops, avoid class hierarchy and inheritance (aka be more functional).<ul>
-<li>The worse case is side effects with global scope.</li>
-<li>Same principal apply to fields, properties, parameters, and variables.  Don’t mutate unless you have a good reason.</li>
-<li>Increase reliability by removing side effects so the code is easier to compose and integrate.  Side-effect free code works in all environments!</li>
-</ul>
-</li>
-</ul>
+        <p>If I had to pick one book to prepare for coding interviews with it would be this one.</p>
+<p>I’m largely self-taught and I this book was as great at both providing patterns to approach different problems and explaining the recommended solutions. I purchased this book along with “Elements of Programming Interviews” and while I strongly suggest purchasing both books, I feel this one is better for people without a formal computer science background.</p>
+<p>I was a bit discouraging when I first started practising with these books but as I worked through them I started to enjoy the process. You eventually start seeing common patterns, become familiar with common algorithms/data structures, and get comfortable ‘running’ code in your head. These are more than just useful interview skills. Estimating how code scales lets you judge when it’s worth increasing code complexity to optimize or when a simple brute force is ‘good enough’ and once you are in the habit of ‘running’ code in you head potential errors will start to jump out at you while reading code. I’d recommend both these books for anyone interested in becoming a better software engineer.</p>
+<p><a href="https://www.goodreads.com/book/show/12544648-cracking-the-coding-interview?utm_medium=api&amp;utm_source=blog_book" target="_blank" rel="external">Goodreads</a></p>
 
       
     </div>
@@ -445,7 +399,7 @@ ga('send', 'pageview');
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/14/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/13/">13</a></li><li><a class="page-number" href="/page/14/">14</a></li><li class="active"><span class="page-number">15</span></li><li><a class="page-number" href="/page/16/">16</a></li><li><a class="page-number" href="/page/17/">17</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/19/">19</a></li><li><a class="page-next" rel="next" href="/page/16/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/page/14/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/13/">13</a></li><li><a class="page-number" href="/page/14/">14</a></li><li class="active"><span class="page-number">15</span></li><li><a class="page-number" href="/page/16/">16</a></li><li><a class="page-number" href="/page/17/">17</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/24/">24</a></li><li><a class="page-next" rel="next" href="/page/16/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -459,25 +413,12 @@ ga('send', 'pageview');
 
 </div>
 
-
   
   <div class="sidebar-module">
-    <h4>Currently Reading</h4>
-    <ul class="sidebar-module-list">
-        
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/17346997-doing-data-science?utm_medium=api&amp;amp;utm_source=blog_book">Doing Data Science</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;amp;utm_source=blog_book">Designing Data-Intensive Applications</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/25531393-patterns-principles-and-practices-of-domain-driven-design?utm_medium=api&amp;amp;utm_source=blog_book">Patterns Principles and Practices of Domain Driven Design</a>
-		  </li>
-		
-    </ul>
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Algorithms/" style="font-size: 10.91px;">Algorithms</a> <a href="/tags/Books/" style="font-size: 18.18px;">Books</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Complexity/" style="font-size: 10px;">Complexity</a> <a href="/tags/Concurrency/" style="font-size: 10px;">Concurrency</a> <a href="/tags/Conferences/" style="font-size: 11.82px;">Conferences</a> <a href="/tags/Courses/" style="font-size: 15.45px;">Courses</a> <a href="/tags/DIY/" style="font-size: 11.82px;">DIY</a> <a href="/tags/Data-Orientated-Design/" style="font-size: 10px;">Data Orientated Design</a> <a href="/tags/Data-Science/" style="font-size: 11.82px;">Data Science</a> <a href="/tags/Data-Structures/" style="font-size: 13.64px;">Data Structures</a> <a href="/tags/Databases/" style="font-size: 10px;">Databases</a> <a href="/tags/DevOps/" style="font-size: 10px;">DevOps</a> <a href="/tags/Distributed-Systems/" style="font-size: 12.73px;">Distributed Systems</a> <a href="/tags/ECMAScript/" style="font-size: 12.73px;">ECMAScript</a> <a href="/tags/Electronics/" style="font-size: 12.73px;">Electronics</a> <a href="/tags/Empirical-Studies/" style="font-size: 12.73px;">Empirical Studies</a> <a href="/tags/Exploring/" style="font-size: 16.36px;">Exploring</a> <a href="/tags/Failure/" style="font-size: 11.82px;">Failure</a> <a href="/tags/Functional-Programming/" style="font-size: 10px;">Functional Programming</a> <a href="/tags/Game-Engines/" style="font-size: 10px;">Game Engines</a> <a href="/tags/Gamification/" style="font-size: 13.64px;">Gamification</a> <a href="/tags/Interviewing/" style="font-size: 10.91px;">Interviewing</a> <a href="/tags/MOOC/" style="font-size: 13.64px;">MOOC</a> <a href="/tags/Machine-Learning/" style="font-size: 11.82px;">Machine Learning</a> <a href="/tags/Makerspace/" style="font-size: 11.82px;">Makerspace</a> <a href="/tags/Making/" style="font-size: 11.82px;">Making</a> <a href="/tags/Math/" style="font-size: 10px;">Math</a> <a href="/tags/Meetup/" style="font-size: 17.27px;">Meetup</a> <a href="/tags/Natural-Language-Processing/" style="font-size: 14.55px;">Natural Language Processing</a> <a href="/tags/Odds-Ends/" style="font-size: 19.09px;">Odds & Ends</a> <a href="/tags/Optimization/" style="font-size: 10px;">Optimization</a> <a href="/tags/Presentations/" style="font-size: 10.91px;">Presentations</a> <a href="/tags/Purposeful-Practice/" style="font-size: 10px;">Purposeful Practice</a> <a href="/tags/Random/" style="font-size: 20px;">Random</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/Reduction/" style="font-size: 10px;">Reduction</a> <a href="/tags/Reviews/" style="font-size: 13.64px;">Reviews</a> <a href="/tags/Software-Architectures/" style="font-size: 10px;">Software Architectures</a> <a href="/tags/Software-Development-Practices/" style="font-size: 13.64px;">Software Development Practices</a> <a href="/tags/Testing/" style="font-size: 11.82px;">Testing</a> <a href="/tags/User-Experience-Design/" style="font-size: 10px;">User Experience Design</a> <a href="/tags/Visual-Learning/" style="font-size: 11.82px;">Visual Learning</a> <a href="/tags/Web/" style="font-size: 10.91px;">Web</a> <a href="/tags/μReview/" style="font-size: 19.09px;">μReview</a>
+    </p>
   </div>
 
 
@@ -512,23 +453,6 @@ ga('send', 'pageview');
   <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
+<script src="/js/script.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>

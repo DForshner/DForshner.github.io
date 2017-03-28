@@ -3,19 +3,19 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>~ Blog</title>
+  <title>David Forshner&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+  <meta name="description" content="David Forshner&apos;s blog about software and making.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="~ Blog">
+<meta property="og:title" content="David Forshner's Blog">
 <meta property="og:url" content="https://dforshner.github.io/page/2/index.html">
-<meta property="og:site_name" content="~ Blog">
-<meta property="og:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta property="og:site_name" content="David Forshner's Blog">
+<meta property="og:description" content="David Forshner&apos;s blog about software and making.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="~ Blog">
-<meta name="twitter:description" content="David Forshner&apos;s blog/notebook/bookmarks/random">
+<meta name="twitter:title" content="David Forshner's Blog">
+<meta name="twitter:description" content="David Forshner&apos;s blog about software and making.">
   
-    <link rel="alternate" href="/atom.xml" title="~ Blog" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="David Forshner&#39;s Blog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.png">
@@ -50,8 +50,8 @@ ga('send', 'pageview');
 	{
 	  "@context" : "http://schema.org",
 	  "@type" : "WebSite",
-	  "name" : "~ Blog",
-	  "alternateName" : "David Forshner&#39;s blog/notebook/bookmarks/random",
+	  "name" : "David Forshner&#39;s Blog",
+	  "alternateName" : "David Forshner&#39;s blog about software and making.",
 	  "url" : "https://dforshner.github.io"
 	}
 	</script>
@@ -127,13 +127,63 @@ ga('send', 'pageview');
   <div class="container">
 	<div class="blog-header">
   
-    <p class="lead blog-description">David Forshner&#39;s blog/notebook/bookmarks/random</p>
+    <p class="lead blog-description">A blog about software and making.</p>
   
 </div>
 
     <div class="row">
         <div class="col-sm-8 blog-main">
           
+  
+    <article id="post-Return-True-To-Win" class="article article-type-post" itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    
+  <h3 itemprop="name">
+    <a class="article-title" href="https://alf.nu/ReturnTrue"
+       target="_blank" itemprop="url">Return True To Win</a>
+  </h3>
+
+
+  </header>
+
+  <div class="article-meta">
+    <div class="article-datetime">
+  <a href="/2016/08/07/Return-True-To-Win/" class="article-date"><time datetime="2016-08-08T00:00:00.000Z" itemprop="datePublished">16-08-08</time></a>
+</div>
+
+    
+    
+
+	
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gamification/">Gamification</a></li></ul>
+
+
+  </div>
+  <div class="article-inner">
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Fun little coding puzzle where you supply the parameter values that cause ECMAScript functions to return true.</p>
+<p><a href="https://alf.nu/ReturnTrue" target="_blank" rel="external">Link</a></p>
+
+      
+    </div>
+
+    
+      
+
+    
+
+    <footer class="article-footer">
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-Google-I-O-Extended-2016" class="article article-type-post" itemscope itemprop="blogPost">
 
@@ -463,253 +513,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/30/Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity/">Exploring Finding Entity Aliases Using N-Gram Similarity</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/30/Exploring-Finding-Entity-Aliases-Using-N-Gram-Similarity/" class="article-date"><time datetime="2016-05-01T00:00:00.000Z" itemprop="datePublished">16-05-01</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Exploring/">Exploring</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This is my second attempt at generating entity aliases from a set of product listings.  In my <a href="/2016/04/11/Exploring-Finding-Entity-Aliases-Using-MinHash-Approximate-Similarity/">first attempt</a> I tried to use MinHash to group similar product listings, but it didn’t work out.  This time, I’m going to be joining on n-grams of the manufacturer name and model number and then scoring the joins by the inverse term probability of the model n-grams.</p>
-<p>I’m planning to use this in a pre-processing stage so that when I block by canonical manufacturer names I can include listings that have different variations of the canonical name.</p>
-<p>For each listing, I’m attempting to find a <em>similar</em> canonical product record.  The criteria I’m using for something being similar are:</p>
-<ol>
-<li>Similar manufacture using character n-gram similarity</li>
-<li>Similar model using shingles made from model parts</li>
-</ol>
-<p>If I find enough instances where a listing is similar to a canonical product, I’ll consider the listing’s manufacturer name to be an alias for the canonical product’s manufacturer name.</p>
-<p>Here are some aliases I was able to find:</p>
-<table>
-<thead>
-<tr>
-<th>Canonical</th>
-<th>Alias</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fujifilm</td>
-<td>fuji</td>
-</tr>
-<tr>
-<td>kodak</td>
-<td>eastman kodak company</td>
-</tr>
-<tr>
-<td>canon</td>
-<td>canon canada</td>
-</tr>
-<tr>
-<td>fujifilm</td>
-<td>fujifilm electronic imaging europe gmbh firstorder</td>
-</tr>
-<tr>
-<td>panasonic</td>
-<td>panasonic deutschland gmbh</td>
-</tr>
-<tr>
-<td>sony</td>
-<td>sony uk consumer electronics instock account</td>
-</tr>
-<tr>
-<td>fujifilm</td>
-<td>fuji photo film europe gmbh</td>
-</tr>
-<tr>
-<td>fujifilm</td>
-<td>fujifilm imaging systems</td>
-</tr>
-<tr>
-<td>kodak</td>
-<td>kodak stock account</td>
-</tr>
-<tr>
-<td>fujifilm</td>
-<td>fujifilm canada</td>
-</tr>
-<tr>
-<td>canon</td>
-<td>canon uk ltd</td>
-</tr>
-<tr>
-<td>olympus</td>
-<td>olympus canada</td>
-</tr>
-</tbody>
-</table>
-<p>My main goal was to relate listings with a manufacturer of <strong>fuji</strong> to <strong>fujifilm</strong> so it looks like this is going to work.  I had to change the scoring method to use the inverse term probably because some of the model names have common numbers or words <em>(ex: “zoom”)</em> which caused lots of false positives.</p>
-<p><a href="https://github.com/DForshner/CSharpExperiments/blob/master/AliasGenerationBySimilarManufacturerAndModel.cs" target="_blank" rel="external">Messy Source Code</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Text-Mining-with-Twitter-and-R-Meetup" class="article article-type-post" itemscope itemprop="blogPost">
-
-  <header class="article-header">
-    
-  
-    <h3 itemprop="name">
-      <a class="article-title" href="/2016/04/28/Text-Mining-with-Twitter-and-R-Meetup/">Text Mining with Twitter and R Meetup</a>
-    </h3>
-  
-
-
-  </header>
-
-  <div class="article-meta">
-    <div class="article-datetime">
-  <a href="/2016/04/28/Text-Mining-with-Twitter-and-R-Meetup/" class="article-date"><time datetime="2016-04-29T00:00:00.000Z" itemprop="datePublished">16-04-29</time></a>
-</div>
-
-    
-    
-
-	
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Meetup/">Meetup</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Natural-Language-Processing/">Natural Language Processing</a></li></ul>
-
-
-  </div>
-  <div class="article-inner">
-
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>A follow along workshop on using R to do data mining on tweets.</p>
-<p><strong>Notes</strong></p>
-<ul>
-<li>Data pipeline: <strong>E</strong>xtract → <strong>C</strong>lean → <strong>T</strong>ransform → <strong>A</strong>nalyize</li>
-<li>Clean<ul>
-<li>Remove: Unicode emoji, punctuation, links, stop words, numbers, dates, URLs, white space</li>
-<li>Normalize to lowercase</li>
-<li><u>Stemming</u> - Truncate words to their radicals<ul>
-<li>Examples: cats → cat, ponies → poni</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Analysis<ul>
-<li><u>Part of speech tagging</u> - Tag each word with its part of speech in a sentence using definition and context.<ul>
-<li>Example: They refuse to permit -&gt; [pronoun] [verb] [to] [verb]</li>
-</ul>
-</li>
-<li><u>Word association</u> - Dot product of two words in a term document matrix gives correlation coefficient.</li>
-<li><u>Clustering</u> - Grouping similar tweets(docs) together<ul>
-<li><u>K-means</u> - Centroidal model, each cluster is represented by a single mean vector.<ul>
-<li>Algorithm: create random clusters → assign points to nearest cluster centroid → recalculate cluster centroids to the average of assigned data points → repeat.</li>
-</ul>
-</li>
-<li><u>Hierarchical</u> - Connectivity model</li>
-<li>Use cosine similarity as the distance function.  Cosine similarity normalizes for tweet(doc) length during the comparison.</li>
-</ul>
-</li>
-<li><u>Topic Mining</u> - Use probability of terms to discover information from documents.  Documents may belong to multiple topics.</li>
-</ul>
-</li>
-</ul>
-<p><em>Word association example:</em></p>
-<table>
-<thead>
-<tr>
-<th>Docs</th>
-<th>word 1</th>
-<th>word 2</th>
-<th>word 3</th>
-<th>word 4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>3</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>4</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Correlation(word 2, word 3) = DotProduct([1,0,0,0], [1,1,0,0]) = 0.5</p>
-<p><a href="http://www.meetup.com/Waterloo-Data-Science/events/230320500/" target="_blank" rel="external">Meetup Event</a></p>
-
-      
-    </div>
-
-    
-      
-
-    
-
-    <footer class="article-footer">
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <div id="page-nav">
-    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="active"><span class="page-number">2</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/19/">19</a></li><li><a class="page-next" rel="next" href="/page/3/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
+    <nav><ul class="pagination"><li><a class="page-prev" rel="prev" href="/"><i class="fa fa-chevron-left"></i> Prev</a></li><li><a class="page-number" href="/">1</a></li><li class="active"><span class="page-number">2</span></li><li><a class="page-number" href="/page/3/">3</a></li><li><a class="page-number" href="/page/4/">4</a></li><li class="disabled"><span class="page-space">&hellip;</span></li><li><a class="page-number" href="/page/24/">24</a></li><li><a class="page-next" rel="next" href="/page/3/">Next <i class="fa fa-chevron-right"></i></a></li></ul></nav>
   </div>
 
 
@@ -723,25 +530,12 @@ ga('send', 'pageview');
 
 </div>
 
-
   
   <div class="sidebar-module">
-    <h4>Currently Reading</h4>
-    <ul class="sidebar-module-list">
-        
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/17346997-doing-data-science?utm_medium=api&amp;amp;utm_source=blog_book">Doing Data Science</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/23463279-designing-data-intensive-applications?utm_medium=api&amp;amp;utm_source=blog_book">Designing Data-Intensive Applications</a>
-		  </li>
-		
-          <li class="sidebar-module-list-item">
-			<a class="sidebar-module-list-link" href="https://www.goodreads.com/book/show/25531393-patterns-principles-and-practices-of-domain-driven-design?utm_medium=api&amp;amp;utm_source=blog_book">Patterns Principles and Practices of Domain Driven Design</a>
-		  </li>
-		
-    </ul>
+    <h4>Tag Cloud</h4>
+    <p class="tagcloud">
+      <a href="/tags/Algorithms/" style="font-size: 10.91px;">Algorithms</a> <a href="/tags/Books/" style="font-size: 18.18px;">Books</a> <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/Complexity/" style="font-size: 10px;">Complexity</a> <a href="/tags/Concurrency/" style="font-size: 10px;">Concurrency</a> <a href="/tags/Conferences/" style="font-size: 11.82px;">Conferences</a> <a href="/tags/Courses/" style="font-size: 15.45px;">Courses</a> <a href="/tags/DIY/" style="font-size: 11.82px;">DIY</a> <a href="/tags/Data-Orientated-Design/" style="font-size: 10px;">Data Orientated Design</a> <a href="/tags/Data-Science/" style="font-size: 11.82px;">Data Science</a> <a href="/tags/Data-Structures/" style="font-size: 13.64px;">Data Structures</a> <a href="/tags/Databases/" style="font-size: 10px;">Databases</a> <a href="/tags/DevOps/" style="font-size: 10px;">DevOps</a> <a href="/tags/Distributed-Systems/" style="font-size: 12.73px;">Distributed Systems</a> <a href="/tags/ECMAScript/" style="font-size: 12.73px;">ECMAScript</a> <a href="/tags/Electronics/" style="font-size: 12.73px;">Electronics</a> <a href="/tags/Empirical-Studies/" style="font-size: 12.73px;">Empirical Studies</a> <a href="/tags/Exploring/" style="font-size: 16.36px;">Exploring</a> <a href="/tags/Failure/" style="font-size: 11.82px;">Failure</a> <a href="/tags/Functional-Programming/" style="font-size: 10px;">Functional Programming</a> <a href="/tags/Game-Engines/" style="font-size: 10px;">Game Engines</a> <a href="/tags/Gamification/" style="font-size: 13.64px;">Gamification</a> <a href="/tags/Interviewing/" style="font-size: 10.91px;">Interviewing</a> <a href="/tags/MOOC/" style="font-size: 13.64px;">MOOC</a> <a href="/tags/Machine-Learning/" style="font-size: 11.82px;">Machine Learning</a> <a href="/tags/Makerspace/" style="font-size: 11.82px;">Makerspace</a> <a href="/tags/Making/" style="font-size: 11.82px;">Making</a> <a href="/tags/Math/" style="font-size: 10px;">Math</a> <a href="/tags/Meetup/" style="font-size: 17.27px;">Meetup</a> <a href="/tags/Natural-Language-Processing/" style="font-size: 14.55px;">Natural Language Processing</a> <a href="/tags/Odds-Ends/" style="font-size: 19.09px;">Odds & Ends</a> <a href="/tags/Optimization/" style="font-size: 10px;">Optimization</a> <a href="/tags/Presentations/" style="font-size: 10.91px;">Presentations</a> <a href="/tags/Purposeful-Practice/" style="font-size: 10px;">Purposeful Practice</a> <a href="/tags/Random/" style="font-size: 20px;">Random</a> <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/Reduction/" style="font-size: 10px;">Reduction</a> <a href="/tags/Reviews/" style="font-size: 13.64px;">Reviews</a> <a href="/tags/Software-Architectures/" style="font-size: 10px;">Software Architectures</a> <a href="/tags/Software-Development-Practices/" style="font-size: 13.64px;">Software Development Practices</a> <a href="/tags/Testing/" style="font-size: 11.82px;">Testing</a> <a href="/tags/User-Experience-Design/" style="font-size: 10px;">User Experience Design</a> <a href="/tags/Visual-Learning/" style="font-size: 11.82px;">Visual Learning</a> <a href="/tags/Web/" style="font-size: 10.91px;">Web</a> <a href="/tags/μReview/" style="font-size: 19.09px;">μReview</a>
+    </p>
   </div>
 
 
