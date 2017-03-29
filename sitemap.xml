@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dforshner.github.io/2017/02/28/Making-Mini-Ottoman/</loc>
+    <loc>https://dforshner.github.io/2017/03/28/State-the-elephant-in-the-code/</loc>
     
-    <lastmod>2017-03-27T15:12:41.409Z</lastmod>
+    <lastmod>2017-03-29T22:38:34.170Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://dforshner.github.io/2017/03/26/Making-Experimenting-With-Metal-Bender/</loc>
     
-    <lastmod>2017-03-27T15:12:12.302Z</lastmod>
+    <lastmod>2017-03-29T22:36:29.380Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2016/02/03/Building-Microservices-Review/</loc>
+    
+    <lastmod>2017-03-29T22:34:46.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dforshner.github.io/2017/02/28/Making-Mini-Ottoman/</loc>
+    
+    <lastmod>2017-03-27T15:12:41.409Z</lastmod>
     
   </url>
   
@@ -173,13 +187,6 @@
     <loc>https://dforshner.github.io/2014/12/31/Working-Effectively-with-Legacy-Code/</loc>
     
     <lastmod>2016-04-21T19:12:16.149Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dforshner.github.io/2016/02/03/Building-Microservices-Review/</loc>
-    
-    <lastmod>2016-04-21T19:11:49.243Z</lastmod>
     
   </url>
   
